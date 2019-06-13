@@ -13,4 +13,4 @@ def ssh_command(ip, user, passwd, command):
         print ssh_session.recv(1024)
     return
 
-ssh_command('10.100.2.8', 'justin', 'SomePassword!','id')
+ssh_command('localhost', 'justin', 'SomePassword!','id')
