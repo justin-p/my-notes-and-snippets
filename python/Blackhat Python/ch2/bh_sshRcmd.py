@@ -10,7 +10,7 @@ def ssh_command(ip, user, passwd, command):
     ssh_session = client.get_transport().open_session()
     if ssh_session.active:
         ssh_session.send(command)
-        print ssh_session.recv(1024)#read banner
+        print ssh_session.recv(1024) # read banner
         while True:
             command = ssh_session.recv(1024) # get the command from the ssh server
             try:
