@@ -572,8 +572,118 @@ FROM scores GROUP BY test_id;
 +------+------+------+-------+-------+---------+
 10 rows in set (0.00 sec)
 ```
+### between
+```
+SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN '1997-1-1' AND '1995-1-1';
+Empty set (0.00 sec)
+
+SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN '1995-1-1' AND '1997-1-1';
++------------+-----------+------------+
+| first_name | last_name | birth_date |
++------------+-----------+------------+
+| Kenya      | Park      | 1996-07-11 |
+| Araceli    | Gould     | 1996-10-02 |
+| Karley     | Roman     | 1996-12-24 |
+| Annabella  | Nixon     | 1995-12-27 |
+| Yasmine    | Lawson    | 1996-03-19 |
+| Killian    | Cortez    | 1995-07-02 |
++------------+-----------+------------+
+6 rows in set (0.00 sec)
+```
+
+### IN
+
+match for 'array' (list) of vales.
+can also be used on subquerys
+
+```
+SELECT first_name, last_name FROM students WHERE last_name IN ('Cooper','Sanders','Johnson');
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Dale       | Cooper    |
+| Meadow     | Johnson   |
+| Kole       | Sanders   |
++------------+-----------+
+3 rows in set (0.00 sec)
+
+```
+
+### Join
+
+```
+SELECT student_id, date, score, maxscore FROM tests, scores WHERE date='2009-08-29' AND tests.test_id = scores.test_id;
++------------+------------+-------+----------+
+| student_id | date       | score | maxscore |
++------------+------------+-------+----------+
+|          1 | 2009-08-29 |     3 |       15 |
+|          2 | 2009-08-29 |     1 |       15 |
+|          3 | 2009-08-29 |     6 |       15 |
+|          4 | 2009-08-29 |     2 |       15 |
+|          5 | 2009-08-29 |    13 |       15 |
+|          6 | 2009-08-29 |     8 |       15 |
+|          7 | 2009-08-29 |     9 |       15 |
+|          8 | 2009-08-29 |     8 |       15 |
+|          9 | 2009-08-29 |    11 |       15 |
+|         10 | 2009-08-29 |     8 |       15 |
+|         11 | 2009-08-29 |     6 |       15 |
+|         12 | 2009-08-29 |     1 |       15 |
+|         13 | 2009-08-29 |     8 |       15 |
+|         14 | 2009-08-29 |    10 |       15 |
+|         15 | 2009-08-29 |     7 |       15 |
+|         16 | 2009-08-29 |     1 |       15 |
+|         17 | 2009-08-29 |     4 |       15 |
+|         18 | 2009-08-29 |     1 |       15 |
+|         19 | 2009-08-29 |     1 |       15 |
+|         20 | 2009-08-29 |     8 |       15 |
+|         21 | 2009-08-29 |    10 |       15 |
+|         22 | 2009-08-29 |     7 |       15 |
+|         23 | 2009-08-29 |     7 |       15 |
+|         24 | 2009-08-29 |    15 |       15 |
+|         25 | 2009-08-29 |    11 |       15 |
++------------+------------+-------+----------+
+25 rows in set (0.00 sec)
 
 
-### 
+SELECT scores.student_id, tests.date, scores.score FROM tests, scores WHERE date='2009-08-29' AND tests.test_id = scores.test_id;
+ELECT scores.student_id, tests.date, scores.score FROM tests, scores WHERE date='2009-08-29' AND tests.test_id = scores.test_id;
++------------+------------+-------+
+| student_id | date       | score |
++------------+------------+-------+
+|          1 | 2009-08-29 |     3 |
+|          2 | 2009-08-29 |     1 |
+|          3 | 2009-08-29 |     6 |
+|          4 | 2009-08-29 |     2 |
+|          5 | 2009-08-29 |    13 |
+|          6 | 2009-08-29 |     8 |
+|          7 | 2009-08-29 |     9 |
+|          8 | 2009-08-29 |     8 |
+|          9 | 2009-08-29 |    11 |
+|         10 | 2009-08-29 |     8 |
+|         11 | 2009-08-29 |     6 |
+|         12 | 2009-08-29 |     1 |
+|         13 | 2009-08-29 |     8 |
+|         14 | 2009-08-29 |    10 |
+|         15 | 2009-08-29 |     7 |
+|         16 | 2009-08-29 |     1 |
+|         17 | 2009-08-29 |     4 |
+|         18 | 2009-08-29 |     1 |
+|         19 | 2009-08-29 |     1 |
+|         20 | 2009-08-29 |     8 |
+|         21 | 2009-08-29 |    10 |
+|         22 | 2009-08-29 |     7 |
+|         23 | 2009-08-29 |     7 |
+|         24 | 2009-08-29 |    15 |
+|         25 | 2009-08-29 |    11 |
++------------+------------+-------+
+25 rows in set (0.00 sec)
+
 ```
-```
+
+## update
+UPDATE scores SET score=25 WHERE student_id=4 AND test_id=4;
+
+
+
+
+https://www.youtube.com/watch?v=yPu6qV5byu4  @ 37:53
