@@ -52,9 +52,9 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         $TOC += "* $($dir.Name) $nl"
 
         foreach ($md in ($repoStructure | Sort-Object -Property Name)) {
-            $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty))
+            $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty)).Replace('\','/') 
             $fileName = $md.Name -replace $md.Extension
-            $TOC += "  * [$fileName]($(""$baseURL$suffix\$($md.Name)""))$nl"
+            $TOC += "  * [$fileName]($(""$baseURL$suffix/$($md.Name)""))$nl"
         }
     }
     Return $TOC
