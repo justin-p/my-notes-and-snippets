@@ -20,21 +20,25 @@ A place where I store my notes from stuff I learned, cheatsheets, code small sni
   * [tmux](/cheatsheets/tmux.md)
   * [xxd](/cheatsheets/xxd.md)
 * code
+  * [php](/code/php/php.md)
+  * [python](/code/python/python.md)
+  * [sql](/code/sql/sql.md)
 * ctf
   * [Bandit](/ctf/OTW/Bandit/Bandit.md)
   * [Natas](/ctf/OTW/Natas/Natas.md)
 
 
 
+```
+TOC shizzels
 
-### TOC shizzels
-
-#### main TOC
+# main TOC
 Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.md" -BaseFolder "$RepoPath" -BaseURL "."
 
 
-#### code TOC
-Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.md" -BaseFolder "$RepoPath\code" -BaseURL "."
+# code python
+Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.py" -BaseFolder "$RepoPath\code\python" -Subfolder '\code\python' -BaseURL "."
 
-##### code python
-Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.py" -BaseFolder $RepoPath\code\python" -BaseURL "."
+# code php
+Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.php" -BaseFolder "$RepoPath\code\php" -Subfolder '\code\php' -BaseURL "."
+```

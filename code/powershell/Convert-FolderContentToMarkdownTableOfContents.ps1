@@ -37,6 +37,7 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         
     param (
         [string]$BaseFolder,
+        [string]$Subfolder,
         [string]$RelativeFolder = ".",
         [string]$FiletypeFilter = "*.md"
     )
@@ -52,7 +53,12 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         $TOC += "* $($dir.Name) $nl"
 
         foreach ($md in ($repoStructure | Sort-Object -Property Name)) {
-            $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty)).Replace('\','/') 
+            if ($Subfolder) {
+                $suffix = $($Subfolder + $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty))).Replace('\','/') 
+            }
+            Else {
+                $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty)).Replace("\", "/")
+            }
             $fileName = $md.Name -replace $md.Extension
             $TOC += "  * [$fileName]($(""$baseURL$suffix/$($md.Name)""))$nl"
         }
