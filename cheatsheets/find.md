@@ -1,5 +1,7 @@
 # Find 
 
+https://devhints.io/find
+
 ## Example 1
 
 In the current folder, find files that are readable, executable have a size of 1033 bytes, then send the files found over to cat.
