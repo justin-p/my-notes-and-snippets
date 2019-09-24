@@ -6,6 +6,7 @@ A place where I store my notes from stuff I learned, cheatsheets, code small sni
 * cheatsheets
   * [ascii-table](/cheatsheets/ascii-table.md)
   * [bash](/cheatsheets/bash.md)
+  * [bash-hacking](/cheatsheets/bash-hacking.md)
   * [cron](/cheatsheets/cron.md)
   * [cut](/cheatsheets/cut.md)
   * [find](/cheatsheets/find.md)
@@ -13,6 +14,7 @@ A place where I store my notes from stuff I learned, cheatsheets, code small sni
   * [man](/cheatsheets/man.md)
   * [markdown](/cheatsheets/markdown.md)
   * [mysql](/cheatsheets/mysql.md)
+  * [mysql-hacking](/cheatsheets/mysql-hacking.md)
   * [openssl](/cheatsheets/openssl.md)
   * [random](/cheatsheets/random.md)
   * [tmux](/cheatsheets/tmux.md)
@@ -21,3 +23,18 @@ A place where I store my notes from stuff I learned, cheatsheets, code small sni
 * ctf
   * [Bandit](/ctf/OTW/Bandit/Bandit.md)
   * [Natas](/ctf/OTW/Natas/Natas.md)
+
+
+
+
+### TOC shizzels
+
+#### main TOC
+Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.md" -BaseFolder "$RepoPath" -BaseURL "."
+
+
+#### code TOC
+Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.md" -BaseFolder "$RepoPath\code" -BaseURL "."
+
+##### code python
+Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.py" -BaseFolder $RepoPath\code\python" -BaseURL "."
