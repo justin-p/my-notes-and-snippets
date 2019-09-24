@@ -14,9 +14,11 @@ Function GenerateToc {
 
 A place where I store my notes from stuff I learned, cheatsheets, code small snippets, etc.
 
-$main" > $PSScriptRoot\README.md
+$main
+" > $PSScriptRoot\README.md
     Write-Output "$python" > $PSScriptRoot\code\python\python.md
     Write-Output "$php" > $PSScriptRoot\code\php\php.md
+    
 }
 if ($UpdateToc) {
     try {
