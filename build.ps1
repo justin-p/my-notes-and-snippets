@@ -1,7 +1,8 @@
 #Requires -Version 5
 param (
     [parameter()]
-    [switch]$UpdateToc
+    [switch]$UpdateToc,
+    [switch]$UpdateExternal
 )
 
 Function GenerateToc {
@@ -19,11 +20,16 @@ $main" > $PSScriptRoot\README.md
 }
 if ($UpdateToc) {
     try {
-        
         GenerateToc
     }
     catch {
         $PSCmdlet.ThrowTerminatingError($PSItem)
     }
 }
-
+If ($UpdateExternal) {
+    Set-Location "C:\_git\github\notes"
+    gci | foreach-object {
+        cd $_.fullname
+        git pull
+    }
+}
