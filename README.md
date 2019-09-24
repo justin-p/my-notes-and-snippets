@@ -1,1 +1,13 @@
 # sec-stuff
+## Index
+* cheatsheets
+  * [ascii-table](\cheatsheets\ascii-table.md)
+  * [bash](\cheatsheets\bash.md)
+  * [cron](\cheatsheets\cron.md)
+  * [man](\cheatsheets\man.md)
+  * [markdown](\cheatsheets\markdown.md)
+  * [mysql](\cheatsheets\mysql.md)
+* code
+* ctf
+  * [Bandit](\ctf\OTW\Bandit\Bandit.md)
+  * [Natas](\ctf\OTW\Natas\Natas.md)
