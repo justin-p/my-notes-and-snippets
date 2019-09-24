@@ -1,4 +1,4 @@
-# OTW-Bandit-temp
+# OTW-Bandit
 
 ## Bandit0
 
@@ -17,7 +17,7 @@ Connection to bandit.labs.overthewire.org closed.
 ```bash
 bandit1@bandit.labs.overthewire.org -p 2220 -PubkeyAuthentication no
 bandit1@bandit$ ls
-.
+-
 bandit1@bandit$ cat ./-
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9  
 bandit1@bandit$ logout  
