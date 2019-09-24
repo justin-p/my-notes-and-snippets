@@ -2,7 +2,6 @@
 
 https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/  
 
-
 | Unicode | Decimal | Binary  | Octal | Hex | UTF-8 | UTF-16 | UTF-32     | Glyph | HTML Entity Name   | HTML Entity Number | Single URL Encoding | Double URL Encoding | Description                                         |
 |---------|---------|---------|-------|-----|-------|--------|------------|-------|--------------------|--------------------|---------------------|---------------------|-----------------------------------------------------|
 | U+0000  | 0       | 0       | 0     | 0   | 0x00  | 0x0000 | 0x00000000 | NUL   |                    | &#0;               | NUL                 | NUL                 | Null character                                      |
