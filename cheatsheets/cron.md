@@ -1,23 +1,17 @@
-### Format
+# Cron
 
-```
-Min  Hour Day  Mon  Weekday
-```
+## Format
 
-```
-*    *    *    *    *  command to be executed
-```
+    Min  Hour Day  Mon  Weekday  Command
+    *    *    *    *    *        command to be executed
+    ┬    ┬    ┬    ┬    ┬
+    │    │    │    │    └─  Weekday  (0=Sun .. 6=Sat)
+    │    │    │    └──────  Month    (1..12)
+    │    │    └───────────  Day      (1..31)
+    │    └────────────────  Hour     (0..23)
+    └─────────────────────  Minute   (0..59)
 
-```
-┬    ┬    ┬    ┬    ┬
-│    │    │    │    └─  Weekday  (0=Sun .. 6=Sat)
-│    │    │    └──────  Month    (1..12)
-│    │    └───────────  Day      (1..31)
-│    └────────────────  Hour     (0..23)
-└─────────────────────  Minute   (0..59)
-```
-
-### Examples
+## Examples
 
 | Example        | Description           |
 | ---            | ---                   |
@@ -27,19 +21,16 @@ Min  Hour Day  Mon  Weekday
 | `0 0 * * 0`    | every Sunday midnight |
 | `@reboot`      | every reboot          |
 
-### Crontab
+## Crontab
 
-```bash
-# Adding tasks easily
-echo "@reboot echo hi" | crontab
-```
+### Adding tasks easily
 
-```bash
-# Open in editor
-crontab -e
-```
+    echo "@reboot echo hi" | crontab
 
-```bash
-# List tasks
-crontab -l [-u user]
-```
+### Open in editor
+
+    crontab -e
+
+### List tasks
+
+    crontab -l [-u user]

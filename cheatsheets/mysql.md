@@ -1,9 +1,8 @@
 # MySQL
 
-Dummy data: https://github.com/justin-p/PowerShell/blob/master/random_sql_data.md
+[Dummy data](https://github.com/justin-p/PowerShell/blob/master/random_sql_data.md)
 
-Sources: https://raw.githubusercontent.com/rstacruz/cheatsheets/master/mysql.md
-
+[Sources](https://raw.githubusercontent.com/rstacruz/cheatsheets/master/mysql.md)
 
 ## Create / Delete Database
 
@@ -60,12 +59,13 @@ DELETE FROM table1, table2 FROM table1, table2 WHERE table1.id1 =
 ```
 
 ## Update
+
 UPDATE scores SET score=25 WHERE student_id=4 AND test_id=4;
 
-## SELECT
+## Select
 
 ```sql
-select * from absence;
+SELECT * FROM absence;
 +------------+------------+
 | student_id | date       |
 +------------+------------+
@@ -91,7 +91,7 @@ SELECT DISTINCT field1 FROM ...
 SELECT DISTINCT field1, field2 FROM ...
 ```
 
-## RENAME
+## Rename
 
 ```sql
 show tables;
@@ -122,7 +122,6 @@ show tables;
 5 rows in set (0.00 sec)
 ```
 
-
 ## Conditions
 
 ```sql
@@ -137,8 +136,22 @@ condition1 AND condition2
 condition1 OR condition2
 ```
 
+```sql
+eq =
+lt <
+gt >
+ge >=
+le <=
+ne !=
+```
 
-## WHERE
+```sql
+OR  ||  
+AND &&
+NOT !  
+```
+
+## Where
 
 ```sql
 select first_name, last_name, state from students where sex="F";
@@ -164,17 +177,6 @@ select first_name, last_name, state from students where sex="F";
 15 rows in set (0.00 sec)
 ```
 
-## WHERE eg,lt,gt,ge,le,ne
-
-```sql
-eq =
-lt <
-gt >
-ge >=
-le <=
-ne !=
-```
-
 select where the year of birth_date is greater than 2000
 
 ```sql
@@ -193,15 +195,6 @@ SELECT first_name, last_name, birth_date FROM students WHERE YEAR(birth_date) >=
 7 rows in set (0.00 sec)
 ```
 
-
-## OR, AND NOT
-
-```sql
-OR  ||  
-AND &&
-NOT !  
-```
-
 select where the month of birth_day is 3 OR where the state has the value of WA
 
 ```sql
@@ -217,7 +210,6 @@ SELECT first_name, last_name, birth_date,state FROM students WHERE MONTH(birth_d
 4 rows in set (0.00 sec)
 ```
 
-
 ```sql
 SELECT first_name, last_name, birth_date,state FROM students WHERE day(birth_date) >= 12 AND (state="WA" OR state="ra");
 SELECT first_name, last_name, birth_date,state FROM students WHERE day(birth_date) >= 12 && (state="WA" || state="ra");
@@ -230,10 +222,10 @@ SELECT first_name, last_name, birth_date,state FROM students WHERE day(birth_dat
 2 rows in set, 2 warnings (0.00 sec)
 ```
 
-
-## NOT NULL
+## Not null
 
 select all last_name from students where a value is been supplied. Do not show null data.
+
 ```sql
 SELECT last_name FROM students WHERE last_name IS NOT NULL;
 +-----------+
@@ -268,7 +260,7 @@ SELECT last_name FROM students WHERE last_name IS NOT NULL;
 25 rows in set (0.01 sec)
 ```
 
-## ORDER BY
+## Order by
 
 order the select by last_name
 
@@ -306,7 +298,7 @@ select first_name, last_name FROM students ORDER BY last_name;
 25 rows in set (0.00 sec)
 ```
 
-## order DESC
+## Order desc
 
 order the select by last_name but in descending order.
 
@@ -382,9 +374,9 @@ SELECT first_name, last_name, state FROM students ORDER BY state DESC, last_name
 25 rows in set (0.00 sec)
 ```
 
-## LIMIT
+## Limit
 
-limit the select to 5 values.
+Limit the select to 5 values.
 
 ```sql
 select student_id,first_name, last_name FROM students LIMIT 5;
@@ -428,10 +420,11 @@ select student_id,first_name, last_name FROM students LIMIT 5, 1;
 1 row in set (0.00 sec)
 ```
 
-## CONCAT && AS
+## Concat and As
 
 CONCAT can be used to 'merge' 2 things into something custom
 AS can be used to rename something.
+
 ```sql
 SELECT CONCAT(first_name, " ", last_name) AS 'Name',Sex AS 'Gender' FROM students LIMIT 1;
 +-------------+--------+
@@ -467,7 +460,7 @@ SELECT CONCAT(first_name, " ", last_name) AS 'Name',Sex AS 'Gender',"Ow Hi there
 
 ```
 
-## LIKE
+## Like
 
 ```sql
 % = wildcard
@@ -526,7 +519,7 @@ SELECT last_name, first_name FROM students WHERE first_name LIKE '___e%';
 7 rows in set (0.00 sec)
 ```
 
-## DISTINCT 
+## Distinct 
 
 only show unique values 
 
@@ -543,10 +536,8 @@ SELECT DISTINCT type FROM tests ORDER BY type;
 
 ## COUNT
 
-Count something
-
-
 Count unique
+
 ```sql
 SELECT COUNT(DISTINCT type) FROM tests;
 +----------------------+
@@ -583,8 +574,7 @@ SELECT sex, COUNT(*) AS GenderCount FROM students GROUP BY sex;
 2 rows in set (0.00 sec)
 ```
 
-
-## GROUP BY
+## Group by
 
 count the students that are born on the same month, then GROUP and ORDER by month.
 
@@ -625,18 +615,20 @@ select Month(birth_date) AS 'Month', Count(student_id) AS Students FROM students
 
 ```
 
-## HAVING
+## Having
 
 > Difference between the having and where clause in sql is that the where clause can not be used with aggregates, but the having clause can. One way to think of it is that the having clause is an additional filter to the where clause.
-> https://stackoverflow.com/questions/16155937/mysql-having-vs-where
+
+[source](https://stackoverflow.com/questions/16155937/mysql-having-vs-where)
 
 > To summarize the difference between WHERE and HAVING:
 > WHERE is used to filter records before any groupings take place.
 > HAVING is used to filter values after they have  been groups.  Only columns or expression in the group can be included in the HAVING clause’s conditions..
-> https://www.essentialsql.com/what-is-the-difference-between-where-and-having-clauses/
+
+[source](https://www.essentialsql.com/what-is-the-difference-between-where-and-having-clauses/)
 
 ```sql
-select sex, COUNT(sex) AS 'Amount' FROM students GROUP BY sex HAVING Amount > 10;
+SELECT sex, COUNT(sex) AS 'Amount' FROM students GROUP BY sex HAVING Amount > 10;
 +-----+--------+
 | sex | Amount |
 +-----+--------+
@@ -645,14 +637,13 @@ select sex, COUNT(sex) AS 'Amount' FROM students GROUP BY sex HAVING Amount > 10
 1 row in set (0.00 sec)
 ```
 
-
 ## MATH stuff
 
 ```sql
-SELECT test_id AS 'Test', 
-MIN(score) AS min, 
-MAX(score) as max, 
-MAX(score)-MIN(SCORE) AS 'range', 
+SELECT test_id AS 'Test',
+MIN(score) AS min,
+MAX(score) as max,
+MAX(score)-MIN(SCORE) AS 'range',
 SUM(score) AS total,
 AVG(score) AS average
 FROM scores GROUP BY test_id;
@@ -674,7 +665,7 @@ FROM scores GROUP BY test_id;
 10 rows in set (0.00 sec)
 ```
 
-## BETWEEN
+## Between
 
 ```sql
 SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN '1997-1-1' AND '1995-1-1';
@@ -694,10 +685,9 @@ SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN 
 6 rows in set (0.00 sec)
 ```
 
-## IN
+## In
 
-match for 'array' (list) of vales.
-can also be used on subquerys
+match for 'array' (list) of vales. Can also be used on sub query's.
 
 ```sql
 SELECT first_name, last_name FROM students WHERE last_name IN ('Cooper','Sanders','Johnson');
@@ -709,12 +699,9 @@ SELECT first_name, last_name FROM students WHERE last_name IN ('Cooper','Sanders
 | Kole       | Sanders   |
 +------------+-----------+
 3 rows in set (0.00 sec)
-
 ```
 
 ## Join
-
-## Select - Join
 
 ```sql
 SELECT ... FROM t1 JOIN t2 ON t1.id1 = t2.id2 WHERE condition
@@ -789,16 +776,12 @@ SELECT scores.student_id, tests.date, scores.score FROM tests, scores WHERE date
 +------------+------------+-------+
 25 rows in set (0.00 sec)
 
-
-
-
 SELECT CONCAT(students.first_name, " ", students.last_name) As Name,
 tests.date, scores.score, tests.maxscore
 FROM tests, scores, students
 WHERE date='2009-08-29'
 AND tests.test_id = scores.test_id
 AND scores.student_id = students.student_id;
-
 
 SELECT students.student_id,
 CONCAT(students.first_name, " ", students.last_name) As Name,
@@ -809,7 +792,7 @@ WHERE students.student_id = absences.student_id
 GROUP BY students.student_id;
 ```
 
-## LEFT JOIN
+## Left join
 
 ```sql
 SELECT students.student_id,
@@ -975,11 +958,11 @@ ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 ## Reset Root Password
 
 ```bash
-$ /etc/init.d/mysql stop
+/etc/init.d/mysql stop
 ```
 
 ```bash
-$ mysqld_safe --skip-grant-tables
+mysqld_safe --skip-grant-tables
 ```
 
 ```bash

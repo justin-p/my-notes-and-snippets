@@ -1,6 +1,6 @@
 # Grep
 
-## find a string
+## Find a string
 
 Find the string `somestring` in data.txt
 
@@ -8,7 +8,7 @@ Find the string `somestring` in data.txt
 grep somestring data.txt
 ```
 
-## regex find
+## Regex find
 
 Find strings that start with 8 in data.txt
 
@@ -16,9 +16,9 @@ Find strings that start with 8 in data.txt
 grep -E ^8.* data.txt
 ```
 
-## Quitetly find
+## Quietly find
 
-Quitetly grep something. Usefull in bash sripts where you just want to check if its true.
+Quietly grep something. Useful in bash scripts where you just want to check if its true.
 
 ```bash
 grep -q somestring data.txt

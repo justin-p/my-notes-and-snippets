@@ -1,6 +1,6 @@
 # Bash
 
-sourced from https://devhints.io/bash and other places
+[source](https://devhints.io/bash) and other places.
 
 ## Getting started
 
@@ -47,7 +47,7 @@ git commit && git push
 git commit || echo "Commit failed"
 ```
 
-### Functions
+### Function
 
 ```bash
 get_name() {
@@ -57,9 +57,7 @@ get_name() {
 echo "You are $(get_name)"
 ```
 
-See: [Functions](#functions)
-
-### Conditionals
+### Conditional
 
 ```bash
 if [[ -z "$string" ]]; then
@@ -68,8 +66,6 @@ elif [[ -n "$string" ]]; then
   echo "String is not empty"
 fi
 ```
-
-See: [Conditionals](#conditionals)
 
 ### Strict mode
 
@@ -85,6 +81,7 @@ See: [Unofficial bash strict mode](http://redsymbol.net/articles/unofficial-bash
 ```bash
 echo {A,B}.js
 ```
+
 | Code | Description |
 | --- | --- |
 | `{A,B}` | Same as `A B` |
@@ -92,7 +89,6 @@ echo {A,B}.js
 | `{1..5}` | Same as `1 2 3 4 5` |
 
 See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
-
 
 ### Parameter expansions
 
@@ -174,6 +170,7 @@ comment
 ```
 
 ### Substrings
+
 | Code | Description |
 | --- | --- |
 | `${FOO:0:3}`  | Substring _(position, length)_ |  
@@ -196,7 +193,6 @@ STR="hello world!"
 echo ${STR^}   #=> "Hello world!" (uppercase 1st letter)
 echo ${STR^^}  #=> "HELLO WORLD!" (all uppercase)
 ```
-
 
 ### Default values
 
@@ -322,7 +318,6 @@ See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_p
 
 ## Conditionals
 
-
 ### Conditions
 
 Note that `[[` is actually a command/program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (like all base utils, such as `grep(1)` or `ping(1)`) can be used as condition, see examples.
@@ -376,7 +371,7 @@ Note that `[[` is actually a command/program that returns either `0` (true) or `
 if ping -c 1 google.com; then
   echo "It appears you have a working internet connection"
 fi
-```` 
+```
 
 ```bash
 if grep -q 'foo' ~/.bash_history; then
@@ -447,7 +442,7 @@ echo ${#Fruits[3]}          # String length of the Nth element
 echo ${Fruits[@]:3:2}       # Range (from position 3, length 2)
 ```
 
-### Operations
+### Operation
 
 ```bash
 Fruits=("${Fruits[@]}" "Watermelon")    # Push
@@ -468,7 +463,6 @@ done
 ```
 
 ## Dictionaries
-
 
 ### Defining
 
@@ -495,7 +489,7 @@ echo ${#sounds[@]}  # Number of elements
 unset sounds[dog]   # Delete dog
 ```
 
-### Iteration
+### Iterations
 
 #### Iterate over values
 
@@ -513,7 +507,7 @@ for key in "${!sounds[@]}"; do
 done
 ```
 
-## Options
+## Option
 
 ### Options
 
@@ -539,8 +533,8 @@ matches.
 
 ## History
 
-
 ### Commands
+
 | Code | Description |
 | --- | --- |
 | `history` | Show history |
@@ -560,7 +554,7 @@ matches.
 
 | Code | Description |
 | --- | --- |
-| `!!` | Execute last command again |         
+| `!!` | Execute last command again |
 | `!!:s/<FROM>/<TO>/` | Replace first occurrence of `<FROM>` to `<TO>` in most recent command |
 | `!!:gs/<FROM>/<TO>/` | Replace all occurrences of `<FROM>` to `<TO>` in most recent command |
 | `!$:t` | Expand only basename from last parameter of most recent command |
