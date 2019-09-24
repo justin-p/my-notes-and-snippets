@@ -1,4 +1,7 @@
-# sec-stuff
+# Notes-and-Snippets
+
+A place where I store my notes from stuff I learned, cheatsheets, code small snippets, etc.
+
 ## Index
 * cheatsheets
   * [ascii-table](/cheatsheets/ascii-table.md)
