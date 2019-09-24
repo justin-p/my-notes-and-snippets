@@ -27,9 +27,12 @@ if ($UpdateToc) {
     }
 }
 If ($UpdateExternal) {
-    Set-Location "C:\_git\github\notes"
+    Set-Location "C:\_git\github\my-notes-and-snippets\external"
     gci | foreach-object {
-        cd $_.fullname
-        git pull
+        if (!($_.fullname -match ".gitkeep")) {
+            cd $_.fullname
+            git pull
+        }
     }
+    Set-Location "C:\_git\github\my-notes-and-snippets"
 }
