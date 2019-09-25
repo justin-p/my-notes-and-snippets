@@ -22,20 +22,30 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         .EXAMPLE
         Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.md" -BaseFolder "C:\_git\github\sec-stuff" -BaseURL "."
         ## Index
-        * cheatsheets
-          * [ascii-table](\cheatsheets\ascii-table.md)
-          * [bash](\cheatsheets\bash.md)
-          * [cron](\cheatsheets\cron.md)
-          * [man](\cheatsheets\man.md)
-          * [markdown](\cheatsheets\markdown.md)
-          * [mysql](\cheatsheets\mysql.md)
-        * code
-        * ctf
-          * [Bandit](\ctf\OTW\Bandit\Bandit.md)
-          * [Natas](\ctf\OTW\Natas\Natas.md)
-
+        * /cheatsheets/ascii-table
+          * [ascii-table](/cheatsheets/ascii-table/ascii-table.xlsx)
+        * /code/php
+          * [php](/code/php/php.md)
+        * /code/php/assert
+          * [php - assert()](/code/php/assert/php - assert().php)
+        * /code/php/simple_shell
+          * [simple_shell_magic.jpg](/code/php/simple_shell/simple_shell_magic.jpg.php)
+          * [simple_shell.php%00](/code/php/simple_shell/simple_shell.php%00.gif)
+          * [simple_shell](/code/php/simple_shell/simple_shell.php)
+        * /code/powershell
+          * [Convert-FolderContentToMarkdownTableOfContents](/code/powershell/Convert-FolderContentToMarkdownTableOfContents.ps1)
+        * /code/python
+          * [python](/code/python/python.md)
+        * /code/python/Blackhat-Python/ch2
+          * [udp_socket](/code/python/Blackhat-Python/ch2/udp_socket.py)
+          * [tcp_socket](/code/python/Blackhat-Python/ch2/tcp_socket.py)
+          * [bh_sshRcmd](/code/python/Blackhat-Python/ch2/bh_sshRcmd.py)
+          * [bh_sshcmd](/code/python/Blackhat-Python/ch2/bh_sshcmd.py)
+          * [bhpnet](/code/python/Blackhat-Python/ch2/bhpnet.py)
+          * [tcp_server](/code/python/Blackhat-Python/ch2/tcp_server.py)
+          * [tcp_proxy](/code/python/Blackhat-Python/ch2/tcp_proxy.py)
+          * [bh_sshserver](/code/python/Blackhat-Python/ch2/bh_sshserver.py)
         .NOTES
-        https://claudioessilva.eu/2017/09/18/generate-markdown-table-of-contents-based-on-files-within-a-folder-with-powershell/
     #>    
         
     param (
@@ -49,28 +59,41 @@ Function Convert-FolderContentToMarkdownTableOfContents {
     $nl = [System.Environment]::NewLine
     $TOC = "## Index$nl"
 
-    If ($Excludefolder) {
-        $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git" | where-object {$_.Name -ne $Excludefolder}
-    } Else {
-        $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git"
+    #If ($Excludefolder) {
+    #    $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git" | where-object {$_.Name -ne $Excludefolder}
+    #} Else {
+    #    $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git"
+    #}
+    $repoFolderStructure=@()
+    (Get-ChildItem -Directory -Recurse) | Sort-Object -Unique | ForEach-Object {
+        $repoFolderStructure += Get-ChildItem $_.Fullname -file
     }
-    
-
-    ForEach ($dir in ($repoFolderStructure | Sort-Object -Property Name)) {
-        $repoStructure = Get-ChildItem -Path $dir.FullName -File -Filter $FiletypeFilter -Recurse
-
-        $TOC += "* $($dir.Name) $nl"
-
-        foreach ($md in ($repoStructure | Sort-Object -Property Name)) {
-            if ($Subfolder) {
-                $suffix = $($Subfolder + $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty))).Replace('\','/') 
-            }
-            Else {
-                $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty)).Replace("\", "/")
-            }
+    $repoFolderStructure = $repoFolderStructure | Sort-Object Directory | Group-Object "directory"
+    foreach ($Folder in $repoFolderStructure) {
+        $Path = ($($Folder.Name.ToString().Replace($BaseFolder, [string]::Empty)).Replace("\", "/"))
+        $TOC += "* $($Path) $nl"
+        foreach ($md in ($FOlder.Group)) {
             $fileName = $md.Name -replace $md.Extension
-            $TOC += "  * [$fileName]($(""$baseURL$suffix/$($md.Name)""))$nl"
-        }
+            $fileName = $fileName -replace " ","_"
+            $TOC += "  * [$fileName]($(""$Path/$($md.Name)""))$nl"
+        } 
     }
     Return $TOC
+
+    #ForEach ($dir in ($repoFolderStructure | Sort-Object -Property Name)) {
+    #    $repoStructure = Get-ChildItem -Path $dir.FullName -File -Filter $FiletypeFilter -Recurse
+    #
+    #    $TOC += "* $($dir.Name) $nl"
+    #
+    #    foreach ($md in ($repoStructure | Sort-Object -Property Name)) {
+    #        if ($Subfolder) {
+    #            $suffix = $($Subfolder + $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty))).Replace('\','/') 
+    #        }
+    #        Else {
+    #            $suffix = $($md.Directory.ToString().Replace($BaseFolder, [string]::Empty)).Replace("\", "/")
+    #        }
+    #        $fileName = $md.Name -replace $md.Extension
+    #        $TOC += "  * [$fileName]($(""$baseURL$suffix/$($md.Name)""))$nl"
+    #    }
+    #}
 }
