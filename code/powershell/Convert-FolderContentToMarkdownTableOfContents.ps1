@@ -65,17 +65,18 @@ Function Convert-FolderContentToMarkdownTableOfContents {
     #    $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git"
     #}
     $repoFolderStructure=@()
-    (Get-ChildItem -Directory -Recurse) | Sort-Object -Unique | ForEach-Object {
-        $repoFolderStructure += Get-ChildItem $_.Fullname -file
+    (Get-ChildItem $BaseFolder -Recurse -File) | Sort-Object -Unique | ForEach-Object {
+        $repoFolderStructure += Get-ChildItem $_.Fullname
     }
     $repoFolderStructure = $repoFolderStructure | Sort-Object Directory | Group-Object "directory"
     foreach ($Folder in $repoFolderStructure) {
         $Path = ($($Folder.Name.ToString().Replace($BaseFolder, [string]::Empty)).Replace("\", "/"))
         $TOC += "* $($Path) $nl"
-        foreach ($md in ($FOlder.Group)) {
-            $fileName = $md.Name -replace $md.Extension
+        foreach ($md in ($Folder.Group)) {
+            $fileName = $md.Name  #-replace $md.Extension
             $fileName = $fileName -replace " ","_"
-            $TOC += "  * [$fileName]($(""$Path/$($md.Name)""))$nl"
+            $Path     = $Path     -replace " ","%20"
+            $TOC += "  * [$fileName]($(""$Path/$($md.Name -replace " ","%20")""))$nl"
         } 
     }
     Return $TOC
