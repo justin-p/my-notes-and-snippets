@@ -13,6 +13,9 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         .PARAMETER RelativeFolder
         to build the URL for each file. This will be added as a link
 
+        .PARAMETER Excludefolder
+        A folder to exclude.
+
         .PARAMETER FiletypeFilter
         to filter the files on the folder
 
@@ -39,13 +42,19 @@ Function Convert-FolderContentToMarkdownTableOfContents {
         [string]$BaseFolder,
         [string]$Subfolder,
         [string]$RelativeFolder = ".",
+        [string]$Excludefolder,        
         [string]$FiletypeFilter = "*.md"
     )
 
     $nl = [System.Environment]::NewLine
     $TOC = "## Index$nl"
 
-    $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git"
+    If ($Excludefolder) {
+        $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git" | where-object {$_.Name -ne $Excludefolder}
+    } Else {
+        $repoFolderStructure = Get-ChildItem -Path $BaseFolder -Directory | Where-Object Name -NotMatch "\.github|\.git"
+    }
+    
 
     ForEach ($dir in ($repoFolderStructure | Sort-Object -Property Name)) {
         $repoStructure = Get-ChildItem -Path $dir.FullName -File -Filter $FiletypeFilter -Recurse

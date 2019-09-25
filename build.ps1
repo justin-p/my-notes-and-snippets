@@ -7,7 +7,7 @@ param (
 
 Function GenerateToc {
     . $PSScriptRoot\code\powershell\Convert-FolderContentToMarkdownTableOfContents.ps1
-    $main   = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter '*.md' -BaseFolder $PSScriptRoot -BaseURL '.'
+    $main   = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter '*.md' -BaseFolder $PSScriptRoot -BaseURL '.' -excludefolder "external"
     $python = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.py" -BaseFolder "$PSScriptRoot\code\python" -Subfolder '\code\python' -BaseURL "."
     $php    = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter "*.php" -BaseFolder "$PSScriptRoot\code\php" -Subfolder '\code\php' -BaseURL "."
     Write-Output "# Notes-and-Snippets
