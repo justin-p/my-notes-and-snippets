@@ -1,4 +1,0 @@
-# ctf
-
-Notes from CTFs
-

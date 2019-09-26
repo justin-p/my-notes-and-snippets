@@ -1,18 +1,18 @@
 #Requires -Version 5
 param (
     [parameter()]
-    [switch]$UpdateToc,
+    #[switch]$UpdateToc,
     [switch]$UpdateExternal
 )
 
-Function GenerateToc {
-    . $PSScriptRoot\code\powershell\Convert-FolderContentToMarkdownTableOfContents.ps1
-    $main       = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter '*.md'   -BaseFolder "$PSScriptRoot" -BaseURL '.'
-    Write-Output "# External resources
-$main " > $PSScriptRoot\including_external.md
-    Set-Location $PSScriptRoot
-    book sm
-}
+#Function GenerateToc {
+#    . $PSScriptRoot\code\powershell\Convert-FolderContentToMarkdownTableOfContents.ps1
+#    $main       = Convert-FolderContentToMarkdownTableOfContents -FiletypeFilter '*.md'   -BaseFolder "$PSScriptRoot" -BaseURL '.'
+#    Write-Output "# External resources
+#$main " > $PSScriptRoot\including_external.md
+#    Set-Location $PSScriptRoot
+#    book sm
+#}
 #if ($UpdateToc) {
 #    try {
 #        GenerateToc
