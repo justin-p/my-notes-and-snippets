@@ -13,14 +13,14 @@ $main " > $PSScriptRoot\including_external.md
     Set-Location $PSScriptRoot
     book sm
 }
-if ($UpdateToc) {
-    try {
-        GenerateToc
-    }
-    catch {
-        $PSCmdlet.ThrowTerminatingError($PSItem)
-    }
-}
+#if ($UpdateToc) {
+#    try {
+#        GenerateToc
+#    }
+#    catch {
+#        $PSCmdlet.ThrowTerminatingError($PSItem)
+#    }
+#}
 If ($UpdateExternal) {
     Set-Location "C:\_git\github\my-notes-and-snippets\external"
     gci | foreach-object {
