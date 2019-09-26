@@ -47,10 +47,10 @@
 
 ## CTF
 
-* [ctf](ctf/README.md)
-  * [OverTheWire](ctf/OverTheWire/README.md)
-    * [Bandit](ctf/OverTheWire/bandit.md)
-    * [Natas](ctf/OverTheWire/natas.md)
+* [CTF](CTF/README.md)
+  * [OverTheWire](CTF/OverTheWire/README.md)
+    * [Bandit](CTF/OverTheWire/bandit.md)
+    * [Natas](CTF/OverTheWire/natas.md)
 
 ## Code
 
