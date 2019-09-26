@@ -45,13 +45,6 @@
     * [xxd](cheatsheets/Unix-CLI/xxd.md)
     * [zcat](cheatsheets/Unix-CLI/zcat.md)
 
-## CTF
-
-* [ctf](ctf/README.md)
-  * [OverTheWire](ctf/OverTheWire/README.md)
-    * [Bandit](ctf/OverTheWire/bandit.md)
-    * [Natas](ctf/OverTheWire/natas.md)
-
 ## Code
 
 * [code](code/code.md)
