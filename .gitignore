@@ -1,3 +1,2 @@
 external/*
 !external/.gitkeep
-!external/EXTERNAL.md
