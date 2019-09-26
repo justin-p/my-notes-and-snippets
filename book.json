@@ -2,7 +2,7 @@
     "title": "my-notes-and-snippets",
     "catalog": "all", 
     "ignores": ["external"], 
-    "unchanged": [],
+    "unchanged": ["ascii-table"],
     "sortedBy": "-",
     "disableTitleFormatting": true
 }

@@ -1,7 +1,7 @@
 # my-notes-and-snippets
 
 - cheatsheets
-  * [table](cheatsheets/ascii-table.md)
+  * [asciitable](cheatsheets/asciitable.md)
   * [awk](cheatsheets/awk.md)
   * [base64](cheatsheets/base64.md)
   * [hacking](cheatsheets/bash-hacking.md)
@@ -45,3 +45,4 @@
   - OTW
     - [Bandit](ctf/OTW/Bandit/Bandit.md)
     - [Natas](ctf/OTW/Natas/Natas.md)
+* [INC-EXTERNAL](SUMMARY-INC-EXTERNAL.md)
