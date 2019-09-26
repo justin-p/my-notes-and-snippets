@@ -11,3 +11,6 @@ Set-Location "C:\_git\github\my-notes-and-snippets\external"
 git clone https://github.com/redhuntlabs/Awesome-Asset-Discovery
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings
 git clone https://github.com/OWASP/CheatSheetSeries OWASP-CheatSheetSeries
+
+npm install -g gitbook-cli
+npm install -g gitbook-summary

@@ -39,10 +39,10 @@
   * [zcat](cheatsheets/zcat.md)
 - code
   - [php](code/php/php.md)
-  - [python](code/python/python.md)
+  - [powershell](code/powershell/powershell.md)
   - [sql](code/sql/sql.md)
 - ctf
   - OTW
     - [Bandit](ctf/OTW/Bandit/Bandit.md)
     - [Natas](ctf/OTW/Natas/Natas.md)
-* [INC-EXTERNAL](SUMMARY-INC-EXTERNAL.md)
+* [including_external](including_external.md)
