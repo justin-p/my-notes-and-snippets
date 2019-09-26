@@ -54,3 +54,19 @@
   * [Bandit](ctfs/overthewire/bandit.md)
   * [Natasa](ctfs/overthewire/natasa.md)
 
+## Guides
+
+* [VPS](guides/vps/README.md)
+  * [Ubuntu VPS](guides/vps/ubuntu-vps/README.md)
+    * [Introduction](guides/vps/ubuntu-vps/introduction.md)
+    * [Packet manager - APT](guides/vps/ubuntu-vps/packet-manager-apt.md)
+    * [Useful packages](guides/vps/ubuntu-vps/useful-packages.md)
+    * [Vim](guides/vps/ubuntu-vps/vim.md)
+    * [Setup UFW](guides/vps/ubuntu-vps/setup-ufw.md)
+    * [Generating and using SSH keys](guides/vps/ubuntu-vps/generating-and-using-ssh-keys.md)
+    * [Setup SSHD](guides/vps/ubuntu-vps/setup-sshd.md)
+    * [Unattended upgrades](guides/vps/ubuntu-vps/unattended-upgrades.md)
+    * [Fail2Ban](guides/vps/ubuntu-vps/fail2ban.md)
+    * [Logwatch](guides/vps/ubuntu-vps/logwatch.md)
+    * [SysCTL optimization](guides/vps/ubuntu-vps/sysctl-optimization.md)
+
