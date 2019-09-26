@@ -486,8 +486,8 @@ if($data["showpassword"] == "yes") {
 }
 ```
 
-\[Running\] php "/home/justin-p/tempCodeRunnerFile.php" The password for natas12 is   
- \[Done\] exited with code=0 in 0.02 seconds
+\[Running\] php "/home/justin-p/tempCodeRunnerFile.php" The password for natas12 is  
+\[Done\] exited with code=0 in 0.02 seconds
 
 ```javascript
 document.cookie="data=ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK"

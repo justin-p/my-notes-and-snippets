@@ -1,3 +1,0 @@
-# OverTheWire
-
-Notes from OverTheWire
