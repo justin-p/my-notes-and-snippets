@@ -80,17 +80,21 @@ __bold__
 ```
 
 ```text
+
 ```
+
 code fences
-```
+
+```text
+
 ```
 
 ```text
 ```js
 codeFences.withLanguage()
 ```
-```
 
+```text
 ## Blockquotes
 
 ```text

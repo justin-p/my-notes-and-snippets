@@ -29,7 +29,7 @@ nc -l -p 567 > textfile
 To transfer a directory, first at the receiving end set up
 
 ```text
-nc -l -p 678 | tar xvfpz 
+nc -l -p 678 | tar xvfpz
 ```
 
 Then send the directory
@@ -38,7 +38,7 @@ Then send the directory
 tar zcfp - /path/to/directory | nc -w 3 1.2.3.4 678
 ```
 
-To send a message to your syslog server \(the  means emerg\)
+To send a message to your syslog server \(the means emerg\)
 
 ```text
 "echo '<0>message' | nc -w 1 -u syslogger 514"

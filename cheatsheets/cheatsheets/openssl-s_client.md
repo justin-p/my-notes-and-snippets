@@ -43,7 +43,7 @@ Options
 -ssl3  
 -tls1  
 -tls1_1  
--tls1_2  
+-tls1_2
 ```
 
 ## Test for specific cipher
