@@ -1,8 +1,0 @@
-{
-    "title": "my-notes-and-snippets",
-    "catalog": "all", 
-    "ignores": ["external","node_modules"], 
-    "unchanged": ["ascii-table"],
-    "sortedBy": "-",
-    "disableTitleFormatting": true
-}
