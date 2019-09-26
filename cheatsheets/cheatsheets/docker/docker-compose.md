@@ -1,4 +1,4 @@
-# compose
+# Docker-Compose
 
 [source](https://devhints.io/docker-compose)
 

@@ -1,4 +1,4 @@
-# hacking
+# mysql hacking
 
 ## External stuff
 
