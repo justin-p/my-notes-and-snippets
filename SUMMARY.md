@@ -4,6 +4,8 @@
 
 ## Cheatsheets
 
+* [Forensic](cheatsheets/forensic/README.md)
+  * [SSH RSA SHA256](cheatsheets/forensic/ssh-rsa-sha256.md)
 * [ASCII Table](cheatsheets/asciitable.md)
 * [Unix-CLI](cheatsheets/unix-cli/README.md)
   * [awk](cheatsheets/unix-cli/awk.md)
