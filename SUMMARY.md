@@ -43,7 +43,7 @@
   * [Docker-Compose](cheatsheets/docker/docker-compose.md)
   * [Dockerfile](cheatsheets/docker/dockerfile.md)
 * [Hacking](cheatsheets/hacking/README.md)
-  * [bash hacking](cheatsheets/hacking/bash-hacking.md)
+  * [bash](cheatsheets/hacking/bash.md)
   * [mysql hacking](cheatsheets/hacking/mysql-hacking.md)
 
 ## Code
