@@ -52,9 +52,15 @@ openssl req -text -noout -verify -in CSR.csr
 openssl rsa -in privateKey.key -check
 ```
 
-### Check a certificate
+### Check length of private key
 
 ```text
+openssl rsa -in mfa_HzVQK4-key.pem -text -noout | grep "Private-Key"
+```
+
+### Check a certificate
+
+```bash
 openssl x509 -in certificate.crt -text -noout
 ```
 
