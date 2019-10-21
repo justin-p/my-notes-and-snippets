@@ -8,6 +8,7 @@
   * [SSH RSA SHA256](cheatsheets/forensic/ssh-rsa-sha256.md)
 * [ASCII Table](cheatsheets/asciitable.md)
 * [Unix-CLI](cheatsheets/unix-cli/README.md)
+  * [nmap](cheatsheets/unix-cli/nmap.md)
   * [awk](cheatsheets/unix-cli/awk.md)
   * [base64](cheatsheets/unix-cli/base64.md)
   * [bash](cheatsheets/unix-cli/bash.md)
