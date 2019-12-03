@@ -1,0 +1,4 @@
+When we connect we are created with by someone seems to have had a field day with caps lock enabled. It seems we have a some sort of shell where every command we type is converted to uppercase. We are able to call some environment variables though.
+I then decided to try some random environment variables.
+Since this yielded no results I to read over the bash man page where I stumbled on Special Parameters.
+Where $0 looked someone what promising. This could contain something like /bin/sh.Which seemed to be the case. This gave me a /bin/sh shell where I spawned /bin/bash and proceeded to cat the password file.
