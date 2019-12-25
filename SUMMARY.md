@@ -3,7 +3,7 @@
 * [Notes and Snippets](README.md)
 
 ## Cheatsheets
-* [Commands]
+* [Commands](cheatsheets/README.md)
   * [docker](cheatsheets/commands/docker/README.md)
     * [Docker-Compose](cheatsheets/commands/docker/docker-compose.md)
     * [Dockerfile](cheatsheets/commands/docker/dockerfile.md) 
