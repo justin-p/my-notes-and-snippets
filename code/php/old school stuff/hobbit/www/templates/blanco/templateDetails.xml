@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<install version="1.7" type="template">
+	<name>Blanco</name>
+	<creationDate>feb 2012</creationDate>
+	<author>Justin Perdok</author>
+	<copyright>Da Vinci College, Dordrecht</copyright>
+	<authorEmail>99010563@davinci.nl</authorEmail>
+	<authorUrl>http://www.davinci.nl</authorUrl>
+	<version>2.5.0</version>
+	<license>GNU/GPL-licentie http://www.gnu.org/licenses/gpl.html</license>
+	<description>Een eenvoudige blanco 3 kolommen template op basis van xhtml en css volgens de W3C richtlijnen voor Joomla! 2.5</description>
+	<files>
+		<folder>images</folder>
+		<folder>css</folder>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>breadcrumbs</position>
+		<position>sidebar-left</position>
+		<position>below-content</position>
+		<position>sidebar-right</position>
+	</positions>
+</install>
+

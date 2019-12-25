@@ -1,0 +1,352 @@
+.cleared {
+   width:1px;
+}
+/* Start Box */
+.dd-box, .dd-box-body {
+   zoom:1;
+}
+/* End Box */
+/* Start Bar */
+.dd-bar{
+   zoom:1;
+}
+/* End Bar */
+/* end Page */
+
+/* begin Header */
+.dd-header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='dd-header-jpeg');
+   z-index: 1;
+}
+
+.dd-header-jpeg
+{
+   position: absolute;
+   z-index:-1;
+   top: 0;
+   width:100%;
+   height: 480px;
+   background-image: url('../images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+/* end Header */
+
+/* begin HeaderObject */
+div.dd-headerobject{
+   font-size: 1px;
+}
+/* end HeaderObject */
+
+/* begin Menu */
+ul.dd-hmenu, ul.dd-hmenu ul, ul.dd-hmenu li, ul.dd-hmenu a {
+   zoom:1;
+}
+.dd-hmenu li.dd-hmenuhover{
+   z-index: 10000;
+}
+.dd-hmenu .dd-hmenuhoverUL{
+   visibility: visible;
+   top: 100%;
+   left: 0;
+}
+.dd-hmenu .dd-hmenuhoverUL .dd-hmenuhoverUL{
+   top: 0;
+   left: 100%;
+}
+.dd-hmenu ul li {
+   float: left !important;
+   clear: both;
+   width: 100%;
+}
+.dd-nav
+{
+   zoom: 1;
+   height: 38px;
+   background:#000000;
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.dd-hmenu a 
+{
+   display:inline-block;
+   color: #FFFFFF;
+   background-color:#363636;
+   padding: 0 15px;
+   line-height: 26px;
+   text-align: center;
+}
+
+.dd-hmenu a.active 
+{
+   color: #FCFCFC;
+   background-color:#E91801;
+}
+
+.dd-hmenu a:hover, .dd-hmenuhoverA,  .dd-hmenuhover a 
+{
+   color: #EDEDED;
+   background-color:#FF0000;
+}
+
+/* end MenuItem */
+
+/* begin MenuSeparator */
+ul.dd-hmenu li {
+   margin-left:expression(this.previousSibling==null?'0':'4px');
+}
+ul.dd-hmenu li li{
+   margin-left:0;
+}
+
+/* end MenuSeparator */
+
+/* begin MenuSubItem */
+.dd-hmenu ul a 
+{
+   color: #EDEDED !important;
+   float: left;
+}
+
+.dd-hmenu ul a:hover, .dd-hmenu ul .dd-hmenuhover .dd-hmenuhoverA 
+{
+   color: #000000 !important;
+   background-position: left bottom;
+   border-color: #9E9E9E;
+   border-top-width: 1px !important;
+}
+
+/* end MenuSubItem */
+
+/* begin Box, Sheet */
+.dd-sheet {
+   background:#242424;
+}
+/* end Box, Sheet */
+
+/* begin Layout */
+.dd-content-layout, .dd-content-layout-row, .dd-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.dd-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin Box, Block, VMenuBlock */
+.dd-vmenublock {
+   background:#242424;
+}
+/* end Box, Block, VMenuBlock */
+
+/* begin Box, Box, VMenuBlockContent */
+.dd-vmenublockcontent {
+   background:#242424;
+}
+
+/* end Box, Box, VMenuBlockContent */
+
+/* begin VMenuItem */
+ul.dd-vmenu, ul.dd-vmenu ul, ul.dd-vmenu li, ul.dd-vmenu a
+{
+   position:relative;
+   zoom: 1;
+}
+
+ul.dd-vmenu li {
+   z-index:0;
+   margin-top:expression(this.previousSibling==null?'0':'4px');
+}
+ul.dd-vmenu ul{
+   margin-top:4px;
+   position:absolute;
+   top: 0;
+}
+ul.dd-vmenu ul ul {
+   margin-top:1px;
+   top:0;
+} 
+
+ul.dd-vmenu a 
+{
+   color: #B8B9A6;
+   background-color:#242424;
+   padding: 0 10px 0 21px;
+   height: 28px;
+   line-height: 28px;
+}
+
+.dd-vmenu a.active 
+{
+   color: #C7C7C7;
+   background-color:#242424;
+}
+
+ul.dd-vmenu a:hover
+{
+   color: #FF0000;
+   background-color:#242424;
+}
+
+ul.dd-vmenu .dd-vmenuhover .dd-vmenuhoverA
+{
+   color: #FF0000;
+   background-color:#242424;
+}
+/* end VMenuItem */
+
+/* begin VMenuSubItem */
+ul.dd-vmenu ul a {
+   color: #BFBFBF !important;
+}
+ul.dd-vmenu li li{
+   margin-top:expression(this.previousSibling==null?'0':'1px');
+} 
+
+ul.dd-vmenu ul a.active {
+   color: #BFBFBF !important;
+}
+ul.dd-vmenu ul a:hover {
+   color: #FF0000 !important;
+}	
+ul.dd-vmenu li.dd-vmenuhover {
+   z-index: 10000;
+}
+
+ul.dd-vmenu ul.dd-vmenuhoverUL
+{
+   visibility: visible;
+   /* left to right by default */
+  left: 100%;
+   z-index: 10000;
+}
+
+ul.dd-vmenu ul.dd-vmenuhoverUL.dd-vmenu-left-to-right
+{
+   right: auto;
+   left: 100%;
+}
+
+ul.dd-vmenu ul.dd-vmenuhoverUL.dd-vmenu-right-to-left
+{
+   left: auto;
+   right: 100%;
+}
+
+ul.dd-vmenu ul .dd-vmenuhover .dd-vmenuhoverA
+{
+   color: #FF0000;
+   background-position: left center;
+   border: none;
+}
+/* end VMenuSubItem */
+
+/* begin Box, Block */
+.dd-block {
+   background:#242424;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.dd-blockheader {
+   background:#2B2B2B;
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.dd-blockcontent {
+   background:#242424;
+}
+.dd-blockcontent-body ul li{
+   height: 1%;
+}
+
+/* end Box, BlockContent */
+
+/* begin Button */
+.dd-button-wrapper{
+   zoom: 1;
+}
+.dd-button-wrapper .dd-button-l, .dd-button-wrapper .dd-button-r {
+   display: none;
+}
+.dd-button-wrapper .dd-button {
+   float: left;
+}
+/* end Button */
+
+/* begin Box, Post */
+.dd-post {
+   background:#242424;
+}
+/* end Box, Post */
+
+/* begin PostIcons, PostHeaderIcons */
+.dd-postheadericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostBullets */
+.dd-post ul li, .dd-post ol ul li
+{
+   height: 1%;
+   padding-left: 13px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+.dd-post ul ol li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin PostIcons, PostFooterIcons */
+.dd-postfootericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostFooterIcons */
+
+/* begin Footer */
+.dd-footer-body{
+   padding-right: 0;
+   zoom:1;
+}
+.dd-footer{
+   zoom:1;
+   background:#2B2B2B;
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+.dd-content {
+   width: auto;
+}
+/* end LayoutCell, content */
+
+form#form-login ul li
+{
+   behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+}
+
+/* Plugin compatilibity. */
+
+/* 150675, googlemap */
+div.map img
+{
+   behavior: none;
+   filter: none;
+}

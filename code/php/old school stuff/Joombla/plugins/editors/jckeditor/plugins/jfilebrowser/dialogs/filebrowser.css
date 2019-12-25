@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2010 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: WebxSolution Ltd
+# Websites:  http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+a{text-decoration:none}
+a:visted span, a:link span{text-decoration:none}
+a:hover{ position:relative}
+a span#previewImg{ display:none;  text-decoration:none}
+a:hover span#previewImg{ display:block;  position:absolute; top:10px; left:0;   padding:10px; margin:10px; z-index:100;  background-color:#f0f0f0;  border:1px dotted #c0c0c0; opacity:0.9; text-decoration:none;  color:#000;  height:auto;  width:auto;  min-height:50px !important;  min-width:50px !important}
+a:hover span#previewImg img{ border:1px solid #c0c0c0;  height:auto;  width:auto;  max-height:100px !important;  max-width:100px !important}
+a:hover span#previewImg div#previewText{ border:1px dotted #c0c0c0;  margin-top:5px;  width:100%}
+input, form { border:1px solid silver;font-size:10px;}
+.cke_skin_office2007 .cke_dialog_body .button { background-color:#E0DFE3; border:1px solid silver; color:#000000; cursor:default; display:inline-block; margin:1px; padding:2px 10px; text-align:center;}
+table#tableFiles tbody tr td a img { padding: 2px 2px 0 0;}
+.cke_folder, .cke_folderOpened, .cke_folderUp { padding: 2px; padding-left: 20px !important;}
+.cke_dialog_ui_hbox_first img {position:relative; bottom:7px;}
+.cke_skin_office2007 iframe.cke_dialog_ui_input_file {height:31px; width:100%;}
+.cke_dialog_ui_hbox.cke_filebrowser span.cke_dialog_ui_button { margin-top:17px;}
+#tableFiles{width:96%; padding-left:0;}

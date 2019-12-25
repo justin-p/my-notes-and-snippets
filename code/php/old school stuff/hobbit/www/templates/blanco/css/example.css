@@ -1,0 +1,735 @@
+/*
+	License		 : GNU/GPL-licentie http://www.gnu.org/licenses/gpl.html
+	creationDate : 13-2-2012
+	version		 : 2.5
+	author 		 : J.Slemmer Dordrecht
+	authorUrl	 : http://www.davinci.nl	
+________________________________________________________ 
+
+
+	
+================================================================================ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;} 
+table { border-collapse:collapse; border-spacing:0; } 
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; } 
+ol,ul { list-style:none; } 
+caption,th { text-align:left; } 
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; } 
+q:before,q:after { content:''; } 
+abbr,acronym { border:0; }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.clearfix:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+p { line-height: 18px; }
+
+/* 
+====================================================================================
+	BASIS STIJLEN
+	De basis van een Joomla! template
+	
+================================================================================ */
+
+
+html,body {
+	font-family: Tahoma, Verdana, Arial,  Helvetica, sans-serif;
+	font-size: 9pt; 
+	color: #000000;
+	margin: 0px;
+	background-color: #FFFFFF;
+}
+
+
+#wrap {
+	width: 950px;
+	background-color: #FFFFFF;
+	font-size: 9pt;
+	margin:0 auto;
+	overflow:hidden;
+	}
+	
+img { border: 0 none; }
+
+/* 
+
+basis lijsten 
+________________________________________________________ 
+
+*/
+
+li {
+	line-height: 15px;
+	padding-left: 15px;
+	padding-top: 0px;
+}
+
+ul {
+	margin: 5px;
+	padding: 0;
+	list-style: none;
+	}
+
+
+/* 
+
+basis links 
+________________________________________________________ 
+
+*/
+
+a:link {  
+	font-size: 9pt; 
+	font-weight: normal; 
+	color:  #0000EE; 
+	text-decoration: underline; 
+	}
+
+a:visited {  
+	font-size: 9pt; 
+	font-weight: normal; 
+	color:  #551A8B; 
+	text-decoration: underline; 	
+	}
+	
+a:hover {  
+	font-size: 9pt; 
+	font-weight: normal; 
+	color:  #000000; 
+	text-decoration: underline; 	
+	}
+
+
+/* 
+
+basis menulinks 
+________________________________________________________ 
+
+*/
+
+ul.menu2 li a span {
+	font-size: 9pt; 
+	/* font-weight: bold; */
+	/* color: #2668D3; */
+	/* text-decoration: none; */
+	padding: 0px;
+	margin: 4px 0 4px 0;
+}
+
+ul.menu2 li a:hover span {
+	
+}
+
+a.mainlevel:link, a.mainlevel:visited {
+	/* text-decoration: underline; */
+	/* color: #000000; */
+}
+
+a.mainlevel:hover {
+	
+}
+
+a.sublevel:link, a.sublevel:visited {
+	/* text-decoration: underline; */
+	/* color: #000000; */
+}
+
+a.sublevel:hover {
+	
+}
+
+/* 
+====================================================================================
+	HEADER
+	
+	
+================================================================================ */
+
+#header	{
+	background-image: url(../images/header.jpg) no-repeat top center; 
+	height : 130px;
+	width : 950px;
+	margin: 0 auto;
+	z-index:1;
+}
+
+#sitename {
+	font-size: 12pt;
+	color: #000000;
+	text-decoration: none;
+	font-weight:bold;
+ 	width: 920px; 
+ 	margin: 5px;
+ 	float: left;
+ 	z-index:5;
+}
+
+#balk {
+	background-color: #FFFFFF;
+	width: 950px;
+	height: 25px;	
+	z-index:1;
+	margin: 0 auto;
+	clear: both;
+}
+
+#balk .pathway {
+	width: 920px;
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+	font-weight:bold;
+	margin: 5px;
+}
+
+#search { float: right; width: 200px; }
+
+
+/* 
+====================================================================================
+	LEFTMARGIN
+	Linkerkolom
+	
+================================================================================ */
+
+#leftmargin {
+ 	width: 195px; 
+ 	margin: 10px 2px 5px 2px;
+ 	float: left;
+ 	display: inline;
+}
+
+/* 
+====================================================================================
+	MAINBODY
+	Tekstgedeelte van Joomla!
+	
+================================================================================ */
+
+#mainbody {
+	width: 525px;
+	margin: 5px;
+	float: left;
+	padding: 0px 8px 0px 8px;
+	font-size: 9pt;
+}	
+
+/* 
+
+Content headings en titles
+________________________________________________________ 
+
+*/
+
+.componentheading  {
+	font-size: 14pt;	
+	color: #CCCCCC;
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.contentpaneopen {
+	width: 100%;
+}
+
+.contentheading {
+	font-size: 10pt;	
+	color: #000000;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.frontpageheader {	
+	color: #000000;
+	font-size: 13pt;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.contentpagetitle {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000000;
+}
+
+.contentdescription {
+	font-size: 10pt;
+	color: #000000;
+}
+
+.createdate {
+	color: #dee1d7; 
+	font: 10px Arial, Helvetica, sans-serif; 
+	}
+
+.modifydate {
+	color: #dee1d7; 
+	font: 10px Arial, Helvetica, sans-serif; 
+	}
+	
+.small {
+	font-size: 9pt; 
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* 
+
+Voor content item titels met een link in plaats van een lees meer link onder het artikel 
+________________________________________________________ 
+
+*/
+
+a.contentpagetitle:link, a.contentpagetitle:visited {
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 0px;
+	color: #000000;
+	text-decoration:none;
+	}
+
+a.contentpagetitle:hover {
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 0px;
+	color: #CCCCCC;
+	}
+	
+/* 
+
+overige Mainbody links 
+________________________________________________________ 
+
+*/
+
+a.blogsection:link, a.blogsection:visited {
+	font-size: 10pt;
+	color: #000000;
+	text-decoration:underline;
+}
+
+a.blogsection:hover {
+	font-size: 10pt;
+	color: #CCCCCC;
+}
+
+a.weblinks:link, a.weblinks:visited {
+	font-size: 10pt;
+	color: #000000;
+	font-weight: bold;	
+	padding: 0px 10px 0px 10px;
+}
+
+a.weblinks:hover {
+	font-size: 10pt;
+	color: #CCCCCC;
+	font-weight: bold;	
+	padding: 0px 10px 0px 10px;
+}
+
+a.readon:link, a.readon:visited {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	padding: 0px 10px 0px 5px;	
+	}
+
+a.readon:hover {
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #CCCCCC;
+	padding: 0px 10px 0px 5px;	
+}
+
+.category {
+	font-size: 10pt;
+	color: #000000; 
+	font-weight: bold;
+	line-height:1.4em; 
+	padding-right:10px; 
+}
+
+a.category:link, a.category:visited {
+	text-align: left;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+ 	text-decoration:underline;
+}
+
+a.category:hover {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #CCCCCC;
+ 	text-decoration:underline;
+}
+
+
+/* 
+
+Pagina navigatie
+________________________________________________________ 
+
+*/
+
+
+
+a.pagenav, a.pagenav:visited { 
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.pagenav:hover {
+	font-size: 10pt;
+	color: #000000;
+}
+
+.pagenavbar {
+	
+}
+
+/* 
+
+Artikel waardering
+________________________________________________________ 
+
+*/
+
+.content_rating {
+	font-weight: normal;
+	font-size: 10pt; 
+}
+
+.content_vote {
+	font-weight: normal;
+	font-size: 10pt; 
+}
+
+
+/* 
+
+Standaard Joomla! meldingen 
+________________________________________________________ 
+
+*/
+
+.message {
+	font-weight: bold;
+	font-size : 10pt;
+	color : #ff6600;
+	text-align: center;
+}
+
+
+/* 
+====================================================================================
+	RIGHTMARGIN
+	Rechterkolom
+	
+================================================================================ */
+
+#rightmargin {
+ width: 195px; 
+ margin: 10px 2px 5px 2px;
+ float: left;
+ display: inline;
+}
+
+/* 
+====================================================================================
+	FOOTER
+	
+	
+================================================================================ */
+
+#footer	{
+	background-color : #FFFFFF;
+	text-align: left;
+	width: 950px;
+	height: 60px;	
+	z-index:1;
+	clear: both;
+}
+
+#footer .tekst {
+	text-align: center;
+	padding: 10px;
+	font-size: 8pt;
+	color: #9B9B9B;
+	margin-left: 0px;
+}
+
+a.footer:link, a.footer:visited {
+	font-size: 8pt;
+	text-decoration: none; 
+	color: #9B9B9B;
+	font-weight: normal;
+}
+
+a.footer:hover {
+	font-size: 8pt;
+	text-decoration: underline; 
+	color: #000000;
+	font-weight: normal;
+}
+
+/* 
+====================================================================================
+	MODULES
+	Opmaak van de modules in de linker- of rechterkolom
+	
+================================================================================ */
+
+.moduletable {
+	font-size: 9pt; 
+	margin: 0px;
+	font-weight: normal;
+}
+
+table.moduletable td  {
+	padding: 0 0 0 4px;
+
+}
+
+div.moduletable_whois {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+.moduletable_menu h3 {
+	font-size: 7pt;
+	background-color: #FFFFFF;
+	color: #000000;
+	width: 191px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 3px 0 3px 5px;
+	text-align: left;
+	border: 0px solid #000000;
+}
+
+.poll {
+	font-size: 9pt;
+	color: #2668D3;
+	line-height: 20px;
+	text-align: center;
+	border: 0px solid #000000;
+}
+
+
+
+/* 
+====================================================================================
+	FORMULIEREN
+	
+	
+================================================================================ */
+
+form {
+	margin: 10px 5px 10px 5px;
+	padding: 0px;
+}
+
+.inputbox {
+	font-size: 8pt;
+	border: 1px solid #000000;
+	width: auto;
+	padding: 2px;
+	margin-right: 5px;
+}
+
+.button {
+	font-size: 8pt;
+	border: 1px solid #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+
+
+/* 
+====================================================================================
+	Joomla! overig
+	
+	
+================================================================================ */
+
+
+
+.sectiontableentry1 {
+	font-size: 9pt;
+	color: #000000;
+	background-color: #EFF0F0;
+	padding-right: 5px;
+}
+	
+.sectiontableentry2 {
+	font-size: 9pt;
+	color: #000000;
+	background-color: #F6F6F6;
+	padding-right: 5px;
+}
+
+.sectiontableheader {
+	font-size: 9pt;
+	font-weight: bold;
+	background-color: #cccccc;
+	color: #fff;
+	padding-right: 5px;
+	}
+
+
+.newsfeedheading {
+	font-size: 12pt;
+	color: #505050;  
+        }
+
+.newsfeeddate {
+	font-size: 10pt;
+	color: #505050; 
+}
+
+
+.searchintro  {
+	font-size: 12pt; 
+}
+
+.adminform  {
+	font-size: 10pt; 
+}
+
+.contentpane {
+	font-size: 12pt; 
+}
+
+.newsflash {
+	font-size: 11pt;
+	text-align: justify;
+	color: #435374;
+	padding-top: 10px;
+}
+	
+.contact {
+	font-size: 12pt; 
+}
+
+/* 
+====================================================================================
+	Aanvulling voor Joomla! 1.6
+	
+	
+================================================================================ */
+
+table.category{
+border:1px solid #CCC;
+width:100%;
+text-align:center;
+}
+table.category th,table.category td{
+padding:2px 6px;
+}
+table.category thead{
+background:#EEE;
+}
+.jcat-children ul,.jcat-children li{
+margin:0;
+list-style:none;
+}
+.jcat-children li a{
+background:url(../images/bullet_green_arrow.png) no-repeat 0 12px;
+display:block;
+padding:5px 5px 5px 15px;
+font-size:0.9em;
+}
+
+/* Print, PDF, Email buttons */
+
+.actions{
+margin:0;
+}
+.actions li{
+list-style: none;
+display:inline;
+float:right;
+}
+
+/* Login formulier*/
+
+p#form-login-username label,
+p#form-login-password label {
+	width: 160px;
+	display:block;
+}
+p#form-login-remember label {
+	font-size: .9em;
+	font-weight: normal;
+	line-height: 25px;
+}
+p#form-login-remember input {
+	float:left;
+	margin-right: 5px;
+}
+form#form-login ul {
+	margin: 0;
+	padding: 0;
+}
+form#form-login ul li {
+	list-style-type: none;
+	margin-left: 20px;
+	font-size: .9em;
+}
+
+fieldset.userdata {border: 0px;}
+
+/* Sectie- en categorieblog layout */
+
+.cols-3 .column-1 {
+    float: left;
+    margin-right: 4%;
+    padding: 0 5px;
+    width: 29%;
+}
+
+.cols-3 .column-2 {
+    float: left;
+    margin-left: 0;
+    padding: 0 5px;
+    width: 29%;
+}
+
+.cols-3 .column-3 {
+    float: right;
+    padding: 0 5px;
+    width: 29%;
+}
+
+/* Content titles */
+
+ h2 {
+	font-size: 14pt;	
+	color: #000000;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+h3 {
+	font-size: 11pt;	
+	color: #000000;
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	text-transform: none;
+}

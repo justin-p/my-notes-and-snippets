@@ -1,5 +1,7 @@
 # Layer 2
 
+Switching
+
 ## MAC Addresses
 
 First 3 pairs of MAC = Vendor.  

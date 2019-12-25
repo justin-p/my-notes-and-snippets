@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="jhtmlencode" method="upgrade">
+	<version>0.1</version>
+	<creationDate>DEC2010</creationDate>
+	<author>JommlaCK Team</author>
+	<authorUrl>http://www.joomlackeditor.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description><![CDATA[ This plugin re-encodes text like  'a&lt;b' character back to 'a&amp;lt;b']]> </description>
+	<languages>
+	</languages>
+	<files>	
+	<filename>plugin.js</filename>
+    </files>
+</install>

@@ -1,0 +1,332 @@
+
+body
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
+.dd-postheader, .dd-postheader a, .dd-postheader a:link, .dd-postheader a:visited, .dd-postheader a:hover,
+.dd-blockheader .t, .dd-vmenublockheader .t, .dd-logo-text, .dd-logo-text a,
+.dd-logo-name, .dd-logo-name a, .dd-logo-name a:link, .dd-logo-name a:visited, .dd-logo-name a:hover
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   text-decoration: none;
+}
+
+a
+{
+   text-decoration: none;
+}
+
+a:link
+{
+   text-decoration: none;
+}
+
+a:hover, a.hover
+{
+   text-decoration: underline;
+}
+
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover
+{
+   font-size: 24px;
+}
+
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover
+{
+   font-size: 19px;
+}
+
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover
+{
+   font-size: 16px;
+}
+
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover
+{
+   font-size: 13px;
+}
+
+h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+   font-size: 11px;
+}
+
+#dd-main
+{
+   position: relative;
+   width: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+}
+
+#dd-page-background-glare, #dd-page-background-middle-texture, #dd-page-background-top-texture
+{
+   display: none;
+}
+
+.cleared
+{
+   float: none;
+   clear: both;
+   margin: 0;
+   padding: 0;
+   border: none;
+   font-size: 1px;
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+/* end Page */
+
+/* begin Box, Post */
+.dd-post
+{
+   margin: 15px;
+}
+
+a img
+{
+   border: 0;
+}
+
+.dd-article img, img.dd-article
+{
+   margin: 10px 10px 10px 10px;
+}
+
+.dd-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.dd-article table, table.dd-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+   width: auto;
+}
+
+.dd-article table, table.dd-article .dd-article tr, .dd-article th, .dd-article td
+{
+   background-color: Transparent;
+}
+
+.dd-article th, .dd-article td
+{
+   padding: 2px;
+   border: solid 1px #eeeeee;
+   vertical-align: top;
+   text-align: left;
+}
+
+.dd-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+/* end Box, Post */
+
+/* begin PostHeaderIcon */
+.dd-postheader
+{
+   margin: 5px 0;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+.dd-postheader a, 
+.dd-postheader a:link, 
+.dd-postheader a:visited,
+.dd-postheader a.visited,
+.dd-postheader a:hover,
+.dd-postheader a.hovered
+{
+   font-weight: normal;
+   font-size: 16px;
+}
+
+.dd-postheader a, .dd-postheader a:link
+{
+   text-align: left;
+   text-decoration: none;
+}
+
+.dd-postheader:first-letter 
+{
+   background:url('../images/postheadericon.png') no-repeat center left;
+   padding-left:22px;
+   padding-top:16px;
+   padding-bottom:16px;
+   margin-top:-16px;
+   margin-bottom:-16px;
+}
+/* end PostHeaderIcon */
+
+/* begin PostHeader */
+
+/* end PostHeader */
+
+/* begin PostIcons, PostHeaderIcons */
+.dd-postheadericons
+{
+   padding: 1px;
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-size: 11px;
+}
+
+.dd-postheadericons a, .dd-postheadericons a:link, .dd-postheadericons a:visited, .dd-postheadericons a:hover
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-size: 11px;
+}
+
+.dd-postheadericons a, .dd-postheadericons a:link, .dd-postheadericons a:visited, .dd-postheadericons a:hover
+{
+   margin: 0;
+}
+
+.dd-postheadericons a:link
+{
+   text-decoration: none;
+}
+
+.dd-postheadericons a:visited, .dd-postheadericons a.visited
+{
+   font-style: italic;
+   font-weight: normal;
+}
+
+.dd-postheadericons a:hover, .dd-postheadericons a.hover
+{
+   text-decoration: underline;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostContent */
+.dd-postcontent p
+{
+   margin: 0.5em 0;
+}
+
+.dd-postcontent
+{
+   margin: 0;
+}
+/* end PostContent */
+
+/* begin PostBullets */
+ol, ul
+{
+   margin: 1em 0 1em 2em;
+   padding: 0;
+   font-size: 13px;
+}
+
+li ol, li ul
+{
+   margin: 0.5em 0 0.5em 2em;
+   padding: 0;
+}
+
+li
+{
+   margin: 0.2em 0;
+   padding: 0;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+.dd-post li
+{
+   padding: 0 0 0 13px;
+   line-height: 1em;
+}
+
+.dd-post ol li, .dd-post ul ol li
+{
+   background: none;
+   padding-left: 0;
+}
+
+.dd-post ul li, .dd-post ol ul li
+{
+   background-image: url('../images/postbullets.png');
+   background-repeat: no-repeat;
+   padding-left: 13px;
+}
+
+/* end PostBullets */
+
+/* begin PostQuote */
+
+blockquote,
+.dd-postcontent blockquote
+{
+   margin: 10px 10px 10px 50px;
+   padding: {QuoteIconPadding}px {QuoteIconPadding}px {QuoteIconPadding}px {QuoteIconLeftPadding}px;
+}
+
+/* end PostQuote */
+
+/* begin PostIcons, PostFooterIcons */
+.dd-postfootericons
+{
+   padding: 1px;
+   font-family: Arial, Helvetica, Sans-Serif;
+}
+
+.dd-postfootericons a, .dd-postfootericons a:link, .dd-postfootericons a:visited, .dd-postfootericons a:hover
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+}
+
+.dd-postfootericons a, .dd-postfootericons a:link, .dd-postfootericons a:visited, .dd-postfootericons a:hover
+{
+   margin: 0;
+}
+
+.dd-postfootericons a:link
+{
+   text-decoration: none;
+}
+
+/* end PostIcons, PostFooterIcons */
+

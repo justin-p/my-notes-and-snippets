@@ -1,0 +1,96 @@
+*
+{
+  margin:0; 
+  padding:0;
+}
+label
+{
+  float: left;
+  width: 300px;
+}
+
+form p
+{
+  clear: left;
+}
+
+
+input[type="text"]
+{
+  width: 350px;
+}
+body
+{
+  background-image:url(images/background.png);
+}
+
+
+li
+{
+  display:inline;
+  padding-left: 20px;
+  margin-right:50px ;
+  font-family: verdana;
+}
+
+h1
+{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: verdana;
+}
+
+p
+{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: verdana;
+  }
+
+p.footer
+{  padding-left: 0px;}
+
+a
+{
+  text-decoration: none;
+  color: white;
+ }
+ 
+ a:hover
+{
+  text-decoration: underline;
+  color: white;
+ }
+ 
+ div.center
+{
+  width: 850px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+div.menu
+{
+  background-color: #BF0000; 
+  height: 30px;
+}
+
+
+div.form
+{
+  background-color: white;
+}
+
+div.footer
+{
+  padding-top:10px ;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: grey;
+  color:white ;
+  font-family: verdana;
+}

@@ -1,0 +1,29 @@
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+body
+{
+Background-color: blue
+}
+
+div.container
+{
+margin-top: 10px;
+margin-left: auto; 
+margin-right: auto;
+padding-bottom: 20px; 
+width: 850px;
+background-color: darkblue;
+}
+
+p
+{
+margin-left:40px;
+margin-top:10px;
+margin-bottom:10px;
+font-size: 25px;
+color: white;
+}

@@ -1,0 +1,144 @@
+*{margin:0;padding:0;}
+
+body
+{
+background-image:url(download.png) ;
+}
+
+div.center
+{
+	width: 640px;
+    margin-left: auto ;
+	margin-right: auto;
+}
+
+
+
+
+div.menu
+{
+
+background-color: #e98b03;
+height: 50px;
+}
+
+ul
+{
+padding-top:10px;
+margin-bottom:0px;
+}
+
+li
+{	
+	font-family:Tahoma;
+	color:white ;
+	display: inline;
+	margin-left:15px;
+	margin-right:50px;
+
+}
+
+h1
+{font-family:Georgia;}
+
+
+div.text
+{
+    background-color: white;
+	font-family: Arial;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+ 
+}
+
+div.text2
+{
+    background-color: white;
+	font-family: Arial;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:40px;
+ 
+}
+
+div.plaatje1
+{
+background-image:url(lorem3.jpg);
+width:224px;
+height:128px;
+float: left;
+margin-right:15px;
+margin-left: 10px;
+}
+
+div.plaatje2
+{
+background-image:url(lorem2.jpg);
+width:224px;
+height:128px;
+float: right;
+margin-left: 10px;
+}
+
+div.plaatje3
+{
+background-image:url(aliquam3.jpg);
+width:224px;
+height:115px;
+float: left;
+margin-right:15px;
+margin-left: 10px;
+}
+
+div.plaatje4
+{
+background-image:url(aliquam2.jpg);
+width:224px;
+height:117px;
+float: right;
+margin-right:15px;
+margin-left: 10px;
+}
+
+div.plaatje5
+{
+background-image:url(Integer3.jpg);
+width:224px;
+height:168px;
+float: left;
+margin-right:15px;
+margin-left: 10px;
+}
+
+div.plaatje6
+{
+background-image:url(Integer2.jpg);
+width:224px;
+height:168px;
+float: right;
+margin-right:15px;
+margin-left: 10px;
+}
+
+A
+{
+	text-decoration: none;
+	font-family:Tahoma;
+	color:white ;
+}
+
+A:hover
+{
+	text-decoration: underline;
+	font-family:Tahoma;
+	color:white ;
+}
+
+div.footer
+{
+background: grey;
+font-family: Arial;
+}

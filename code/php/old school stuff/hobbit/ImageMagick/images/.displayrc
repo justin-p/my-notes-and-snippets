@@ -1,0 +1,11 @@
+display.printCommand:	print %s
+display.backdrop:	False
+display.displayWarnings:	True
+display.dither:	True
+display.browseCommand:	c:/Program Files/Plus!/Microsoft Internet/iexplore %s &
+display.undoCache:	16
+display.editorCommand:	notepad %s
+display.colormap:	Shared
+display.usePixmap:	True
+display.gammaCorrect:	True
+display.confirmExit:	False

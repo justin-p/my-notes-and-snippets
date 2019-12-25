@@ -1,0 +1,64 @@
+*{padding: 0px; margin: 0px;}
+body{
+	font-family: Verdana;
+	background-color: #EEE8AA;
+}
+
+.container{
+	width: 800px;
+	margin: 20px auto 0px auto;
+	background-color: silver;
+}
+th{
+	background-color: gray;
+	color: #fff;
+	font-family: Tahoma;
+}
+td{
+	padding: 0px 5px 0px 5px;
+}
+tr:hover{
+	background-color: gray;
+	color: #fff;
+}
+p{
+	margin: 20px 0px 0px 20px;
+	font-size: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+h1{
+	color: gray;
+	margin: 0px 0px 20px 20px;
+	font-size: 34px;
+}
+h2{
+	color: gray;
+	margin: 0px 0px 5px 20px;
+}
+h3{
+	color: gray;
+	margin: 20px 0px 5px 20px;
+}
+ul{
+	margin: 20px 0px 0px 20px;
+	color: #fff;
+	font-size: 20px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+li{
+	background-color: gray;
+	margin-top: 5px;
+	padding-left: 10px;
+	width: 200px;
+	list-style-type: square;
+}
+a{
+	color: blue;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+}

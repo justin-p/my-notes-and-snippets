@@ -1,0 +1,64 @@
+110121 14:56:18  InnoDB: Started; log sequence number 0 46409
+110121 14:56:18 [Note] Event Scheduler: Loaded 0 events
+110121 14:56:18 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.1.35-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+110121 14:56:28 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+110121 14:56:28 [Note] Event Scheduler: Purging the queue. 0 events
+110121 14:56:28  InnoDB: Starting shutdown...
+110121 14:56:29  InnoDB: Shutdown completed; log sequence number 0 46409
+110121 14:56:29 [Warning] Forcing shutdown of 1 plugins
+110121 14:56:29 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+110121 14:58:12 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+110121 14:58:12  InnoDB: Initializing buffer pool, size = 8.0M
+110121 14:58:12  InnoDB: Completed initialization of buffer pool
+110121 14:58:12  InnoDB: highest supported file format is Barracuda.
+InnoDB: 127 rollback segment(s) active.
+110121 14:58:12  InnoDB: 1.1.4 started; log sequence number 46409
+110121 14:58:12 [ERROR] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: unknown variable 'default-character-set=latin1'
+110121 14:58:12 [ERROR] Aborting
+
+110121 14:58:12  InnoDB: Starting shutdown...
+110121 14:58:13  InnoDB: Shutdown completed; log sequence number 1591515
+110121 14:58:13 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+110121 14:58:25 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+110121 14:58:25  InnoDB: Initializing buffer pool, size = 8.0M
+110121 14:58:25  InnoDB: Completed initialization of buffer pool
+110121 14:58:25  InnoDB: highest supported file format is Barracuda.
+110121 14:58:25  InnoDB: 1.1.4 started; log sequence number 1591515
+110121 14:58:25 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+110121 14:58:25 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+110121 14:58:25 [Note] Event Scheduler: Loaded 0 events
+110121 14:58:25 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+110121 14:58:42 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+110121 14:58:42 [Note] Event Scheduler: Purging the queue. 0 events
+110121 14:58:42  InnoDB: Starting shutdown...
+110121 14:58:42  InnoDB: Shutdown completed; log sequence number 1591515
+110121 14:58:42 [Note] D:\wos1\np\c\mysql\bin\mysqld-nt.exe: Shutdown complete
+

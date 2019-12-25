@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="multipleclickdialoghandler" method="upgrade">
+	<version>0.1</version>
+	<creationDate>DEC2010</creationDate>
+	<author>JommlaCK Team</author>
+	<authorUrl>http://www.joomlackeditor.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>This handler ensures only one instance of a dialog  can be created at a time</description>
+	<languages>
+	</languages>
+	<files>	
+	<filename>plugin.js</filename>
+    </files>
+</install>

@@ -1,0 +1,43 @@
+body
+{
+background-color:black;
+}
+
+.container
+{
+	color:white;
+	width: 780px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border:1px solid red;
+}
+
+h1
+{
+color:white;
+}
+
+a
+{
+color:white;
+font-size:20px;
+}
+
+a:hover 
+{
+color:red;
+}
+
+.header 
+{
+background-color:#850000;
+}.naam
+{
+	padding-left: 100px;
+	padding-bottom: 50px;
+}
+h2
+{
+	padding-left: 30px;
+}

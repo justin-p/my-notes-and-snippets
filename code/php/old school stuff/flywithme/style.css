@@ -1,0 +1,243 @@
+*{
+padding: 0px; margin: 0px;
+}
+
+body{
+	font-family: Verdana;
+	background-image: url(images/background.jpg);
+}
+
+p{
+font-size: 20px;
+color: #fff;
+}
+
+.container{
+	width: 630px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 50px;
+	
+}
+table.vlucht{
+
+	background-color: lightblue;
+	position: center;
+}
+
+th.vlucht{
+	background-color: gray;
+	color: #fff;
+	font-family: Tahoma;
+}
+
+td.vlucht{
+	padding: 0px 5px 0px 5px;
+	border: 1px solid black;
+}
+
+tr.vlucht:hover{
+	background-color: gray;
+	color: #fff;
+}
+
+p{
+	margin: 20px 0px 0px 20px;
+	font-size: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+h1{
+	color: #fff;
+	margin: 0px 0px 20px 20px;
+	font-size: 34px;
+}
+
+h2{
+	color: brown;
+	margin: 0px 0px 5px 20px;
+}
+h3{
+
+	color: brown;
+	margin: 20px 0px 5px 20px;
+}
+
+
+
+
+
+a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+label{
+
+}
+
+/*_______________________________MENU________________________________*/
+#header {
+	    background: #0F1620 url(headerbg.png) no-repeat top center;
+	    width: 100%;
+	    height: 160px;
+    border: solid #0F1620;
+	    border-width: 3px 0 3px 0;
+	}
+	 
+	#navi {
+	    height: 50px;
+	    margin-top: 50px;
+	}
+	 
+	#menu {
+	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #426d9c), color-stop(40%, #0f67a1), color-stop(100%, #1384d1));
+	    background: -moz-linear-gradient(top, #426d9c, #0f67a1, #1384d1);
+	 
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	 
+	    line-height: 50px;
+	    text-align: center;
+	    margin: 0 auto;
+	    padding: 0;
+	}
+	 
+	#content {
+	    width: 750px;
+	    margin: 0 auto;
+	    margin-bottom: 25px;
+	    padding: 30px 0;
+	    text-align: left;
+	}
+	 
+	ul {
+	    padding: 0;
+	}
+	 
+	ul li {
+	    list-style-type: none;
+	    display: inline;
+	    margin-right: 15px;
+	}
+	 
+	ul li a {
+	    color: #fff;
+	    text-decoration: none;
+	    padding: 3px 7px;
+	 
+	    text-shadow: 1px 1px 1px #000;
+	 
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	 
+	    -webkit-transition-property: color, background;
+	    -webkit-transition-duration: 0.5s, 0.5s;
+	}
+	 
+	ul li a:hover {
+	    background: #01458e;
+	    color: #ff0;
+	 
+	    -webkit-transition-property: color, background;
+	    -webkit-transition-duration: 0.5s, 0.5s;
+	}
+ 
+	.default {
+	    width: 850px;
+	    height: 50px;
+ 
+	    -webkit-box-shadow: 0 5px 20px #888;
+	    -moz-box-shadow: 0 5px 20px #888;
+	    box-shadow: 0 5px 20px #888;
+	}
+	 
+	.fixed {
+	    position: fixed;
+	    top: -5px;
+    left: 0;
+	    width: 100%;
+	 
+	    -webkit-box-shadow: 0 0 40px #222;
+	    -moz-box-shadow: 0 0 40px #222;
+	    box-shadow: 0 0 40px #222;
+	}
+/*______________________________________________________TABLE___________________________________________________	*/
+	table {
+		border-collapse:collapse;
+		background:#EFF4FB url(http://www.roscripts.com/images/teaser.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		font:0.8em/145% 'Trebuchet MS',helvetica,arial,verdana;
+		color: #333;
+}
+
+td, th {
+		padding:5px;
+}
+
+caption {
+		padding: 0 0 .5em 0;
+		text-align: left;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #333;
+		background: transparent;
+}
+
+/* =links
+----------------------------------------------- */
+
+table a {
+		color:#950000;
+		text-decoration:none;
+}
+
+table a:link {}
+
+table a:visited {
+		font-weight:normal;
+		color:#666;
+		text-decoration: line-through;
+}
+
+table a:hover {
+		border-bottom: 1px dashed #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+thead th, tfoot th, tfoot td {
+		background:#333 url(http://www.roscripts.com/images/llsh.gif) repeat-x;
+		color:#fff;
+		
+}
+
+tfoot td {
+		text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+tbody th, tbody td {
+width: 630px;
+}
+
+tbody th {
+		white-space: nowrap;
+}
+
+tbody th a {
+		color:#333;
+}
+
+.odd {}
+
+tbody tr:hover {
+		background:#fafafa
+}

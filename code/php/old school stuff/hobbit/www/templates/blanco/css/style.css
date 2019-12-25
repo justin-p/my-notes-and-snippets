@@ -1,0 +1,108 @@
+/* Vorm en afbeeldingen
+____________________________________________________________________________________________________ */
+
+body
+{
+background-image: url(../images/background.jpg) ;
+background-position: center;
+}
+
+#wrap
+{
+	width: 632px;
+    margin-left: auto ;
+	margin-right: auto;
+}
+
+
+#header
+{
+	height: 229px;
+	background-color: #49523d;
+	background-image: url(../images/header.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#footer
+{
+	background-image: url(../images/divider.gif);
+    background-position: bottom center;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+}	
+
+#title
+{
+	text-align: center;
+	width:380px ;
+}
+
+#bg
+{
+	background-image: url(bgcontent.gif) ;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+/* Text
+____________________________________________________________________________________________________ */
+h1
+{
+    font-size: 48px;
+	padding-top: 30px;
+	margin-bottom: 0;
+	margin-top: 0;	
+	font-weight:normal;
+	color:#ffa;
+	font-family:Times New Roman;
+	background-image: url(divider_header.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding: 30px;
+}
+
+
+
+h2
+{
+	font-size: 18px ;
+	font-weight:normal;
+	color:#ffa;
+	font-family:Lucida Sans Unicode;
+}
+
+
+li
+{
+	display: inline;
+	font-family: Times New Roman;
+	font-size: 15pt;
+	color: #49523d;
+	margin-left: 25px;
+	margin-right: 10px;
+}
+
+a
+{
+	text-decoration: none;
+	font-family: Times New Roman;
+	font-size: 15pt;
+	color: #49523d;
+}
+
+
+a:hover
+{
+	text-decoration: underline;
+	font-family: Times New Roman;
+	font-size: 15pt;
+	color: #49523d;
+}
+
+p
+{
+	margin-left:35px;
+	margin-right:35px;
+}
+

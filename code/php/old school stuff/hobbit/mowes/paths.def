@@ -1,0 +1,3 @@
+apache2\conf\httpd.conf;slash;35
+mysql\my.ini;slash;35
+php5\php.ini;backslash;59

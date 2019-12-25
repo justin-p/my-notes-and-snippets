@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="jtreelink" method="upgrade">
+	<name>JTreeLink</name>
+	<version>1.0</version>
+	<creationDate>MARCH 2011</creationDate>
+	<author>WebxSolution Ltd</author>
+	<authorUrl>http://www.webxsolution.com</authorUrl>
+	<copyright>Copyright (C) 2011 - 2012 WebxSolution Ltd</copyright>
+	<license>GNU/GPLv2</license>
+	<description>Jtree Link JCK plugin</description>
+	<languages>
+	</languages>
+	<icon>images/jtreelink.png</icon>
+	<files>	
+	<filename>plugin.js</filename>
+	<folder>dialogs</folder>
+	<folder>images</folder>
+	<folder>lang</folder>
+    </files>
+	<params>
+		<param name="dialogtitle" type="text" default="JTree Link" label="Dialog Title" description="The Title shown in the dialog for this plugin" />
+		<param name="height" type="text" default="330" label="Dialog height" description="The height of dialog" />
+		<param name="width" type="text" default="590" label="Dialog width" description="The width of dialog"/>
+	</params>
+</install>

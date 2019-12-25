@@ -1,0 +1,94 @@
+*{padding: 0px; margin: 0px;}
+
+body
+{
+background-image: url(background.png);
+background-repeat:repeat-x;
+background-color :#25060b ;
+}
+div.container
+{
+width: 670px;
+margin-left: auto;
+margin-right: auto;
+}
+
+div.menu
+{
+margin-top: 60px;
+}
+
+a
+{
+background-color: black;
+color: white;
+border-bottom: none;
+padding-bottom: 11px;
+padding-right: 11px;
+padding-left: 11px;
+padding-top: 11px; 
+}
+
+a:hover
+{
+background-color: white;
+color: black;
+border-bottom: none;
+padding-bottom: 11px;
+padding-right: 11px;
+padding-left: 11px;
+padding-top: 11px; 
+
+}
+ul
+{
+text-align: center;
+}
+li
+{
+margin-left: center;
+display: inline;
+padding-bottom: 15px;
+}
+
+h1.header
+{
+color: white;
+}
+
+div.component
+{
+border: 10px solid black;
+background-image: url(contentBack.png);
+height: 305px;
+padding: 10px;
+}
+
+div.header
+{
+background-image: url(mainImage.jpg);
+border: solid black 10px;
+margin-top: 10px;
+margin-bottom: 30px;
+height: 305px;
+padding: 10px;
+}
+
+div.footer
+{
+color: white;
+margin-left: 150px;
+margin-right: auto ;
+}
+
+a.active
+{
+background-color: orange;
+color: black;
+border-bottom: none;
+padding-bottom: 11px;
+padding-right: 11px;
+padding-left: 11px;
+padding-top: 11px; 
+
+}

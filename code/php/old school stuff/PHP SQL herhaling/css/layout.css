@@ -1,0 +1,67 @@
+body
+{
+	background-color: white;
+	background-image: url('../images/bg.jpg');
+	background-position: center;
+	background-repeat: repeat-y;
+}
+td
+{
+	text-align: center;
+}
+th{
+	background-color: #c28f60;
+	color: white;
+}
+li,a
+{
+	display: inline;
+	padding-left: 30px;
+	text-decoration: none;
+	color: #c28f60;
+	font-family: verdana;
+	font-size: 16px;
+}
+li a:hover
+{
+	text-decoration: underline;
+	color: brown;
+}
+.main
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header
+{
+	background-image: url('../images/hamer.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 200px;
+}
+h1
+{
+	font-family: courier;
+	font-size: 80px;
+	padding-left: 50px;
+	color: brown;
+	
+}
+table
+{
+border-collapse:collapse;
+}
+table, td, th
+{
+border:2px solid brown;
+}
+.footer
+{
+	text-align: center;
+	color: brown;
+	font-family: Georgia;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}

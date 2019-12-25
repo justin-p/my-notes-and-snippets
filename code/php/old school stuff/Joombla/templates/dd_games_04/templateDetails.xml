@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="template">
+	<name>dd_games_04</name>
+	<version>1.7</version>
+	<creationDate>2012-01-14</creationDate>
+	<author>www.diablodesign.eu</author>
+	<authorEmail>biuro@diablodesign.eu</authorEmail>
+	<authorUrl>http://www.diablodesign.eu</authorUrl>
+	<copyright>www.diablodesign.eu</copyright>
+	<license>Gnu/GPL</license>
+	<description><![CDATA[	<h1>DD Games</h1>
+<h3>Aby uzyskać takie menu jak w demo należy w module main menu  w konfiguracji modułu w okienku o nazwie Module Class Suffix wpisać dd-vmenu i zapisać moduł .</h3>	
+	<img src="../templates/dd_games_04/template_thumbnail.png" align="left" hspace="10" style="padding-right:10px;"/>
+<h3>Position Modules</h3>	
+<img src="../templates/dd_games_04/images/pozycje.jpg" align="left" hspace="10" style="padding-right:10px;"/>
+	<b>Free Joomla 1.7 Template developed by <a target="_blank" href="http://www.diablodesign.eu">www.diablodesign.eu</a>, released under the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0</a>.
+	<br />Our free joomla templates may be used for both personal and commercial websites.<br />
+	<br />Copyright © 2011 www.diablodesign.eu - All Rights Reserved</b>
+	]]></description>
+	<files>
+		<filename>Scripts/expressInstall.swf</filename>
+		<filename>Scripts/swfobject_modified.js</filename>
+		<filename>classes.php</filename>
+		<filename>classes/ArtxContent.php</filename>
+		<filename>classes/ArtxContentArchivedArticle.php</filename>
+		<filename>classes/ArtxContentArticleBase.php</filename>
+		<filename>classes/ArtxContentCategoryArticle.php</filename>
+		<filename>classes/ArtxContentFeaturedArticle.php</filename>
+		<filename>classes/ArtxContentItem.php</filename>
+		<filename>classes/ArtxContentListItem.php</filename>
+		<filename>classes/ArtxContentSingleArticle.php</filename>
+		<filename>classes/ArtxPage.php</filename>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>flash/dym.swf</filename>
+		<filename>functions.php</filename>
+		<filename>html/com_content/archive/default.php</filename>
+		<filename>html/com_content/archive/default_items.php</filename>
+		<filename>html/com_content/archive/index.html</filename>
+		<filename>html/com_content/article/default.php</filename>
+		<filename>html/com_content/article/index.html</filename>
+		<filename>html/com_content/category/blog.php</filename>
+		<filename>html/com_content/category/blog_item.php</filename>
+		<filename>html/com_content/category/index.html</filename>
+		<filename>html/com_content/featured/default.php</filename>
+		<filename>html/com_content/featured/default_item.php</filename>
+		<filename>html/com_content/featured/index.html</filename>
+		<filename>html/com_content/index.html</filename>
+		<filename>html/index.html</filename>
+		<filename>html/mod_menu/default.php</filename>
+		<filename>html/mod_menu/default_component.php</filename>
+		<filename>html/mod_menu/default_separator.php</filename>
+		<filename>html/mod_menu/default_url.php</filename>
+		<filename>html/mod_menu/index.html</filename>
+		<filename>html/mod_search/default.php</filename>
+		<filename>html/mod_syndicate/default.php</filename>
+		<filename>html/mod_syndicate/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>jquery.js</filename>
+		<filename>params.ini</filename>
+		<filename>script.js</filename>
+		<filename>templateDetails.xml</filename>
+	
+	</files>
+	<images>
+		<filename>images/Bottom_texture.jpg</filename>
+		<filename>images/blockcontent.png</filename>
+		<filename>images/blockcontentbullets.png</filename>
+		<filename>images/blockheader.png</filename>
+		<filename>images/button.png</filename>
+		<filename>images/footer.png</filename>
+		<filename>images/footer_b.png</filename>
+		<filename>images/header.jpg</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/menuitem.png</filename>
+		<filename>images/nav.png</filename>
+		<filename>images/postauthoricon.png</filename>
+		<filename>images/postbullets.png</filename>
+		<filename>images/postcategoryicon.png</filename>
+		<filename>images/postdateicon.png</filename>
+		<filename>images/postheadericon.png</filename>
+		<filename>images/postquote.png</filename>
+		<filename>images/pozycje.jpg</filename>
+		<filename>images/share_icon/digg_icon.png</filename>
+		<filename>images/share_icon/facebook_icon.png</filename>
+		<filename>images/share_icon/flickr_icon.png</filename>
+		<filename>images/share_icon/skype_icon.png</filename>
+		<filename>images/share_icon/twitter_icon.png</filename>
+		<filename>images/share_icon/youtube_icon.png</filename>
+		<filename>images/spacer.gif</filename>
+		<filename>images/subitem.png</filename>
+		<filename>images/vmenuitem.png</filename>
+		<filename>images/vsubitem.png</filename>
+		<filename>images/vsubitemicon.png</filename>
+		<filename>joomla_images/Joomla.png</filename>
+		<filename>joomla_images/emailButton.png</filename>
+		<filename>joomla_images/livemarks.png</filename>
+		<filename>joomla_images/pdf_button.png</filename>
+		<filename>joomla_images/powered_by.gif</filename>
+		<filename>joomla_images/printButton.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/editor.css</filename>
+		<filename>css/print.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/template.ie6.css</filename>
+		<filename>css/template.ie7.css</filename>
+	</css>
+	<positions>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-7</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>position-16</position>
+		<position>position-17</position>
+		<position>position-18</position>
+		<position>position-19</position>
+		<position>position-20</position>
+		<position>position-21</position>
+		<position>position-22</position>
+		<position>position-23</position>
+		<position>position-24</position>
+		<position>position-25</position>
+		<position>position-26</position>
+		<position>position-27</position>
+		<position>position-28</position>
+		<position>position-29</position>
+	</positions>
+	
+<config>
+		<fields name="params">
+
+			<fieldset name="social" label="Linki do serwisów społecznościowych">	
+			
+			<field name="facebook" type="text" default="http://" label="Facebok url:" description="facebok link" filter="string" />
+			<field name="twitter" type="text" default="http://" label="Twitter url:" description="twitter link" filter="string" />
+			<field name="digg" type="text" default="http://" label="Digg url:" description="digg link" filter="string" />
+			<field name="flickr" type="text" default="http://" label="Flickr url:" description="flickr link" filter="string" />
+			<field name="youtube" type="text" default="http://" label="Youtube url:" description="youtube link" filter="string" />
+			<field name="skype" type="text" default="http://" label="Skype url:" description="skype link" filter="string" />
+			</fieldset>
+				<fieldset name="logo" label="Konfiguracja Logo:"><field name="logo" type="media" label="Wybierz swoje logo: 458px / 88px" description="Logo" default="templates/dd_games_04/images/logo.png"/>
+				</fieldset>
+				<fieldset name="footer" label="Konfiguracja stopki / footer:">
+			<field name="footer" type="text" default="Games Site" label="Nazwa witryny" description="" filter="string" />
+			<field name="footer_link" type="text" default="http://" label="Link:" description="Footer link:" filter="string" />
+			</fieldset>
+			<fieldset name="info_text" label="Info scroll / Informacje przewijane :">
+				<field name="info_text" type="textarea" default="Major Nelson opublikował listę najpopularniejszych gier zeszłego roku na Xbox Live. Seria Call of Duty niepodzielnie rządzi i dzieli wśród użytkowników X360. Ciekawostką jest fakt, że wydane..." label="Wpisz swoją informację przewijaną" description="" rows="8" cols="60"  />
+				<field name="infotext_link" type="text" default="http://" label="Link info:" description="Link Info:" filter="string" /></fieldset>
+			</fields>
+			</config>
+			</install>

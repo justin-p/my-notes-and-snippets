@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="forcesimpleamp" method="upgrade">
+	<version>0.1</version>
+	<creationDate>JUL2010</creationDate>
+	<author>JommlaCK Team</author>
+	<authorUrl>http://www.joomlackeditor.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>JCK Plugin that forces simple ampersand for links</description>
+	<languages>
+	</languages>
+	<files>	
+	<filename>plugin.js</filename>
+    </files>
+</install>

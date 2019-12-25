@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7">
+<name>Dutch Language Pack</name>
+<packagename>nl-NL</packagename>
+<version>1.7</version>
+<url>http://joomlacode.org/gf/project/nederlands/</url>
+<packager></packager>
+<packagerurl></packagerurl>
+<description>1.7 Joomla Dutch Language Package</description>
+<files>
+<file type="language" client="site" id="nl-NL">site_nl-NL.zip</file>
+<file type="language" client="administrator" id="nl-NL">admin_nl-NL.zip</file>
+</files>
+</extension> 

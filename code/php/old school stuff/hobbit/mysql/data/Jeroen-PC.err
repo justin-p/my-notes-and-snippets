@@ -1,0 +1,145 @@
+120212 22:27:39 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+120212 22:27:39  InnoDB: Initializing buffer pool, size = 8.0M
+120212 22:27:39  InnoDB: Completed initialization of buffer pool
+120212 22:27:39  InnoDB: highest supported file format is Barracuda.
+120212 22:27:40  InnoDB: 1.1.4 started; log sequence number 1591515
+120212 22:27:40 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120212 22:27:40 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120212 22:27:40 [Note] Event Scheduler: Loaded 0 events
+120212 22:27:40 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120212 22:28:07 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+120212 22:28:07 [Note] Event Scheduler: Purging the queue. 0 events
+120212 22:28:07  InnoDB: Starting shutdown...
+120212 22:28:07  InnoDB: Shutdown completed; log sequence number 1591515
+120212 22:28:07 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+120212 22:28:09 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+120212 22:28:09  InnoDB: Initializing buffer pool, size = 8.0M
+120212 22:28:09  InnoDB: Completed initialization of buffer pool
+120212 22:28:09  InnoDB: highest supported file format is Barracuda.
+120212 22:28:10  InnoDB: 1.1.4 started; log sequence number 1591515
+120212 22:28:10 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120212 22:28:10 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120212 22:28:10 [Note] Event Scheduler: Loaded 0 events
+120212 22:28:10 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120212 22:46:35 [ERROR] Incorrect definition of table mysql.proc: expected column 'comment' at position 15 to have type text, found type char(64).
+120213  0:04:29 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+120213  0:04:29 [Note] Event Scheduler: Purging the queue. 0 events
+120213  0:04:29  InnoDB: Starting shutdown...
+120213  0:04:29  InnoDB: Shutdown completed; log sequence number 1591515
+120213  0:04:29 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+120213  0:04:33 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+120213  0:04:33  InnoDB: Initializing buffer pool, size = 8.0M
+120213  0:04:33  InnoDB: Completed initialization of buffer pool
+120213  0:04:33  InnoDB: highest supported file format is Barracuda.
+120213  0:04:34  InnoDB: 1.1.4 started; log sequence number 1591515
+120213  0:04:34 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120213  0:04:34 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120213  0:04:34 [Note] Event Scheduler: Loaded 0 events
+120213  0:04:34 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120213  2:34:01 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+120213  2:34:01 [Note] Event Scheduler: Purging the queue. 0 events
+120213  2:34:01  InnoDB: Starting shutdown...
+120213  2:34:02  InnoDB: Shutdown completed; log sequence number 3004210
+120213  2:34:02 [Note] C:\Users\Jeroen\Desktop\joomla\mowes\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+120213  2:47:48 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+120213  2:47:48  InnoDB: Initializing buffer pool, size = 8.0M
+120213  2:47:48  InnoDB: Completed initialization of buffer pool
+120213  2:47:48  InnoDB: highest supported file format is Barracuda.
+120213  2:47:49  InnoDB: 1.1.4 started; log sequence number 3004210
+120213  2:47:49 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120213  2:47:49 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120213  2:47:49 [Note] Event Scheduler: Loaded 0 events
+120213  2:47:49 [Note] C:\Users\Jeroen\Desktop\joomla\hobbit\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120213  3:24:52 [Note] C:\Users\Jeroen\Desktop\joomla\hobbit\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+120213  3:24:52 [Note] Event Scheduler: Purging the queue. 0 events
+120213  3:24:52  InnoDB: Starting shutdown...
+120213  3:24:53  InnoDB: Shutdown completed; log sequence number 3094950
+120213  3:24:53 [Note] C:\Users\Jeroen\Desktop\joomla\hobbit\mysql\bin\mysqld-nt.exe: Shutdown complete
+

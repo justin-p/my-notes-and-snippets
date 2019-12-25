@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="ietoolbarcollasperfix" method="upgrade">
+	<version>0.1</version>
+	<creationDate>AUG 2011</creationDate>
+	<author>JommlaCK Team</author>
+	<authorUrl>http://www.joomlackeditor.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>JCK Fix for IE and codenirror plugin when collasping the toolbar</description>
+	<languages>
+	</languages>
+	<files>	
+	<filename>plugin.js</filename>
+    </files>
+</install>

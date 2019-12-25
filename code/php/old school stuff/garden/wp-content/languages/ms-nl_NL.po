@@ -1,0 +1,2263 @@
+# Translation of Multisite in Dutch
+# This file is distributed under the same license as the Multisite package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2011-07-12 09:37:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Multisite\n"
+
+#: wp-admin/includes/ms.php:514
+msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
+msgstr "Als je per ongeluk op dit scherm terechtgekomen bent en je dacht &#233;&#233;n van je eigen sites te bezoeken, hier zijn enkele snelkoppelingen die je kunnen helpen de weg te vinden."
+
+#: wp-includes/ms-functions.php:1307
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new SITE_NAME site has been successfully set up at:\n"
+"BLOG_URL\n"
+"\n"
+"You can log in to the administrator account with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"Log in here: BLOG_URLwp-login.php\n"
+"\n"
+"We hope you enjoy your new site. Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"Hallo gebruiker,\n"
+"\n"
+"Je nieuwe SITE_NAME site is met succes ingesteld opt:\n"
+"BLOG_URL\n"
+"\n"
+"Je kunt inloggen met je administrator account met de volgende gegevens:\n"
+"Gebruikersnaam: USERNAME\n"
+"Wachtwoord: PASSWORD\n"
+"Je kunt hier inloggen: BLOG_URLwp-login.php\n"
+"\n"
+"We hopen dat je plezier hebt met je nieuwe site. Bedankt!\n"
+"\n"
+"--Het team van @ SITE_NAME"
+
+#: wp-admin/network/user-new.php:46
+msgid "Cannot add user."
+msgstr "Kan gebruiker niet toevoegen"
+
+#: wp-admin/network/site-users.php:161 wp-admin/network/site-settings.php:72
+#: wp-admin/network/site-info.php:82 wp-admin/network/site-themes.php:128
+msgid "Edit Site: <a href=\"%1$s\">%2$s</a>"
+msgstr "Bewerk Site: <a href=\"%1$s\">%2$s</a>"
+
+#: wp-admin/network/sites.php:37
+msgid "Clicking on bold headings can re-sort this table."
+msgstr "Klikken op de vette koppen kan deze tabel her-sorteren."
+
+#: wp-admin/network/index.php:29
+msgid "The Right Now box provides the network administrator with links to the screens to either create a new site or user, or to search existing users and sites. Screen for Sites and Users are also accessible through the left-hand navigation in the Network Admin section."
+msgstr "De &#39;Op dit moment&#39; box geeft de netwerk admin links naar de schermen om een nieuwe gebruiker of een nieuwe site te maken, of om te zoeken naar bestaande gebruikers en sites. Schermen voor sites en gebruikers zijn ook toegankelijk via de navigatie aan de linkerkant van de netwerk admin sectie."
+
+#: wp-admin/network/user-new.php:21
+msgid "Add User will set up a new user account on the network and send that person an email with username and password."
+msgstr "Gebruiker toevoegen zal een nieuwe gebruikersaccount aan het netwerk toevoegen en deze persoon een e-mail zenden met gebruikersnaam en wachtwoord."
+
+#: wp-admin/network/themes.php:181
+msgid "Themes can be enabled on a site by site basis by the network admin on the Edit Site screen (which has a Themes tab); get there via the Edit action link on the All Sites screen. Only network admins are able to install or edit themes."
+msgstr "Thema&#39;s kunnen worden geactiveerd per site door de netwerkbeheerder op de pagina Site-scherm (welke een tabblad Thema&#39;s heeft). Je komt daar via het de link Bewerken op het overzicht van alle sites. Alleen netwerkbeheerders kunnen them&#39;'s installeren of bewerken."
+
+#: wp-admin/network/upgrade.php:22
+msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Admin Bar). Clicking the Update Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "Gebruik dit scherm slechts eenmaal als je een nieuwe versie van WordPress hebt geupdated via de updates/beschikbare updates(via het netwerk admin navigatie menu of de adminbalk). Klikken op de Netwerk bijwerken knop gaat langs elke site in het netwerk (5 sites per keer) en zorgt dat de database updates worden toegepast."
+
+#: wp-admin/network.php:109
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "Het volgende scherm voor Netwerk Setup geeft je individueel gegenereerde regels code die je moet toe voegen aan je wp-config.php en .htaccess-bestanden. Zorg ervoor dat de instellingen van je FTP-client zo zijn dat bestanden die met een punt beginnen zichtbaar zijn zodat je het .htaccess bestand kunt vinden. Mogelijk moet je dit bestand maken als het er echt niet is. Maak van beide bestanden uiteraard eerst een kopie. "
+
+#: wp-admin/network/menu.php:77
+msgid "Available Updates"
+msgstr "Beschikbare updates"
+
+#: wp-admin/network/menu.php:17
+msgid "All Sites"
+msgstr "Alle sites"
+
+#: wp-admin/network/menu.php:33
+msgid "Installed Themes"
+msgstr "Ge&iuml;nstalleerde thema's"
+
+#: wp-admin/network/menu.php:52
+msgid "Network Settings"
+msgstr "Netwerkinstellingen"
+
+#: wp-activate.php:92
+msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
+msgstr "Je account is nu geactiveerd. <a href=\"%1$s\">Login</a> of ga terug naar de <a href=\"%2$s\">homepage</a>."
+
+#: wp-admin/network/settings.php:31
+msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
+msgstr "Super admins kunnen niet langer worden toegevoegd via het opties scherm. Je gaat nu naar de lijst van bestaande gebruikers op Netwerk admin -> Gebruikers en klikt op de gebruikersnaam of de bewerklink onder de naam. Dit gaat naar een bewerk gebruiker pagina waar je een gebruiker super admin rechten kunt geven via een selectievakje."
+
+#: wp-admin/network.php:111
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Howdy (Username) dropdown in the upper right of the administration area."
+msgstr "Heb je deze code eenmaal toegevoegd en je browser ververst, dan zal multisite ingeschakeld zijn. Dit scherm houdt de toegevoegde code in archief. Je kunt wisselen tussen Netwerk admin en sitebeheerder door te klikken op het Hallo (gebruikersnaam) dropdownmenu aan de rechter bovenkant van van het admin gebied."
+
+#: wp-activate.php:90
+msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
+msgstr "Je account is nu geactiveerd. <a href=\"%1$s\">Bekijk je site</a> of <a href=\"%2$s\">Login</a>"
+
+#: wp-admin/includes/ms.php:511 wp-admin/includes/ms.php:513
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "Je probeert toegang te krijgen tot het \"%1$s\" dashboard, maar je hebt momenteel onvoldoende rechten op deze site. Als je denkt dat je toegang moet hebben op het \"%1$s\" dashboard, neem dan contact op met je netwerk admin."
+
+#: wp-admin/includes/ms.php:525
+msgid "Visit Dashboard"
+msgstr "Ga naar Dashbord"
+
+#: wp-admin/includes/ms.php:516
+msgid "Your Sites"
+msgstr "Jouw sites"
+
+#: wp-admin/includes/ms.php:525
+msgid "View Site"
+msgstr "Bekijk site"
+
+#: wp-admin/my-sites.php:45
+msgid "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Documentation on My Sites</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Documentati over mijn sites</a>"
+
+#: wp-admin/network.php:115
+msgid "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentatie over het netwerkscherm</a>"
+
+#: wp-admin/network/themes.php:210
+msgctxt "network"
+msgid "Theme deleted."
+msgid_plural "%s themes deleted."
+msgstr[0] "Thema verwijderd."
+msgstr[1] "%s thema&#39;s verwijderd."
+
+#: wp-admin/network/user-new.php:25 wp-admin/network/index.php:32
+#: wp-admin/network/site-users.php:32 wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-new.php:24 wp-admin/network/users.php:42
+#: wp-admin/network/sites.php:40 wp-admin/network/site-info.php:27
+#: wp-admin/network/site-themes.php:32
+msgid "<a href=\"http://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://nl.forums.wordpress.org/\" target=\"_blank\">Nederlandstalige ondersteuningsforums</a>"
+
+#: wp-admin/network/themes.php:142
+msgid "Yes, Delete this theme"
+msgid_plural "Yes, Delete these themes"
+msgstr[0] "Ja, dit thema verwijderen"
+msgstr[1] "Ja, deze thema&#39;s verwijderen"
+
+#: wp-admin/network/themes.php:128
+msgid "You are about to remove the following theme:"
+msgid_plural "You are about to remove the following themes:"
+msgstr[0] "Je staat op het punt om het volgende thema te verwijderen:"
+msgstr[1] "Je staat op het punt om de volgende thema&#39;s te verwijderen:"
+
+#: wp-admin/network/themes.php:145
+msgid "No, Return me to the theme list"
+msgstr "Nee, breng mij terug naar de themalijst"
+
+#: wp-admin/network/themes.php:214
+msgid "You cannot delete a theme while it is active on the main site."
+msgstr "Het is niet mogelijk een thema te verwijderen die actief is op de hoofdsite."
+
+#: wp-admin/network/themes.php:125
+msgid "Delete Theme"
+msgid_plural "Delete Themes"
+msgstr[0] "Thema verwijderen"
+msgstr[1] "Thema&#39;s verwijderen"
+
+#: wp-admin/network/themes.php:81
+msgid "You do not have sufficient permissions to delete themes for this site."
+msgstr "Je hebt onvoldoende rechten om thema&#39;s voor deze website te verwijderen."
+
+#: wp-admin/network/themes.php:127
+msgid "This theme may be active on other sites in the network."
+msgid_plural "These themes may be active on other sites in the network."
+msgstr[0] "Dit thema kan actief zijn op andere websites in het netwerk."
+msgstr[1] "Deze thema&#39; kunnen actief zijn op andere websites in het netwerk."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:291
+msgid "Delete this theme"
+msgstr "Dit thema verwijderen"
+
+#: wp-admin/network/themes.php:133
+msgid "Are you sure you wish to delete these themes?"
+msgstr "Weet je zeker dat je de thema&#39;s wilt verwijderen?"
+
+#: wp-admin/network/site-users.php:26 wp-admin/network/site-settings.php:21
+#: wp-admin/network/site-info.php:21 wp-admin/network/site-themes.php:26
+msgid "<strong>Info</strong> - The domain and path are rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr "<strong>Info</strong> - Het domein en het pad worden zelden bewerkt aangezien dit kan resulteren in een site die niet naar behoren werkt. De geregistreerde datum en laatst bijgewerkt datum worden weergegeven. Netwerk admins kunnen een site markeren als gearchiveerd, spam, geschrapt en volwassen, om ze uit de openbare lijst te verwijderen."
+
+#: wp-admin/network/site-users.php:28 wp-admin/network/site-settings.php:23
+#: wp-admin/network/site-info.php:23 wp-admin/network/site-themes.php:28
+msgid "<strong>Themes</strong> - This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>Thema&#39;s</strong> - Dit onderdeel toont thema&#39;s die nog niet zijn ingeschakeld voor het hele netwerk. Wanneer een thema in dit menu wordt ingeschakeld, wordt het zichtbaar voor deze site. Dit activeert het thema niet, maar maakt het zichtbaar in het Weergavemenu. Om een thema voor het hele netwerk beschikbaar te maken, ga je naar het <a href=\"%s\">Netwerk thema&#39;s</a> scherm."
+
+#: wp-admin/network/menu.php:74
+msgid "Updates"
+msgstr "Updates"
+
+#: wp-admin/network/themes.php:183
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentatie over Netwerk Thema&#39;s</a>"
+
+#: wp-admin/network/upgrade.php:26
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Update Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentatie over Update Network</a>"
+
+#: wp-admin/network.php:114
+msgid "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentatie over Maken van een Netwerk</a>"
+
+#: wp-admin/network/site-users.php:27 wp-admin/network/site-settings.php:22
+#: wp-admin/network/site-info.php:22 wp-admin/network/site-themes.php:27
+msgid "<strong>Users</strong> - This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>Gebruikers</strong> - Dit toont gebruikers verbonden met deze site. Je kunt ook hun rol, hun wachtwoord resetten of ze verwijderen van de site. Het verwijderen van de gebruiker van de site verwijderd deze niet van het netwerk."
+
+#: wp-admin/network/index.php:31
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentatie over de Netwerk Admin</a>"
+
+#: wp-admin/network/settings.php:33
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentatie over de Network Settings</a>"
+
+#: wp-admin/network/user-new.php:24 wp-admin/network/users.php:41
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentatie over Netwerk-gebruikers</a>"
+
+#: wp-admin/network/menu.php:29
+msgid "Themes %s"
+msgstr "Thema&#39;s %s"
+
+#: wp-admin/network/site-users.php:31 wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-new.php:23 wp-admin/network/sites.php:39
+#: wp-admin/network/site-info.php:26 wp-admin/network/site-themes.php:31
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentation on Site Management</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentatie over Site Management</a>"
+
+#: wp-admin/network/site-new.php:20
+msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
+msgstr "Dit scherm is voor Super Admins om nieuwe sites toe te voegen aan het netwerk. Dit wordt niet beïnvloed door registratie instellingen."
+
+#: wp-admin/network/site-users.php:25 wp-admin/network/site-settings.php:20
+#: wp-admin/network/site-info.php:20 wp-admin/network/site-themes.php:25
+msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
+msgstr "Het menu is voor het bewerken van specifieke informatie over individuele sites, met name wanneer het admin gebied van een site niet beschikbaar is."
+
+#: wp-admin/network/site-users.php:29 wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-info.php:24 wp-admin/network/site-themes.php:29
+msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>Instellingen</strong> - Deze pagina toont een lijst van alle instellingen voor deze site. Sommige zijn gemaakt door WordPress en anderen zijn gemaakt door plugins die zijn geactiveerd. Merk op dat sommige velden grijs zijn en Geserialiseerde Data melden. Je kunt deze waarden niet wijzigen vanwege de manier hoe deze instellingen worden opgeslagen in de database."
+
+#: wp-includes/ms-functions.php:930
+msgid "The user is already active."
+msgstr "De gebruiker is al geactiveerd."
+
+#: wp-admin/network/site-users.php:242
+msgid "You may add from existing network users, or set up a new user to add to this site."
+msgstr "Je kunt het toevoegen vanuit bestaande netwerk gebruikers, of een nieuwe gebruiker aanmaken om aan deze site toe te voegen."
+
+#: wp-admin/network/site-users.php:240
+msgid "Add User to This Site"
+msgstr "Gebruiker aan deze website toevoegen"
+
+#: wp-admin/network/site-users.php:244
+msgid "You may add from existing network users to this site."
+msgstr "Je kunt bestaande netwerk gebruikers toevoegen aan deze site."
+
+#: wp-admin/network.php:343 wp-admin/network.php:345
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> and <code>%s</code> files."
+msgstr "<strong>Let op:</strong> Wij adviseren dat je een back-up maakt van je bestaande <code>wp-config.php</code> en <code>%s</code>-bestanden."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:236
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Network Enable"
+msgstr "Netwerk activeren"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Network Disable"
+msgstr "Netwerk uitschakelen"
+
+#: wp-signup.php:87
+msgid "Your address will be %s."
+msgstr "Je adres wordt %s."
+
+#: wp-signup.php:86
+msgid "domain"
+msgstr "domein"
+
+#: wp-admin/network/settings.php:105
+msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
+msgstr "Laat sitebeheerders om nieuwe gebruikers toe te voegen aan hun site via de \"Gebruikers &rarr; Nieuwe Toevoegen\" pagina."
+
+#: wp-admin/network/sites.php:99 wp-admin/network/menu.php:18
+msgctxt "site"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:201
+msgctxt "themes"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alles <span class=\"count\">(%s)</span>"
+msgstr[1] "Alles <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:204
+msgid "Enabled <span class=\"count\">(%s)</span>"
+msgid_plural "Enabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Ingeschakeld <span class=\"count\">(%s)</span>"
+msgstr[1] "Ingeschakeld <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:97
+msgid "Super Admin <span class=\"count\">(%s)</span>"
+msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
+msgstr[0] "Super Admin <span class=\"count\">(%s)</span>"
+msgstr[1] "Super Admins <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable"
+msgstr "Uitschakelen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit Theme Site"
+msgstr "Themawebsite bezoeken"
+
+#: wp-admin/network/site-themes.php:22
+msgid "You do not have sufficient permissions to manage themes for this site."
+msgstr "Je hebt onvoldoende rechten om thema&#39;s voor deze website te beheren."
+
+#: wp-admin/network/themes.php:22
+msgid "You do not have sufficient permissions to manage network themes."
+msgstr "Je hebt onvoldoende rechten om netwerk thema&#39;s te beheren."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:170
+msgid "No themes found."
+msgstr "Geen thema&#39;s gevonden."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:172
+msgid "You do not appear to have any themes available at this time."
+msgstr "Het lijkt erop dat er geen thema&#39;s beschikbaar zijn op dit moment."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:288
+msgid "Open this theme in the Theme Editor"
+msgstr "Dit thema openen in de thema-editor"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable this theme"
+msgstr "Dit thema deactiveren"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable this theme"
+msgstr "Dit thema activeren"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit theme homepage"
+msgstr "Themahomepage bezoeken"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:207
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Uitgeschakeld <span class=\"count\">(%s)</span>"
+msgstr[1] "Uitgeschakeld <span class=\"count\">(%s)</span>"
+
+#: wp-admin/network/themes.php:212 wp-admin/network/site-themes.php:161
+msgid "No theme selected."
+msgstr "Geen thema geselecteerd."
+
+#: wp-admin/network/themes.php:207 wp-admin/network/site-themes.php:159
+msgid "Theme disabled."
+msgid_plural "%s themes disabled."
+msgstr[0] "Thema deactiveren."
+msgstr[1] "%s thema&#39;s deactiveren."
+
+#: wp-admin/network/themes.php:204 wp-admin/network/site-themes.php:156
+msgid "Theme enabled."
+msgid_plural "%s themes enabled."
+msgstr[0] "Thema activeren."
+msgstr[1] "%s thema&39;s activeren."
+
+#: wp-admin/network/site-users.php:214
+msgid "Enter the username and email."
+msgstr "Voer de gebruikersnaam en e-mailadres in."
+
+#: wp-admin/network/site-users.php:211
+msgid "User created."
+msgstr "Gebruiker aangemaakt."
+
+#: wp-admin/network/site-users.php:202
+msgid "Select a user to change role."
+msgstr "Selecteer een gebruiker om de rol te wijzigen."
+
+#: wp-admin/network/site-users.php:208
+msgid "Select a user to remove."
+msgstr "Selecteer een gebruiker om te verwijderen."
+
+#: wp-admin/network/site-users.php:193
+msgid "User is already a member of this site."
+msgstr "Gebruiker is al lid van deze website."
+
+#: wp-admin/network/site-users.php:196
+msgid "Enter the username of an existing user."
+msgstr "Voer de gebruikersnaam van een bestaande gebruiker in."
+
+#: wp-admin/network/sites.php:61
+msgid "You do not have permission to delete that site."
+msgstr "Je hebt onvoldoende rechten om die website te verwijderen."
+
+#: wp-admin/network/edit.php:204
+msgid "You are not allowed to delete the site."
+msgstr "Je hebt geen toestemming om de website te verwijderen."
+
+#: wp-admin/network/edit.php:42
+msgid "Warning! User %s cannot be deleted."
+msgstr "Waarschuwing! Gebruiker %s kan niet worden verwijderd."
+
+#: wp-admin/network/settings.php:240
+msgid "Language Settings"
+msgstr "Taalinstellingen"
+
+#: wp-admin/network/site-themes.php:164
+msgid "Network enabled themes are not shown on this screen."
+msgstr "Netwerk ingeschakeld thema&#39;s worden niet weergegeven op dit scherm."
+
+#: wp-admin/network/user-new.php:17
+msgid "You do not have sufficient permissions to add users to this network."
+msgstr "Je beschikt niet over voldoende rechten voor het toevoegen van gebruikers aan het netwerk."
+
+#: wp-admin/network/themes.php:176 wp-admin/network/site-themes.php:125
+msgctxt "themes per page (screen options)"
+msgid "Themes"
+msgstr "Thema&#39;s"
+
+#: wp-admin/network.php:145
+msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
+msgstr "De constante DO_NOT_UPGRADE_GLOBAL_TABLES kan niet worden gedefinieerd tijdens het aanmaken van een netwerk."
+
+#: wp-admin/network/user-new.php:98 wp-admin/network/site-users.php:270
+msgid "Add User"
+msgstr "Gebruiker toevoegen"
+
+#: wp-admin/network/sites.php:32
+msgid "Dashboard leads to the Dashboard for that site."
+msgstr "Dashboard leidt naar het Dashboard van de betreffende site."
+
+#: wp-admin/network/sites.php:34
+msgid "Delete which is a permanent action after the confirmation screens."
+msgstr "Verwijderen, wat een permanente actie is na de bevestiging vensters."
+
+#: wp-admin/network/site-users.php:175 wp-admin/network/site-settings.php:88
+#: wp-admin/network/site-info.php:98 wp-admin/network/site-themes.php:142
+msgid "Info"
+msgstr "Info"
+
+#: wp-admin/network/site-info.php:78
+msgid "Site info updated."
+msgstr "Site informatie bijgewerkt."
+
+#: wp-admin/network/site-users.php:38 wp-admin/network/site-settings.php:33
+#: wp-admin/network/site-info.php:33 wp-admin/network/site-themes.php:49
+msgid "Invalid site ID."
+msgstr "Ongeldige site ID."
+
+#: wp-admin/network/site-users.php:17 wp-admin/network/site-settings.php:17
+#: wp-admin/network/site-info.php:17
+msgid "You do not have sufficient permissions to edit this site."
+msgstr "Je hebt onvoldoende rechten om deze site te bewerken."
+
+#: wp-admin/network/site-settings.php:68
+msgid "Site options updated."
+msgstr "Site opties bijgewerkt."
+
+#: wp-admin/network/site-users.php:162 wp-admin/network/site-settings.php:73
+#: wp-admin/network/site-info.php:83 wp-admin/network/site-themes.php:129
+msgid "Edit Site: %s"
+msgstr "Wijzig Site:%s"
+
+#: wp-admin/network/themes.php:196 wp-admin/network/menu.php:34
+msgctxt "theme"
+msgid "Add New"
+msgstr "Nieuwe Toevoegen"
+
+#: wp-admin/network/sites.php:28
+msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
+msgstr "Nieuwe Toevoegen brengt je naar de Nieuwe Site Toevoegen scherm. Je kunt zoeken naar een site op naam, ID nummer, of IP-adres. Via Schermopties kunt je kiezen hoeveel sites je wilt tonen op een pagina."
+
+#: wp-admin/network/site-new.php:98 wp-admin/network/site-new.php:107
+msgid "Add New Site"
+msgstr "Nieuwe Site Toevoegen"
+
+#: wp-admin/network/site-new.php:17
+msgid "You do not have sufficient permissions to add sites to this network."
+msgstr "Je hebt onvoldoende rechten om sites toe te voegen aan dit netwerk."
+
+#: wp-admin/network/menu.php:46
+msgctxt "plugin editor"
+msgid "Add New"
+msgstr "Nieuwe Toevoegen"
+
+#: wp-admin/network/sites.php:25
+msgctxt "sites per page (screen options)"
+msgid "Sites"
+msgstr "Sites"
+
+#: wp-admin/network/sites.php:31
+msgid "An Edit link to a separate Edit Site screen."
+msgstr "Een Bewerken Link naar een apart Wijzig Site scherm."
+
+#: wp-admin/network.php:354
+msgid "Create a <code>blogs.dir</code> directory at <code>%s/blogs.dir</code>. This directory is used to store uploaded media for your additional sites and must be writeable by the web server."
+msgstr "Maak een <code>blogs.dir</code> map bij <code>%s/blogs.dir</code>. Deze map wordt gebruikt om geuploade media op te slaan voor je toegevoegde sites en moet beschrijfbaar zijn op de webserver."
+
+#: wp-includes/ms-functions.php:527
+msgid "Only lowercase letters (a-z) and numbers are allowed."
+msgstr "Alleen kleine letters (a-z) en cijfers zijn toegestaan."
+
+#: wp-activate.php:66
+msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;.  Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
+msgstr "Je account is geactiveerd. Je kunt nu <a href=\"%1$s\">inloggen</a> op de site met je gekozen gebruikersnaam van &#8220;%2$s&#8221;.  Ga naar je e-mailprogramma op %3$s voor je wachtwoord en inloginstructies. Als je geen e-mail ontvangt, controleer dan je spammap. Als je nog steeds geen e-mail ontvangt binnen een uur, kun je <a href=\"%4$s\">het wachtwoord resetten.</a>."
+
+#: wp-includes/ms-load.php:238
+msgid "Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
+msgstr "Lees de <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug rapport</a> pagina(Engels). Enkele van de richtlijnen kunnen je helpen uit te vinden wat er mis gegaan is."
+
+#: wp-includes/ms-functions.php:839 wp-includes/ms-functions.php:890
+msgid "[%1$s] Activate %2$s"
+msgstr "[%1$s] Activeer %2$s"
+
+#: wp-includes/ms-load.php:213
+msgid "No site defined on this host. If you are the owner of this site, please check <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Debugging a WordPress Network</a> for help."
+msgstr "Er is geen site gedefinieerd bij deze host. Als je de eigenaar bent, bezoek <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Debugging a WordPress Network</a>(Engels) voor hulp."
+
+#: wp-admin/includes/ms.php:35
+msgid "This file is too big. Files must be less than %1$s KB in size."
+msgstr "Dit bestand is te groot. Bestanden moeten kleiner zijn dan %1$s KB."
+
+#: wp-admin/network/edit.php:52
+msgid "What should be done with posts and links owned by <em>%s</em>?"
+msgstr "Wat moet er gebeuren met berichten en links van  <em>%s</em>?"
+
+#: wp-admin/network/edit.php:45
+msgid "Warning! User cannot be deleted. The user %s is a network admnistrator."
+msgstr "Let op! Deze gebruiker kan niet worden verwijderd. De gebruiker %s is een netwerk administrator"
+
+#: wp-admin/network/edit.php:29
+msgid "Transfer or delete posts and links before deleting users."
+msgstr "Verhuis of verwijder berichten en links voordat je gebruikers verwijderd."
+
+#: wp-admin/includes/ms.php:40
+msgid "Back"
+msgstr "Terug"
+
+#: wp-admin/includes/ms.php:37
+msgid "You have used your space quota. Please delete files before uploading."
+msgstr "Je hebt je grens bereikt van je toegestane ruimte. Graag eerst bestanden verwijderen voordat je gaat uploaden."
+
+#: wp-admin/network/edit.php:405
+msgid "Warning! User cannot be modified. The user %s is a network administrator."
+msgstr "Let Op! Gebruiker kan niet worden aangepast. De gebruikers %s is een netwerk admin."
+
+#: wp-admin/includes/ms.php:33
+msgid "Not enough space to upload. %1$s KB needed."
+msgstr "Onvoldoende ruimte op te uploaden. %1$s KB is nodig."
+
+#: wp-admin/network/edit.php:70
+msgid "Site: %s"
+msgstr "Site: %s"
+
+#: wp-admin/includes/ms.php:221
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the administration email address on\n"
+"your site changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL### "
+msgstr ""
+"Beste gebruiker,\n"
+" \n"
+"\n"
+"Je hebt onlangs de wijziging van je admin email adres van je \n"
+"site te wijzigen.\n"
+"\n"
+"Als dit klopt, klik dan op de volgende link om dit te wijzigen:\n"
+"###ADMIN_URL###\n"
+"\n"
+"Je kunt deze mail zonder probleem negeren en verwijderen\n"
+"als je dit niet wilt wijzigen.\n"
+"\n"
+"Dit bericht is verstuurd naar  ###EMAIL###\n"
+"\n"
+"Met vriendelijke groet,\n"
+"Iedereen bij  ###SITENAME###\n"
+"###SITEURL### "
+
+#: wp-admin/includes/ms.php:242
+msgid "[%s] New Admin Email Address"
+msgstr "[%s] Nieuw Admin Email Adres"
+
+#: wp-admin/includes/ms.php:258
+msgid "<strong>ERROR</strong>: The e-mail address isn't correct."
+msgstr "<strong>FOUT</strong>: Dit email adres is incorrent."
+
+#: wp-admin/includes/ms.php:263
+msgid "<strong>ERROR</strong>: The e-mail address is already used."
+msgstr "<strong>FOUT</strong>: Dit email adres is al in gebruik. "
+
+#: wp-admin/includes/ms.php:275
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the email address on your account changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL###"
+msgstr ""
+"Beste gebruiker,\n"
+"\n"
+"Je hebt recent het email adres van je account gewijzigd.\n"
+"Als dit correct is, klik op de volgende link om te bevestigen:\n"
+"###ADMIN_URL###\n"
+"\n"
+"Je kunt deze email veilig negeren en verwijderen als je deze actie\n"
+"niet voort wilt zetten.\n"
+"\n"
+"Deze email is verzonden naar ###EMAIL###\n"
+"\n"
+"Groet,\n"
+"###SITENAME###\n"
+"###SITEURL###"
+
+#: wp-admin/includes/ms.php:295
+msgid "[%s] New Email Address"
+msgstr "[%s] Nieuw Email Adres"
+
+#: wp-admin/includes/ms.php:303
+msgid "Your email address has not been updated yet. Please check your inbox at %s for a confirmation email."
+msgstr "Je email adres is nog niet bijgewerkt. Controleer je inbox van %s voor een bevestigingsemail. "
+
+#: wp-admin/includes/ms.php:413
+msgid "GB"
+msgstr "GB"
+
+#: wp-admin/includes/ms.php:416
+msgid "MB"
+msgstr "MB"
+
+#: wp-admin/includes/ms.php:419
+msgid "Used: %1s%% of %2s"
+msgstr "Verbruikt: %1s%% of %2s"
+
+#: wp-admin/includes/ms.php:556
+msgid "British English"
+msgstr "Brits Engels"
+
+#: wp-admin/includes/ms.php:566
+msgid "English"
+msgstr "Engels"
+
+#: wp-admin/includes/ms.php:586
+msgid "Warning! WordPress encrypts user cookies, but you must add the following lines to <strong>wp-config.php</strong> for it to be more secure."
+msgstr "Waarschuwing! WordPress encrypt gebruiker cookies, maar je moet de volgende regels aan je <strong>wp-config.php</strong> toevoegen om het veiliger te maken."
+
+#: wp-admin/includes/ms.php:587
+msgid "Before the line <code>/* That's all, stop editing! Happy blogging. */</code> please add this code:"
+msgstr "Voor de regel <code>/* That's all, stop editing! Happy blogging. */</code> voeg deze code toe:"
+
+#: wp-admin/includes/ms.php:600
+msgid "Thank you for Updating! Please visit the <a href=\"%s\">Update Network</a> page to update all your sites."
+msgstr "Bedankt voor het updaten! Bezoek de <a href=\"%s\">Netwerk Update</a> pagina om al je sites te updaten."
+
+#: wp-admin/includes/ms.php:633
+msgid "Primary Site"
+msgstr "Primaire Site"
+
+#: wp-admin/includes/ms.php:552
+msgid "American English"
+msgstr "Amerikaans Engels"
+
+#: wp-admin/includes/ms.php:432
+msgid "MB (Leave blank for network default)"
+msgstr "MB (Laat leeg voor de netwerk standaard)"
+
+#: wp-admin/includes/ms.php:431
+msgid "Site Upload Space Quota "
+msgstr "Site Upload Ruimte Quota"
+
+#: wp-admin/includes/ms.php:680
+msgid "The <code>%1$s</code> file is deprecated. Please remove it and update your server rewrite rules to use <code>%2$s</code> instead."
+msgstr "Het <code>%1$s</code> bestand is verouderd. Verwijder het en update je server rewrite rules in plaats daarvan met <code>%2$s</code>."
+
+#: wp-admin/network/settings.php:25
+msgid "Dashboard Site is an option to give a site to users who do not have a site on the system. Their default role is Subscriber, but that default can be changed. The Admin Notice Feed can provide a notice on all dashboards of the latest post via RSS or Atom, or provide no such notice if left blank."
+msgstr "Dashboard site is een instelling om site gebruikers een eigen Dashboard te geven als zij geen eigen site hebben op het netwerk. Hun standaard rol is inschrijver, maar deze standaard kan gewijzigd worden. De admin notificatie feed kan alle Dashboards voorzien van de laatste berichten via RSS of Atom -of niet-, dan wordt het vak leeg gelaten."
+
+#: wp-admin/network/site-new.php:21
+msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
+msgstr "Als de admin email voor de nieuwe site niet bestaat in de database zal er een nieuwe gebruiker worden gemaakt. "
+
+#: wp-admin/network/sites.php:33
+msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
+msgstr "Deactiveren, Archief en Spam welke naar de bevestiging schermen leiden. Deze acties kunnen later ongedaan gemaakt worden."
+
+#: wp-admin/network/sites.php:36
+msgid "The site ID is used internally, and is not shown on the front end of the site or to users/viewers."
+msgstr "Het site ID wordt intern gebruikt en wordt niet getoond aan de voorkant van de site of aan gebruikers/bezoekers."
+
+#: wp-admin/network/sites.php:30
+msgid "Hovering over each site reveals seven options (three for the primary site):"
+msgstr "Met de muis over je site heen gaan toont zeven opties (drie voor de primaire site):"
+
+#: wp-admin/network.php:110
+msgid "Add a <code>blogs.dir</code> directory under <code>/wp-content</code> and add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgstr "Voeg een <code>blogs.dir</code> folder toe in <code>/wp-content</code> en voeg de betreffende regels code toe aan wp-config.php (vlak voor <code>/*...stop editing...*/</code>) en <code>.htaccess</code> (de bestaande WordPress regels vervangen)."
+
+#: wp-admin/network.php:107
+msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
+msgstr "Dit scherm laat je een netwerk instellen met subdomeinen (<code>site1.example.com</code>) of subdirectories (<code>example.com/site1</code>). Subdomeinen vereisen dat wildcard subdomeinen zijn ingeschakeld in Apache en DNS records, als je host dit toestaat."
+
+#: wp-admin/network/settings.php:24
+msgid "Operational settings has fields for the network&#8217;s name and admin email."
+msgstr "Operationele instellingen bevatten velden voor de netwerk naam en admin email."
+
+#: wp-admin/network/users.php:36
+msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
+msgstr "Je kunt ook naar de gebruikers profiel pagina door op de individuele gebruikersnaam te klikken."
+
+#: wp-admin/network/users.php:38
+msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
+msgstr "De bulk actie zal de geselecteerde gebruikers permanent verwijderen, of de geselecteerde markeren/demarkeren als spam. De berichten van de spam gebruikers zullen verwijderd worden. Spam gebruikers kunnen zich niet opnieuw registreren met hetzelfde email adres."
+
+#: wp-admin/network/settings.php:28
+msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
+msgstr "Upload instellingen controleert de grootte van de geuploade bestanden en de overgebleven upload ruimte die nog beschikbaar is voor elke site. De standaard ruimte voor specifieke sites kan gewijzigd worden door de Super Admin, als deze bewerkt wordt.Toegestane bestandstypen kunnen ook gewijzigd worden (alleen door spaties gescheiden)."
+
+#: wp-admin/my-sites.php:43
+msgid "Up until WordPress version 3.0, what is now called a Multi-site Network had to be installed separately as WordPress MU (multi-user)."
+msgstr "Tot WordPress versie 3.0, wat nu een Multi-siteNetwerk wordt genoemd moest separaat ge&iuml;stalleerd worden als WordPress MU (multi-user)."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:180
+msgid "Theme"
+msgstr "Thema"
+
+#: wp-admin/network/index.php:28
+msgid "Blogs are now called Sites; Site is now called Network."
+msgstr "Blogs heten nu Sites; Site is nu Netwerk"
+
+#: wp-admin/network/index.php:27
+msgid "Site Admin is now Super Admin (we highly encourage you to get yourself a cape!)."
+msgstr "Site Admin is nu Super Admin (we raden je aan een passende cape aan!)."
+
+#: wp-includes/ms-load.php:232
+msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
+msgstr "Als je de eigenaar van dit netwerk bent, controleer of MySQL correct werkt en alle tabellen zonder fouten zijn."
+
+#: wp-includes/ms-load.php:231
+msgid "If your site does not display, please contact the owner of this network."
+msgstr "Wanneer je site niet toont, neem dan contact op met de eigenaar van dit netwerk."
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:76
+msgctxt "user"
+msgid "Not Spam"
+msgstr "Geen spam"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:75
+msgctxt "user"
+msgid "Mark as Spam"
+msgstr "Als spam markeren"
+
+#: wp-admin/network.php:153
+msgid "Once the network is created, you may reactivate your plugins."
+msgstr "Is een netwerk eenmaal gemaakt, dan kun je de plugins weer activeren."
+
+#: wp-admin/network/sites.php:35
+msgid "Visit to go to the frontend site live."
+msgstr "Ga naar de frontend live site."
+
+#: wp-admin/network.php:347
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> file."
+msgstr "<strong>Waarschuwing:</strong> We raden je aan een backup te maken van je huidige <code>wp-config.php</code> bestand."
+
+#: wp-admin/network/index.php:26
+msgid "Until WordPress 3.0, running multiple sites required using WordPress MU instead of regular WordPress. In version 3.0, these applications have merged. If you are a former MU user, you should be aware of the following changes:"
+msgstr "Tot WordPress 3.0 uitkwam, was het gebruik van WordPress MU nodig om meerdere sites op &#233;&#233;n installatie te laten werken. In versie 3.0 zijn deze toepassingen samengevoegd. Als je een oud MU gebruiker bent, houd rekening met de volgende wijzigingen:"
+
+#: wp-admin/network/settings.php:29
+msgid "Checkboxes for media upload buttons set which are shown in the visual editor. If unchecked, a generic upload button is still visible; other media types can still be uploaded if on the allowed file types list."
+msgstr "Aanvink boxen voor media knoppen stelt in wat wordt getoond in de wysiwyg editor. Als dit niet is geselecteerd, is nog steeds een algemene uploadknop zichtbaar; andere media bestand typen kunnen nog steeds worden geupload als deze zich bevinden op de bestand typen lijst."
+
+#: wp-admin/network/settings.php:27
+msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "Nieuwe site instellingen zijn standaard toegepast als een nieuwe site in het netwerk wordt gemaakt. Deze bevatten een welkomst email wanneer een nieuwe gebruiker of gebruikersaccount is geregistreerd. Het bevat ook berichten voor de inhoud van de site voor het eerste bericht, pagina, reactie, reactie auteur en reactie URL(internet adres). Al deze berichten kun je naar eigen inzicht wijzigen."
+
+#: wp-admin/network/themes.php:179
+msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
+msgstr "Dit scherm laat je kiezen welke thema's beschikbaar zijn in het Weergave menu voor elke site. Het thema wat momenteel gebruikt wordt hierdoor niet geactiveerd of geactiveerd. "
+
+#: wp-admin/my-sites.php:42
+msgid "This screen shows an individual user all of their sites in this network, and also allows that user to set a primary site. He or she can use the links under each site to visit either the frontend or the dashboard for that site."
+msgstr "Dit scherm toont individuele gebruikers alle sites (waar ze eigenaar van zijn, of bij geregistreerd zijn) in dit netwerk. Een gebruiker kan hier ook een eigen hoofdsite instellen. Met de links onder elke site in de lijst kan gekozen worden naar de voorkant of naar het Dashboard van die site te gaan."
+
+#: wp-admin/network/themes.php:180
+msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
+msgstr "Als de Super Admin een thema uitschakelt wat in gebruik is, kan dat thema nog steeds gebruikt worden door de site eigenaars die deze site in gebruik hebben. Kiest een site eigenaar echter een ander thema, zal het uitgeschakelde thema niet meer verschijnen in het Design -> Thema scherm."
+
+#: wp-admin/network/settings.php:23
+msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
+msgstr "Dit scherm is voor de instellingen en wijzigingen voor het netwerk als geheel. De eerste site is de hoofdsite in het netwerk. De netwerk instellingen worden van de originele site instellingen gehaald."
+
+#: wp-admin/network/settings.php:26
+msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
+msgstr "Registratie instellingen kunnen ingeschakeld/uitgeschakeld worden voor publieke registraties. Als je anderen laat registreren voor een site, installeer dan anti spam plugins. Namen en sites die je wilt verbannen op dit netwerk, scheiden met spaties, gebruik GEEN komma&#39;s."
+
+#: wp-admin/network/settings.php:30
+msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
+msgstr "In- of uitschakelen van de plugin menu&#39;s voor niet super admins, zodat alleen super admins -geen site admins- toegang hebben om plugins te activeren."
+
+#: wp-admin/network/sites.php:29
+msgid "This is the main table of all sites on this network. Switch between list and excerpt views by using the icons above the right side of the table."
+msgstr "Dit is het hoofdoverzicht van alle sites op dit newerk. Wissel tussen lijst en samenvattingen met gebruik van de icoontjes aan de rechter bovenkant van het overzicht."
+
+#: wp-admin/network/user-new.php:22
+msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
+msgstr "Gebruikers die zijn geregistreerd op het netwerk zonder een eigen site, worden toegevoegd als inschrijvers op de hoofdsite, ze krijgen toegang in het Dashboard op hun eigen profiel pagina om hun account te beheren. Deze gebruikers zullen het Dashboard en Mijn sites alleen kunnen zien in de hoofdnavigatie, tot zijzelf een eigen site zullen bezitten."
+
+#: wp-admin/network/users.php:37
+msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
+msgstr "Je kunt het overzicht sorteren door te klikken op &#233;&#233;n van de vetgedrukte teksten en wisselen tussen lijst en samenvattingen met gebruik van de icoontjes in de rechter bovenhoek."
+
+#: wp-admin/network/users.php:35
+msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to his or her Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
+msgstr "Hover over een gebruiker van de lijst om de bewerk links te laten verschijnen. De Bewerk link aan de linkerkant brengt je naar de Bewerk Gebruiker profiel pagina van de betreffende gebruiker; de Bewerk link aan de rechterkant bij een site naam gaat naar een Bewerk Site scherm van de betreffende site."
+
+#: wp-admin/network/upgrade.php:24
+msgid "If this process fails for any reason, users logging in to their sites will force the same update."
+msgstr "Indien dit proces mislukt om wat voor reden dan ook, zullen gebruikers die op hun site inloggen dezelfde update forceren."
+
+#: wp-admin/network/upgrade.php:23
+msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
+msgstr "Als er geen versie update is gedaan, zal klikken op deze knop geen enkele invloed hebben."
+
+#: wp-admin/network/users.php:34
+msgid "This table shows all users across the network and the sites to which they are assigned."
+msgstr "Deze tabel toont alles gebruikers in het netwerk en de sites waar ze bij horen."
+
+#: wp-admin/network/users.php:39
+msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
+msgstr "Je kunt een bestaande gebruiker wijzigen naar Super Admin door naar de Bewerk Gebruiker profiel pagina te gaan en deze keuze toe te wijzen."
+
+#: wp-admin/network.php:108
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "Kies subdomeinen of subdirectories; dit kan alleen achteraf gewisseld worden door je installatie te herconfigureren. Vul de netwerk details in, en klik installeren. Als het niet werkt, kun je een wildcard DNS record (voor subdomeinen) toevoegen, of wijzigen met een andere instelling in Permalinks (voor subdirectories)."
+
+#: wp-admin/network.php:112
+msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed soon in a future version."
+msgstr "De keuze van subdirectory sites is uitgeschakeld als deze instelling meer dan een maand oud is, vanwege permalink problemen met &#8220;/blog/&#8221; van de hoofdsite. Dit uitschakelen zal in een toekomstige versie aangepast worden."
+
+#: wp-admin/network/site-new.php:44
+msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>"
+msgstr "De volgende woorden zijn gereserveerd voor gebruik van de WordPress functies en kunnen niet gebruikt worden als site namen: <code>%s</code>"
+
+#: wp-admin/network/upgrade.php:61
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "Waarschuwing! Probleem met het updaten van %1$s. Je server is niet ingeschakeld om verbinding te maken met de sites die het gebruiken. Fout bericht: <em>%2$s</em>"
+
+#: wp-signup.php:391
+msgctxt "Multisite active signup type"
+msgid "user"
+msgstr "gebruiker"
+
+#: wp-signup.php:390
+msgctxt "Multisite active signup type"
+msgid "blog"
+msgstr "blog"
+
+#: wp-signup.php:389
+msgctxt "Multisite active signup type"
+msgid "none"
+msgstr "geen"
+
+#: wp-signup.php:388
+msgctxt "Multisite active signup type"
+msgid "all"
+msgstr "alles"
+
+#: wp-admin/network.php:252 wp-admin/network.php:262 wp-admin/network.php:269
+msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
+msgstr "De hoofd site in een sub-directory installatie moet een aangepast permalink structuur gebruiken, om issues met bestaande links te voorkomen."
+
+#: wp-admin/network.php:268
+msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
+msgstr "Omdat je installatie niet nieuw is, moeten de sites in je WordPress netwerk gebruik maken van sub-domeinen."
+
+#: wp-admin/network.php:474
+msgid "Add the following to your <code>web.config</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "Voeg de volgende regels toe aan je <code>web.config</code> bestand in <code>%s</code>, dit vervangt alle andere WordPress regels:"
+
+#: wp-admin/network.php:184 wp-admin/network.php:356
+msgid "Networks may not be fully compatible with custom wp-content directories."
+msgstr "Netwerken zijn mogelijk niet volledig compatibel met aangepaste wp-content mappen."
+
+#: wp-admin/network.php:216
+msgid "Sub-domains"
+msgstr "Subdomeinen"
+
+#: wp-admin/network.php:220
+msgid "Sub-directories"
+msgstr "Submappen"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:127
+msgctxt "site"
+msgid "Mark as Spam"
+msgstr "Als spam markeren"
+
+#: wp-signup.php:435
+msgid "Sorry, new registrations are not allowed at this time."
+msgstr "Helaas, op dit moment zijn nieuwe registraties niet toegestaan."
+
+#: wp-signup.php:365
+msgid "Check your inbox at <strong>%s</strong> and click the link given."
+msgstr "Controleer je inbox op <strong>%s</strong> en klik op de link die we hebben gestuurd."
+
+#: wp-signup.php:371
+msgid "Wait a little longer. Sometimes delivery of email can be delayed by processes outside of our control."
+msgstr "Nog even geduld. We hebben niet alle omstandigheden waaronder een email bericht wordt afgeleverd in de hand."
+
+#: wp-signup.php:372
+msgid "Check the junk or spam folder of your email client. Sometime emails wind up there by mistake."
+msgstr "Controleer de prullenbak of spam map van je emailprogramma. Soms komen e-mails per ongeluk daar terecht."
+
+#: wp-signup.php:394
+msgid "Greetings Site Administrator! You are currently allowing &#8220;%s&#8221; registrations. To change or disable registration go to your <a href=\"%s\">Options page</a>."
+msgstr "Hallo Site Administrator! Op dit moment heb je &#8220;%s&#8221; registraties toegelaten. Ga naar de <a href=\"%s\">instellingen pagina</a> om de registratie instellingen te wijzigen of uit te schakelen."
+
+#: wp-signup.php:373
+msgid "Have you entered your email correctly?  You have entered %s, if it&#8217;s incorrect, you will not receive your email."
+msgstr "Heb je je emailadres juist ingevuld? Je hebt %s ingevuld, als dat niet klopt zal je geen email ontvangen."
+
+#: wp-signup.php:102
+msgid "Allow my site to appear in search engines like Google, Technorati, and in public listings around this network."
+msgstr "Ik wil mijn website zichtbaar hebben in zoekmachines als Google, Technorati en in publieke lijsten rond dit netwerk."
+
+#: wp-signup.php:141
+msgid "We send your registration email to this address. (Double-check your email address before continuing.)"
+msgstr "Je registratie e-mail is verstuurd naar dit adres. (Controleer het adres nog een keer voordat je doorgaat.)"
+
+#: wp-admin/network.php:511
+msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
+msgstr "Zodra je deze stappen voltooit hebt, is je netwerk ingeschakeld en geconfigureerd. Je moet dan opnieuw inloggen."
+
+#: wp-admin/network.php:267
+msgid "Sub-domain Install"
+msgstr "Subdomein installatie"
+
+#: wp-admin/network.php:153
+msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
+msgstr "<a href=\"%s\">Deactiveer je plugins</a> voordat je de netwerkinstellingen gaat activeren."
+
+#: wp-includes/ms-default-constants.php:113
+msgid "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a subdomain configuration. Use is_subdomain_install() to check whether a subdomain configuration is enabled."
+msgstr "De constante <code>VHOST</code> <strong>is niet langer in gebruik</strong>. Gebruik de boolean constante <code>SUBDOMAIN_INSTALL</code> in wp-config.php om de subdomein configuratie in te schakelen. Gebruik subdomain_install() om te controleren of een subdomein configuratie ingeschakeld is."
+
+#: wp-includes/ms-default-constants.php:115
+msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
+msgstr "<strong>Conflicterende waarden voor de constanten VHOST en SUBDOMAIN_INSTALL.</strong> De waarde van SUBDOMAIN_INSTALL zal worden overgenomen voor de subdomein configuratie instellingen."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:236
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:232
+msgctxt "%1$s: site name. %2$s: site tagline."
+msgid "%1$s &#8211; <em>%2$s</em>"
+msgstr "%1$s &#8211; <em>%2$s</em>"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:148
+#: wp-admin/network/site-info.php:138
+msgctxt "site"
+msgid "Registered"
+msgstr "Geregistreerd"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:128
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:258
+msgctxt "site"
+msgid "Not Spam"
+msgstr "Geen spam"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+msgctxt "user"
+msgid "Registered"
+msgstr "Geregistreerd"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:255
+msgctxt "verb; site"
+msgid "Archive"
+msgstr "Archiveren"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:173
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:260
+#: wp-admin/network/site-info.php:149
+msgctxt "site"
+msgid "Spam"
+msgstr "Spam"
+
+#: wp-includes/ms-load.php:236
+msgid "<strong>Could not find site <code>%1$s</code>.</strong> Searched for table <code>%2$s</code> in database <code>%3$s</code>. Is that right?"
+msgstr "<strong>Kon de website <code>%1$s</code> niet vinden.</strong> Zocht naar tabel <code>%2$s</code> in database <code>%3$s</code>. Klopt dat?"
+
+#: wp-includes/ms-load.php:227
+msgid "Error establishing database connection"
+msgstr "Fout tijdens het maken van de databaseverbinding"
+
+#: wp-includes/ms-load.php:234
+msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now."
+msgstr "<strong>Databasetabellen niet aanwezig.</strong> Dit betekend dat MySQL niet draait, WordPress niet goed is ge&#239;nstalleerd of dat iemand <code>%s</code> heeft verwijderd. Het is verstandig om even naar de database te kijken."
+
+#: wp-includes/ms-functions.php:1116
+msgid ""
+"New Site: %1s\n"
+"URL: %2s\n"
+"Remote IP: %3s\n"
+"\n"
+"Disable these notifications: %4s"
+msgstr ""
+"Nieuwe site: %1s\n"
+"URL: %2s\n"
+"Remote IP: %3s\n"
+"\n"
+"Deze notificaties uitschakelen: %4s"
+
+#: wp-includes/ms-functions.php:691
+msgid "Sorry, that site already exists!"
+msgstr "Helaas, deze website bestaat al!"
+
+#: wp-includes/ms-functions.php:829
+msgid ""
+"To activate your blog, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+"After you activate, you can visit your site here:\n"
+"\n"
+"%s"
+msgstr ""
+"Klik op de volgende link om je site te activeren:\n"
+"\n"
+"%s\n"
+"\n"
+"Na je activatie ontvang je een *andere e-mail* met je inlog gegevens.\n"
+"\n"
+"Na je activatie, kun je de site hier bezoeken:\n"
+"\n"
+"%s"
+
+#: wp-includes/ms-functions.php:1123
+msgid "New Site Registration: %s"
+msgstr "Nieuwe website registratie: %s"
+
+#: wp-includes/ms-functions.php:663
+msgid "Sorry, site names may not contain the character &#8220;_&#8221;!"
+msgstr "Helaas, websitenamen mogen geen &#8220;_&#8221; karakters bevatten!"
+
+#: wp-includes/ms-functions.php:649
+msgid "Please enter a site name"
+msgstr "Voer een websitenaam in"
+
+#: wp-includes/ms-functions.php:1343
+msgid "New %1$s Site: %2$s"
+msgstr "Nieuw %1$s website: %2$s"
+
+#: wp-includes/ms-functions.php:1057
+msgid "Site already exists."
+msgstr "Website bestaat al."
+
+#: wp-includes/ms-functions.php:932
+msgid "The site is already active."
+msgstr "De website is al actief."
+
+#: wp-includes/ms-functions.php:660
+msgid "Site name must be at least 4 characters"
+msgstr "Websitenaam moet minimaal 4 tekens lang zijn"
+
+#: wp-includes/ms-functions.php:1063
+msgid "Could not create site."
+msgstr "Niet mogelijk om website aan te maken."
+
+#: wp-includes/ms-functions.php:680
+msgid "Please enter a site title"
+msgstr "Voer een websitetitel in"
+
+#: wp-includes/ms-functions.php:673
+msgid "Sorry, site names must have letters too!"
+msgstr "Helaas, websitenamen moeten ook letters bevatten!"
+
+#: wp-includes/ms-functions.php:667
+msgid "Sorry, you may not use that site name."
+msgstr "Helaas, dit mag niet worden gebruikt als websitenaam."
+
+#: wp-includes/ms-functions.php:695
+msgid "Sorry, that site is reserved!"
+msgstr "Helaas, deze website is gereserveerd!"
+
+#: wp-includes/ms-functions.php:706
+msgid "That site is currently reserved but may be available in a couple days."
+msgstr "Deze website is momenteel gereserveerd, maar komt wellicht binnenkort beschikbaar."
+
+#: wp-includes/ms-functions.php:324
+msgid "Error: problem creating site entry."
+msgstr "Fout: probleem tijdens aanmaken website."
+
+#: wp-includes/ms-functions.php:317
+msgid "Error: Site URL already taken."
+msgstr "Fout: Website URL is al in gebruik."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:120
+msgid "No sites found."
+msgstr "Geen websites gevonden."
+
+#: wp-includes/ms-load.php:101
+msgid "This site has been archived or suspended."
+msgstr "Deze website is gearchiveerd of buiten werking gesteld."
+
+#: wp-includes/ms-settings.php:124
+msgid "No site by that name on this system."
+msgstr "Geen website met deze naam bekend in ons systeem."
+
+#: wp-includes/ms-load.php:211
+msgid "That site does not exist. Please try <a href=\"%s\">%s</a>."
+msgstr "Deze website bestaat niet. Probeer <a href=\"%s\">%s</a>."
+
+#: wp-includes/ms-functions.php:1829
+msgid "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">login</a> using your username and password."
+msgstr "Je bent toegevoegd aan deze site. Bezoek de <a href=\"%s\">homepage</a> of<a href=\"%s\">login</a> met je gebruikersnaam en wachtwoord."
+
+#: wp-includes/ms-functions.php:1827
+msgid "An error occurred adding you to this site. Back to the <a href=\"%s\">homepage</a>."
+msgstr "Er is een fout opgetreden bij het toevoegen van jouw op deze site. Ga terug naar de <a href=\"%s\">startpagina</a>."
+
+#: wp-includes/ms-functions.php:1829
+msgid "Success"
+msgstr "Succes"
+
+#: wp-includes/ms-functions.php:1751
+msgid "This file is too big. Files must be less than %d KB in size."
+msgstr "Dit bestand is te groot. Bestanden moeten kleiner als %d KB zijn."
+
+#: wp-activate.php:68
+msgid "Your site at <a href=\"%1$s\">%2$s</a> is active. You may now log in to your site using your chosen username of &#8220;%3$s&#8221;.  Please check your email inbox at %4$s for your password and login instructions.  If you do not receive an email, please check your junk or spam folder.  If you still do not receive an email within an hour, you can <a href=\"%5$s\">reset your password</a>."
+msgstr "Je site op <a href=\"%1$s\">%2$s</a> is actief. Je kunt nu inloggen met je gekozen gebruikersnaam van &#8220;%3$s&#8221;.  Controleer je  email op %4$s voor je wachtwoord en inlog instructies. Ontvang je geen email, controleer dan je spam map.  Ontvang je binnen een uur nog steeds geen email, dan kun je het <a href=\"%5$s\">wachtwoord resetten</a>."
+
+#: wp-signup.php:87
+msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
+msgstr "Het moeten minstens 4 karakters zijn, alleen letters en cijfers, Het kan niet veranderd worden, dus wees voorzichtig!"
+
+#: wp-signup.php:407
+msgid "You must first <a href=\"%s\">log in</a>, and then you can create a new site."
+msgstr "Je moet eerst <a href=\"%s\">inloggen</a>, daarna kan je een nieuwe site maken."
+
+#: wp-signup.php:437
+msgid "You are logged in already. No need to register again!"
+msgstr "Je bent al ingelogd. Je hoeft je dus niet opnieuw te registreren."
+
+#: wp-signup.php:173
+msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
+msgstr "Welkom terug, %s. Met behulp van het onderstaande formulier kan je <strong>een nieuwe website toevoegen aan je account.</strong>. Er is geen limiet voor het aantal website, dus ga je gang."
+
+#: wp-signup.php:443
+msgid "<p><em>The site you were looking for, <strong>%s</strong> does not exist, but you can create it now!</em></p>"
+msgstr "<p><em>De website, <strong>%s</strong>, die je zocht bestaat niet. Je kan deze natuurlijk wel aanmaken!</em></p>"
+
+#: wp-includes/ms-functions.php:551
+msgid "Sorry, usernames may not contain the character &#8220;_&#8221;!"
+msgstr "Helaas, in gebruikersnamen is het karakter &#8220;_&#8221; niet toegestaan!"
+
+#: wp-signup.php:445
+msgid "<p><em>The site you were looking for, <strong>%s</strong>, does not exist.</em></p>"
+msgstr "<p><em>De website waar je naar zoekt, <strong>%s</strong>, bestaat niet.</em></p> "
+
+#: wp-signup.php:369
+msgid "If you haven&#8217;t received your email yet, there are a number of things you can do:"
+msgstr "Wanneer je nog geen e-mail hebt ontvangen, zijn er een aantal dingen die je kan doen:"
+
+#: wp-includes/ms-settings.php:15
+msgid "Configuration error in <code>wp-config.php</code>. <code>$base</code> is set to <code>BASE</code> when it should be like <code>/</code> or <code>/blogs/</code>."
+msgstr "Configuratiefout in <code>wp-config.php</code>. <code>$base</code> is ingesteld op <code>BASE</code> terwijl het <code>/</code> or <code>/blogs/</code> zou moeten zijn."
+
+#: wp-includes/ms-load.php:239
+msgid "If you&#8217;re still stuck with this message, then check that your database contains the following tables:"
+msgstr "Wanneer je deze melding nog steeds krijgt, controleer dan of jouw database de volgende tabellen bevat:"
+
+#: wp-signup.php:225
+msgid "<a href=\"http://%1$s\">http://%2$s</a> is your new site.  <a href=\"%3$s\">Log in</a> as &#8220;%4$s&#8221; using your existing password."
+msgstr "<a href=\"http://%1$s\">http://%2$s</a> is je nieuwe site. <a href=\"%3$s\">Log in</a> als &#8220;%4$s&#8221; met je huidige wachtwoord."
+
+#: wp-admin/my-sites.php:34
+msgid "The primary site you chose does not exist."
+msgstr "De primaire site die je gekozen hebt bestaat niet."
+
+#: wp-admin/network/settings.php:126
+msgid "If you want to limit site registrations to certain domains. One domain per line."
+msgstr "Als je de site registraties wil beperken tot bepaalde domeinen. Een domein per regel."
+
+#: wp-admin/network/settings.php:136
+msgid "If you want to ban domains from site registrations. One domain per line."
+msgstr "Als je domeinen wilt verbieden van site registraties. Een domein per regel."
+
+#: wp-admin/network/settings.php:214
+msgid "The media upload buttons to display on the &#8220;Write Post&#8221; page. Make sure you update the allowed upload file types below as well."
+msgstr "De media upload knoppen om te tonen op de &#8220;Bericht Schrijven&#8221; pagina. Verzeker je ervan dat je de toegestane upload bestandstypen hieronder ook bijwerkt."
+
+#: wp-admin/network.php:237 wp-admin/network.php:277
+msgid "The internet address of your network will be <code>%s</code>."
+msgstr "Het internet adres van je netwerk zal zijn <code>%s</code>."
+
+#: wp-admin/network.php:190
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
+msgstr "Vul de gegevens hieronder in en je bent op weg om een netwerk van WordPress sites te maken. We maken de configuratie bestanden in de volgende stap."
+
+#: wp-admin/network/settings.php:86
+msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."
+msgstr "Als registreren is uitgeschakeld, stel dan <code>NOBLOGREDIRECT</code> in, in <code>wp-config.php</code> naar een URL om bezoekers naar te laten redirecten als ze een niet bestaande site bezoeken."
+
+#: wp-admin/network/site-new.php:34
+msgid "Can&#8217;t create an empty site."
+msgstr "Aanmaken van een lege website niet mogelijk."
+
+#: wp-admin/network/upgrade.php:66
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "Als je browser de volgende pagina niet automatisch start, klik op deze link:"
+
+#: wp-admin/network.php:212
+msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
+msgstr "Je hebt een wildcard DNS record nodig als je virtual host (sub-domein) functionaliteit gaat gebruiken."
+
+#: wp-admin/network.php:232
+msgid "We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix."
+msgstr "We bevelen aan om je site url te wijzigen naar <code>%1$s</code> voor je de netwerk mogelijkheid inschakelt. Het zal nog steeds mogelijk zijn de <code>www</code> prefix te gebruiken met een adres zoals <code>%2$s</code> maar de links zullen de <code>www</code> prefix niet bevatten."
+
+#: wp-admin/network.php:202
+msgid "Please make sure the Apache <code>mod_rewrite</code> module is installed as it will be used at the end of this installation."
+msgstr "Zorg ervoor dat de Apache <code>mod_rewrite</code> module al geïnstalleerd is. Deze wordt namelijk gebruikt aan het eind van deze installatieprocedure."
+
+#: wp-admin/network.php:358
+msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "Voeg het volgende toe aan het <code>wp-config.php</code> bestand in <code>%s</code> <strong>boven </strong> de regel met <code>/* Dat is alles, stop met bewerken! Veel plezier met bloggen. */</code>:"
+
+#: wp-admin/network/sites.php:79
+msgid "Site marked as spam."
+msgstr "Website gemarkeerd als spam."
+
+#: wp-admin/network/sites.php:52
+msgid "Sites marked as spam."
+msgstr "Website gemarkeerd als spam."
+
+#: wp-admin/network/sites.php:49
+msgid "Sites removed from spam."
+msgstr "Website verwijderd uit spam."
+
+#: wp-admin/network/users.php:59
+msgid "Users removed from spam."
+msgstr "Gebruikers verwijderd uit spam."
+
+#: wp-admin/network/sites.php:76
+msgid "Site removed from spam."
+msgstr "Website verwijderd uit spam."
+
+#: wp-admin/network.php:138
+msgid "Your <strong>WordPress address</strong> must match your <strong>Site address</strong> before creating a Network. See <a href=\"%s\">General Settings</a>."
+msgstr "Je <strong>WordPress adres</strong> moet gelijk zijn aan het <strong>website adres</strong> voordat je een netwerk kan maken. Zie <a href=\"%s\">Standaard instellingen</a>."
+
+#: wp-admin/network.php:259
+msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
+msgstr "Omdat je installeert in een directory, moeten de websites in je WordPress netwerk gebruik maken van sub-directories ."
+
+#: wp-admin/network/sites.php:55
+msgid "Sites deleted."
+msgstr "Websites verwijderd."
+
+#: wp-admin/network/sites.php:58
+msgid "Site deleted."
+msgstr "Website verwijderd."
+
+#: wp-admin/network/site-new.php:95
+msgid "Site added."
+msgstr "Site toegevoegd"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:255
+msgid "You are about to archive the site %s."
+msgstr "Je staat op het punt de site %s te archiveren."
+
+#: wp-admin/network/users.php:56
+msgid "Users marked as spam."
+msgstr "Gebruikers gemarkeerd als spam"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:258
+msgid "You are about to unspam the site %s."
+msgstr "Je staat op het punt de site %s te markeren als geen spam."
+
+#: wp-admin/network/site-info.php:134
+msgid "Update <code>siteurl</code> and <code>home</code> as well."
+msgstr "Werk <code>siteurl</code> en <code>home</code> bij."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:260
+msgid "You are about to mark the site %s as spam."
+msgstr "Je staat op het punt de site %s te markeren als geen spam. "
+
+#: wp-admin/network/sites.php:73
+msgid "Site deactivated."
+msgstr "Website gedeactiveerd."
+
+#: wp-admin/network/sites.php:70
+msgid "Site activated."
+msgstr "Website geactiveerd."
+
+#: wp-admin/network/sites.php:67
+msgid "Site unarchived."
+msgstr "Website herstellen uit het archief."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:263
+msgid "You are about to delete the site %s."
+msgstr "Je staat op het punt om de website %s te verwijderen."
+
+#: wp-admin/network/users.php:62
+msgid "Users deleted."
+msgstr "Gebruikers verwijderd."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:253
+msgid "You are about to unarchive the site %s."
+msgstr "Je staat op het punt de website %s te herstellen vanuit het archief."
+
+#: wp-admin/network/users.php:53
+msgid "User deleted."
+msgstr "Gebruiker verwijderd."
+
+#: wp-admin/network/sites.php:64
+msgid "Site archived."
+msgstr "Website gearchiveerd."
+
+#: wp-admin/ms-delete-site.php:17
+msgid "You do not have sufficient permissions to delete this site."
+msgstr "Je hebt onvoldoende rechten om deze site te verwijderen."
+
+#: wp-admin/ms-delete-site.php:44
+msgid ""
+"Dear User,\n"
+"You recently clicked the 'Delete Site' link on your site and filled in a\n"
+"form on that page.\n"
+"If you really want to delete your site, click the link below. You will not\n"
+"be asked to confirm again so only click this link if you are absolutely certain:\n"
+"###URL_DELETE###\n"
+"\n"
+"If you delete your site, please consider opening a new site here\n"
+"some time in the future! (But remember your current site and username\n"
+"are gone forever.)\n"
+"\n"
+"Thanks for using the site,\n"
+"Webmaster\n"
+"###SITE_NAME###"
+msgstr ""
+"Geachte gebruiker,\n"
+"\n"
+"Je hebt recentelijk op de 'Website verwijderen' link op je Site geklikt en het formulier ingevuld op die pagina.\n"
+"Als je zeker weet dat je deze site wil verwijderen, klik dan de link hieronder. Er wordt je niet\n"
+"meer gevraagd om het nog een keer te bevestigen dus klik alleen als je het absoluut zeker weet:\n"
+"###URL_DELETE###\n"
+"\n"
+"Als je je site verwijderd kan je hier in de toekomst een nieuwe maken! (Hou er dan rekening mee dat je huidige site en gebruikersnaam voor altijd weg zijn.)\n"
+"\n"
+"Bedankt voor het gebruik van de site,\n"
+"Webmaster\n"
+"###SITE_NAME###"
+
+#: wp-admin/ms-delete-site.php:75
+msgid "I'm sure I want to permanently disable my site, and I am aware I can never get it back or use %s again."
+msgstr "Ik weet zeker dat ik permanent mijn website wil uitschakelen, en ben er van op de hoogte dat ik niet meer terug kan en %s niet meer kan gebruiken."
+
+#: wp-admin/ms-delete-site.php:76
+msgid "Delete My Site Permanently"
+msgstr "Verwijder mijn website permanent"
+
+#: wp-admin/network/edit.php:105
+msgid "You probably need to go back to the <a href=\"%s\">options page</a>."
+msgstr "Je moet waarschijnlijk terug naar de <a href=\"%s\">instellingenpagina</a>."
+
+#: wp-admin/network/site-new.php:55
+msgid "Invalid email address."
+msgstr "Ongeldig e-mailadres."
+
+#: wp-admin/network/site-new.php:71
+msgid "There was an error creating the user."
+msgstr "Er is een fout opgetreden bij het aanmaken van de gebruiker."
+
+#: wp-admin/network/edit.php:222 wp-admin/network/edit.php:323
+msgid "You are not allowed to change the current site."
+msgstr "Je bent niet geautoriseerd om de huidige site te veranderen."
+
+#: wp-admin/ms-delete-site.php:70
+msgid "Remember, once deleted your site cannot be restored."
+msgstr "Onthoudt dat als deze website eenmaal is verwijderd het niet kan worden hersteld."
+
+#: wp-admin/ms-delete-site.php:69
+msgid "If you do not want to use your %s site any more, you can delete it using the form below. When you click <strong>Delete My Site Permanently</strong> you will be sent an email with a link in it. Click on this link to delete your site."
+msgstr "Als je %s website niet meer wil gebruiken, kan je deze verwijderen met het onderstaande formulier. Wanneer je klikt op <strong>Mijn website definitief verwijderen</strong> wordt er een email verstuurd met een link. Klik op deze link om je site definitief te verwijderen."
+
+#: wp-admin/ms-delete-site.php:65
+msgid "Thank you. Please check your email for a link to confirm your action. Your site will not be deleted until this link is clicked. "
+msgstr "Bedankt. Controleer je e-mail voor een link om je actie te bevestigen. Je site wordt niet verwijderd totdat op de link wordt geklikt om de actie te bevestigen."
+
+#: wp-admin/ms-delete-site.php:62
+msgid "Delete My Site"
+msgstr "Verwijder mijn website"
+
+#: wp-admin/ms-delete-site.php:22
+msgid "Thank you for using %s, your site has been deleted. Happy trails to you until we meet again."
+msgstr "Bedankt voor het gebruik van %s, je site is verwijderd. Hopelijk tot een volgende keer."
+
+#: wp-admin/network.php:217
+msgctxt "subdomain examples"
+msgid "like <code>site1.%1$s</code> and <code>site2.%1$s</code>"
+msgstr "zoals <code>site1.%1$s</code> en <code>site2.%1$s</code>"
+
+#: wp-admin/network.php:221
+msgctxt "subdirectory examples"
+msgid "like <code>%1$s/site1</code> and <code>%1$s/site2</code>"
+msgstr "zoals <code>%1$s/site1</code> en <code>%1$s/site2</code>"
+
+#: wp-includes/ms-settings.php:38
+msgid "Multisite only works without the port number in the URL."
+msgstr "Multisite werkt alleen zonder poortnummer in de URL."
+
+#: wp-admin/network/settings.php:231
+msgctxt "File size in kilobytes"
+msgid "%s KB"
+msgstr "%s KB"
+
+#: wp-admin/network/settings.php:67
+msgid "Registration and support emails will come from this address. An address such as <code>support@%s</code> is recommended."
+msgstr "Registratie en ondersteuningsberichten (e-mails) worden verstuurd vanaf dit adres. Een adres zoals <code> support@%s</code> wordt aangeraden."
+
+#: wp-admin/network/settings.php:209
+msgid "Media upload buttons"
+msgstr "Media upload knoppen"
+
+#: wp-admin/network/settings.php:225
+msgid "Upload file types"
+msgstr "Upload bestandstypen"
+
+#: wp-admin/network/settings.php:220
+msgid "Limit total size of files uploaded to %s MB"
+msgstr "Maximale bestandsgrootte voor uploaden is %s MB"
+
+#: wp-admin/network.php:184 wp-admin/network.php:204 wp-admin/network.php:252
+#: wp-admin/network.php:262
+msgid "Warning!"
+msgstr "Waarschuwing!"
+
+#: wp-admin/network.php:202
+msgid "Note:"
+msgstr "Opmerking:"
+
+#: wp-admin/network.php:206
+msgid "If <code>mod_rewrite</code> is disabled, ask your administrator to enable that module, or look at the <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentation</a> or <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a> for help setting it up."
+msgstr "Als <code>mod_rewrite</code> is uitgeschakeld, vraag dan uw beheerder om die module te activeren, of kijk in de <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentatie </a> of <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a>  voor hulp hoe dit op te zetten."
+
+#: wp-admin/network.php:204
+msgid "It looks like the Apache <code>mod_rewrite</code> module is not installed."
+msgstr "Het lijkt erop dat de Apache<code>mod_rewrite</code> module niet is ge&#239;nstalleerd."
+
+#: wp-admin/network/settings.php:194
+msgid "The author of the first comment on a new site."
+msgstr "De auteur van de eerste reactie op een nieuwe site."
+
+#: wp-admin/network/settings.php:168
+msgid "The first post on a new site."
+msgstr "Het eerste bericht op een nieuwe site."
+
+#: wp-admin/network/settings.php:177
+msgid "The first page on a new site."
+msgstr "De eerste pagina op een nieuwe site."
+
+#: wp-admin/network/settings.php:186
+msgid "The first comment on a new site."
+msgstr "De eerste reactie op een nieuwe site."
+
+#: wp-admin/network/settings.php:202
+msgid "The URL for the first comment on a new site."
+msgstr "De URL voor het eerst reactie op de nieuwe website."
+
+#: wp-admin/network/upgrade.php:52
+msgid "All done!"
+msgstr "Klaar!"
+
+#: wp-admin/network.php:27
+msgid "The Network creation panel is not for WordPress MU networks."
+msgstr "Het netwerk aanmaakpaneel is niet voor Wordpress MU netwerken."
+
+#: wp-admin/network.php:186
+msgctxt "Default network name"
+msgid "%s Sites"
+msgstr "%s websites"
+
+#: wp-admin/network.php:176
+msgid "ERROR: The network could not be created."
+msgstr "FOUT: Het netwerk kon niet worden aangemaakt."
+
+#: wp-admin/network/settings.php:83
+msgid "Logged in users may register new sites."
+msgstr "Ingelogde gebruikers mogen nieuwe sites registreren."
+
+#: wp-admin/network/settings.php:84
+msgid "Both sites and user accounts can be registered."
+msgstr "Zowel websites als gebruikersaccounts kunnen worden geregistreerd."
+
+#: wp-admin/network/settings.php:82
+msgid "User accounts may be registered."
+msgstr "Gebruikersaccounts kunnen worden geregistreerd."
+
+#: wp-admin/network/settings.php:81
+msgid "Registration is disabled."
+msgstr "Registreren is gedeactiveerd."
+
+#: wp-admin/network/settings.php:258
+msgid "Enable administration menus"
+msgstr "Administratiemenu&#39;s activeren"
+
+#: wp-admin/network/settings.php:51
+msgid "Operational Settings"
+msgstr "Operationele instellingen"
+
+#: wp-admin/network/settings.php:255
+msgid "Menu Settings"
+msgstr "Menu instellingen"
+
+#: wp-admin/network/settings.php:206
+msgid "Upload Settings"
+msgstr "Upload instellingen"
+
+#: wp-admin/network/settings.php:141
+msgid "New Site Settings"
+msgstr "Nieuwe website instellingen"
+
+#: wp-admin/network/settings.php:71
+msgid "Registration Settings"
+msgstr "Registratie instellingen"
+
+#: wp-admin/network.php:326
+msgid "The original configuration steps are shown here for reference."
+msgstr "De originele configuratie stappen worden hier weergeven als referentie."
+
+#: wp-admin/network.php:164
+msgid "Return to Dashboard"
+msgstr "Terug naar het Dashboard"
+
+#: wp-admin/network.php:163
+msgid "You cannot use port numbers such as <code>%s</code>."
+msgstr "Het is niet mogelijk om poortnummers als <code>%s</code> te gebruiken."
+
+#: wp-admin/network.php:153 wp-admin/network.php:331 wp-admin/network.php:356
+msgid "Warning:"
+msgstr "Waarschuwing:"
+
+#: wp-admin/network.php:331
+msgid "An existing WordPress network was detected."
+msgstr "Een bestaande WordPress netwerk is ontdekt."
+
+#: wp-admin/network.php:332
+msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
+msgstr "Maak de configuratie stappen af. Om een nieuwe netwerk te maken moet je de netwerk database tabellen legen of verwijderen."
+
+#: wp-admin/network.php:96
+msgid "You must define the <code>WP_ALLOW_MULTISITE</code> constant as true in your wp-config.php file to allow creation of a Network."
+msgstr "De constante waarde <code>WP_ALLOW_MULTISITE</code> moet zijn gedefinieerd in je wp-config.php bestand om netwerken te kunnen activeren."
+
+#: wp-admin/network/site-new.php:51
+msgid "Missing or invalid site address."
+msgstr "Ontbrekend of ongeldig site adres."
+
+#: wp-admin/network/site-new.php:53
+msgid "Missing email address."
+msgstr "E-mailadres ontbreekt."
+
+#: wp-admin/network.php:249
+msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
+msgstr "Omdat je gebruik maakt van <code>localhost</code>, moeten de websites in je WordPress netwerk gebruikmaken van submappen. Overweeg het gebruik van <code>localhost.localdomain</code> als je gebruik wilt maken van subdomeinen."
+
+#: wp-admin/network.php:247 wp-admin/network.php:257
+msgid "Sub-directory Install"
+msgstr "Submap installatie"
+
+#: wp-admin/network.php:389
+msgid "To make your installation more secure, you should also add:"
+msgstr "Om je installatie veiliger te maken moet je ook dit toevoegen:"
+
+#: wp-admin/network.php:389
+msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
+msgid_plural "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
+msgstr[0] "Deze unieke authenticatie sleutel is niet aanwezig in je <code>wp-config.php</code> bestand."
+msgstr[1] "Deze unieke authenticatie sleutels zijn niet aanwezig in je <code>wp-config.php</code> bestand."
+
+#: wp-admin/network.php:503
+msgid "Add the following to your <code>.htaccess</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "Voeg het volgende toe aan  je<code>.htaccess</code> bestand in <code>%s</code>,  en overschrijf andere WordPress regels:"
+
+#: wp-admin/network.php:340
+msgid "Complete the following steps to enable the features for creating a network of sites."
+msgstr "Voer de volgende stappen uit om de features aan te zetten die een netwerk van sites te maken."
+
+#: wp-admin/network/upgrade.php:18 wp-admin/network/upgrade.php:37
+#: wp-admin/network/upgrade.php:79 wp-admin/network/menu.php:78
+msgid "Update Network"
+msgstr "Netwerk bijwerken"
+
+#: wp-admin/network/upgrade.php:78
+msgid "You can update all the sites on your network through this page. It works by calling the update script of each site automatically. Hit the link below to update."
+msgstr "Het is mogelijk om alle websites binnen je netwerk bij te werken via deze pagina. Het werkt door het updatescript van elke site automatisch aan te roepen. Klik op onderstaande link om bij te werken."
+
+#: wp-admin/network.php:102
+msgid "Create a Network of WordPress Sites"
+msgstr "Maak een netwerk met WordPress websites"
+
+#: wp-admin/network.php:162
+msgid "You cannot install a network of sites with your server address."
+msgstr "Je kan geen netwerk van websites installeren met jouw server adres."
+
+#: wp-admin/network.php:189
+msgid "Welcome to the Network installation process!"
+msgstr "Welkom bij het Netwerk installatie proces!"
+
+#: wp-admin/network.php:210
+msgid "Addresses of Sites in your Network"
+msgstr "Adres van websites in uw netwerk"
+
+#: wp-admin/network.php:285
+msgid "What would you like to call your network?"
+msgstr "Hoe wil je het netwerk noemen?"
+
+#: wp-admin/network.php:211
+msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
+msgstr "Kies hoe je de sites wil gebruiken in je WordPress netwerk, of als sub-domeinen of als sub-mappen. <strong>Het kan later niet meer worden aangepast.</strong>"
+
+#: wp-admin/network.php:243
+msgid "Network Details"
+msgstr "Netwerk details"
+
+#: wp-admin/network.php:282
+msgid "Network Title"
+msgstr "Netwerk titel"
+
+#: wp-admin/network.php:289
+msgid "Admin E-mail Address"
+msgstr "Beheerder e-mailadres"
+
+#: wp-admin/network.php:339
+msgid "Enabling the Network"
+msgstr "Het netwerk inschakelen"
+
+#: wp-signup.php:223
+msgid "The site %s is yours."
+msgstr "De website %s is van jou."
+
+#: wp-signup.php:193
+msgid "Create Site"
+msgstr "Website aanmaken"
+
+#: wp-signup.php:188
+msgid "If you&#8217;re not going to use a great site domain, leave it for a new user. Now have at it!"
+msgstr "Als je dit domein niet gaat gebruiken, gun het aan een nieuwe gebruiker. Nu houd jij het bezet!"
+
+#: wp-signup.php:179
+msgid "Sites you are already a member of:"
+msgstr "Websites waar je al deelnemer van bent: "
+
+#: wp-includes/ms-load.php:94
+msgid "This site has not been activated yet. If you are having problems activating your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
+msgstr "Deze website is nog niet geactiveerd. Als je problemen ondervindt bij het activeren van de website, neem dan contact op met <a href=\"mailto:%1$s\">%1$s</a>."
+
+#: wp-signup.php:92
+msgid "Site Title:"
+msgstr "Website titel:"
+
+#: wp-signup.php:71
+msgid "Site Domain:"
+msgstr "Website domein:"
+
+#: wp-signup.php:69
+msgid "Site Name:"
+msgstr "Websitenaam:"
+
+#: wp-signup.php:84
+msgid "sitename"
+msgstr "websitenaam"
+
+#: wp-signup.php:167
+msgid "Get <em>another</em> %s site in seconds"
+msgstr "Verkrijg een <em>andere</em> %s website in enkele seconden"
+
+#: wp-signup.php:362
+msgid "Congratulations! Your new site, %s, is almost ready."
+msgstr "Gefeliciteerd! je nieuwe website, %s is bijna klaar."
+
+#: wp-signup.php:421
+msgid "Site registration has been disabled."
+msgstr "Website registratie is uitgeschakeld."
+
+#: wp-signup.php:265
+msgid "Gimme a site!"
+msgstr "Geef me een website!"
+
+#: wp-signup.php:364
+msgid "But, before you can start using your site, <strong>you must activate it</strong>."
+msgstr "Voordat je met je website kan starten, <strong>moet deze eerst worden geactiveerd</strong>. "
+
+#: wp-signup.php:366
+msgid "If you do not activate your site within two days, you will have to sign up again."
+msgstr "Als je de website niet binnen twee dagen activeert, zul je opnieuw moeten beginnen."
+
+#: wp-admin/network/settings.php:63
+msgid "Network Admin Email"
+msgstr "Netwerkbeheerder e-mailadres"
+
+#: wp-admin/network/settings.php:54
+msgid "Network Name"
+msgstr "Netwerknaam"
+
+#: wp-admin/network/site-new.php:83
+msgid "[%s] New Site Created"
+msgstr "[%s] Nieuwe website aangemaakt"
+
+#: wp-admin/network/site-new.php:82
+msgid ""
+"New site created by %1s\n"
+"\n"
+"Address: http://%2s\n"
+"Name: %3s"
+msgstr ""
+"Nieuwe website aangemaakt door y %1s\n"
+"\n"
+"Adres: http://%2s\n"
+"Naam: %3s"
+
+#: wp-admin/network/edit.php:328
+msgid "WordPress &rsaquo; Confirm your action"
+msgstr "WordPress &rsaquo; Je actie bevestigen"
+
+#: wp-admin/network/settings.php:150
+msgid "The welcome email sent to new site owners."
+msgstr "De welkomse-mail is verstuurd naar de nieuwe website eigenaren."
+
+#: wp-admin/network/settings.php:218
+msgid "Site upload space"
+msgstr "Site uploadruimte"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:248
+msgid "You are about to activate the site %s"
+msgstr "Je staat op het punt website %s te activeren"
+
+#: wp-admin/network/settings.php:98
+msgid "Send the network admin an email notification every time someone registers a site or user account."
+msgstr "Stuur de netwerk admin een email notificatie elke keer dat iemand een site of een user account registreert"
+
+#: wp-admin/network/settings.php:114
+msgid "Users are not allowed to register these sites. Separate names by spaces."
+msgstr "Gebruikers zijn niet toegestaan deze sites te registeren. Namen onderscheiden door spaties."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:250
+msgid "You are about to deactivate the site %s"
+msgstr "Je staat op het punt website %s te deactiveren"
+
+#: wp-admin/network/upgrade.php:66
+msgid "Next Sites"
+msgstr "Volgende websites"
+
+#: wp-includes/ms-functions.php:214 wp-includes/ms-functions.php:276
+msgid "That user does not exist."
+msgstr "Deze gebruiker bestaat niet."
+
+#: wp-includes/ms-functions.php:534
+msgid "Please enter a username"
+msgstr "Geef een gebruikersnaam"
+
+#: wp-includes/ms-functions.php:654
+msgid "Only lowercase letters and numbers allowed"
+msgstr "Alleen kleine letters en cijfers zijn toegestaan"
+
+#: wp-includes/ms-functions.php:542
+msgid "That username is not allowed"
+msgstr "Deze gebruikersnaam is niet toegestaan."
+
+#: wp-includes/ms-functions.php:545
+msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
+msgstr "Je kunt dat email adres niet gebruiken om je aan te melden. We hebben problemen met ze dat enkele emails van ons worden geblokkeerd. Graag een andere email provider gebruiken."
+
+#: wp-includes/ms-functions.php:548
+msgid "Username must be at least 4 characters"
+msgstr "Gebruikersnamen moeten minimaal 4 karakters bevatten"
+
+#: wp-includes/ms-functions.php:557
+msgid "Sorry, usernames must have letters too!"
+msgstr "Helaas, gebruikersnamen moeten ook letters bevatten!"
+
+#: wp-includes/ms-functions.php:560
+msgid "Please enter a correct email address"
+msgstr "Geef een correct e-mail adres op"
+
+#: wp-includes/ms-functions.php:566
+msgid "Sorry, that email address is not allowed!"
+msgstr "Helaas, dit e-mailadres is niet toegestaan!"
+
+#: wp-includes/ms-functions.php:571
+msgid "Sorry, that username already exists!"
+msgstr "Helaas, deze gebruikersnaam bestaat al!"
+
+#: wp-includes/ms-functions.php:575
+msgid "Sorry, that email address is already used!"
+msgstr "Helaas, dit e-mailadres is al in gebruik!"
+
+#: wp-includes/ms-functions.php:587
+msgid "That username is currently reserved but may be available in a couple of days."
+msgstr "Deze gebruikersnaam is momenteel gereserveerd, maar kan in een paar dagen beschikbaar komen."
+
+#: wp-includes/ms-functions.php:590
+msgid "username and email used"
+msgstr "gebruikersnaam en email gebruikt"
+
+#: wp-includes/ms-functions.php:600
+msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
+msgstr "Dat email adres is al in gebruik. Controleer je mailbox voor een activatie email. Het zal vrijgegeven worden in een paar dagen als je niets doet."
+
+#: wp-includes/ms-functions.php:657
+msgid "That name is not allowed"
+msgstr "Deze naam is niet toegestaan."
+
+#: wp-includes/ms-functions.php:882
+msgid ""
+"To activate your user, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+msgstr ""
+"Om een gebruiker te activeren, klik op de volgende link:\n"
+"\n"
+"%s\n"
+"\n"
+"Na activatie ontvangt je *opnieuw een e-mail* met uw inloggegevens.\n"
+
+#: wp-includes/ms-functions.php:926
+msgid "Invalid activation key."
+msgstr "Ongeldige activatiesleutel."
+
+#: wp-includes/ms-functions.php:948
+msgid "Could not create user"
+msgstr "Gebruiker kon niet worden aangemaakt"
+
+#: wp-includes/ms-functions.php:956
+msgid "That username is already activated."
+msgstr "Die gebruikersnaam is al geactiveerd."
+
+#: wp-includes/ms-functions.php:1150
+msgid ""
+"New User: %1s\n"
+"Remote IP: %2s\n"
+"\n"
+"Disable these notifications: %3s"
+msgstr ""
+"Nieuwe gebruiker: %1s\n"
+"Remote IP: %2s\n"
+"\n"
+"Deze notificaties uitschakelen: %3s"
+
+#: wp-includes/ms-functions.php:1156
+msgid "New User Registration: %s"
+msgstr "Nieuwe gebruikersregistratie: %s"
+
+#: wp-includes/ms-functions.php:1229
+msgid "<h1>Already Installed</h1><p>You appear to have already installed WordPress. To reinstall please clear your old database tables first.</p>"
+msgstr "<h1>Al ge&#239;nstalleerd</h1> <p>Het lijkt erop dat je WordPress al hebt ge&#239;nstalleerd. Om opnieuw te installeren moeten de oude database tabellen opgeschoond worden.</p>"
+
+#: wp-includes/ms-functions.php:1391
+msgid "New %1$s User: %2$s"
+msgstr "Nieuwe %1$s gebruikerr: %2$s"
+
+#: wp-includes/ms-functions.php:1572
+msgid "Sorry, you have used your space allocation. Please delete some files to upload more files."
+msgstr "Helaas, je hebt al je ruimte verbruikt. Verwijder enkele bestanden om nieuwe bestanden te uploaden."
+
+#: wp-includes/ms-functions.php:1782
+msgid "Please try again!"
+msgstr "Probeer het nogmaals!"
+
+#: wp-includes/ms-functions.php:1989
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new account is set up.\n"
+"\n"
+"You can log in with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"Beste Gebruiker,\n"
+"\n"
+"Je nieuwe account is aangemaakt.\n"
+"\n"
+"Je kan inloggen met de volgende informatie:\n"
+"Gebruikersnaam: USERNAME\n"
+"Wachtwoord: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Bedankt!\n"
+"\n"
+"Het team van @ SITE_NAME"
+
+#: wp-includes/ms-load.php:87
+msgid "This user has elected to delete their account and the content is no longer available."
+msgstr "Deze gebruiker heeft zijn account opgeheven, en de inhoud is niet langer beschikbaar."
+
+#: wp-includes/ms-settings.php:123
+msgid "Database tables are missing."
+msgstr "De database tabellen ontbreken."
+
+#: wp-admin/network.php:138 wp-admin/network.php:145 wp-admin/network.php:162
+msgid "Error:"
+msgstr "Fout:"
+
+#: wp-signup.php:101
+msgid "Privacy:"
+msgstr "Privacy:"
+
+#: wp-signup.php:134
+msgid "(Must be at least 4 characters, letters and numbers only.)"
+msgstr "(Moet tenminste 4 karakters bevatten, alleen letters en cijfers zijn toegestaan.)"
+
+#: wp-signup.php:137
+msgid "Email&nbsp;Address:"
+msgstr "E-mail&nbsp;adres:"
+
+#: wp-signup.php:170
+msgid "There was a problem, please correct the form below and try again."
+msgstr "Er was een probleem, corrigeer onderstaand formulier en probeer opnieuw."
+
+#: wp-signup.php:252
+msgid "Get your own %s account in seconds"
+msgstr "Verkrijg je eigen %s account in enkele seconden"
+
+#: wp-signup.php:268
+msgid "Just a username, please."
+msgstr "Gewoon een gebruikersnaam."
+
+#: wp-signup.php:272
+msgid "Next"
+msgstr "Volgende"
+
+#: wp-signup.php:299
+msgid "%s is your new username"
+msgstr "%s is je nieuwe gebruikersnaam"
+
+#: wp-signup.php:300
+msgid "But, before you can start using your new username, <strong>you must activate it</strong>."
+msgstr "Voordat jij kan starten met je nieuwe gebruikersnaam, <strong>moet je deze eerst activeren</strong>."
+
+#: wp-signup.php:301
+msgid "Check your inbox at <strong>%1$s</strong> and click the link given."
+msgstr "Ga naar de inbox van <strong>%1$s</strong> en klik op de verstuurde link."
+
+#: wp-signup.php:302
+msgid "If you do not activate your username within two days, you will have to sign up again."
+msgstr "Als je de gebruikersnaam niet binnen twee dagen activeert, dan moet u zich opnieuw registeren."
+
+#: wp-signup.php:328
+msgid "Signup"
+msgstr "Registreren"
+
+#: wp-signup.php:367
+msgid "Still waiting for your email?"
+msgstr "Nog steeds aan het wachten op een e-mail?"
+
+#: wp-signup.php:400
+msgid "Registration has been disabled."
+msgstr "Registraties zijn uitgeschakeld."
+
+#: wp-signup.php:415
+msgid "User registration has been disabled."
+msgstr "Gebruikersregistratie is gedeactiveerd."
+
+#: wp-admin/my-sites.php:13 wp-admin/ms-delete-site.php:13
+#: wp-admin/network/user-new.php:14 wp-admin/network/index.php:17
+#: wp-admin/network/themes.php:14 wp-admin/network/plugin-editor.php:14
+#: wp-admin/network/plugin-install.php:17 wp-admin/network/site-users.php:14
+#: wp-admin/network/theme-editor.php:14 wp-admin/network/setup.php:14
+#: wp-admin/network/site-settings.php:14 wp-admin/network/site-new.php:14
+#: wp-admin/network/edit.php:14 wp-admin/network/theme-install.php:17
+#: wp-admin/network/users.php:14 wp-admin/network/upgrade.php:14
+#: wp-admin/network/update-core.php:14 wp-admin/network/sites.php:14
+#: wp-admin/network/settings.php:14 wp-admin/network/user-edit.php:14
+#: wp-admin/network/site-info.php:14 wp-admin/network/plugins.php:14
+#: wp-admin/network/profile.php:14 wp-admin/network/update.php:17
+#: wp-admin/network/site-themes.php:14 wp-admin/network/admin.php:16
+msgid "Multisite support is not enabled."
+msgstr "Multiwebsite ondersteuning is niet geactiveerd."
+
+#: wp-admin/network/user-new.php:31 wp-admin/network/index.php:20
+#: wp-admin/network/site-users.php:42 wp-admin/network/site-settings.php:37
+#: wp-admin/network/site-new.php:31 wp-admin/network/edit.php:102
+#: wp-admin/network/edit.php:175 wp-admin/network/edit.php:192
+#: wp-admin/network/edit.php:236 wp-admin/network/edit.php:246
+#: wp-admin/network/edit.php:256 wp-admin/network/edit.php:267
+#: wp-admin/network/edit.php:278 wp-admin/network/edit.php:288
+#: wp-admin/network/edit.php:298 wp-admin/network/edit.php:308
+#: wp-admin/network/edit.php:355 wp-admin/network/edit.php:376
+#: wp-admin/network/edit.php:391 wp-admin/network/edit.php:442
+#: wp-admin/network/users.php:17 wp-admin/network/upgrade.php:33
+#: wp-admin/network/sites.php:17 wp-admin/network/settings.php:17
+#: wp-admin/network/site-info.php:37 wp-admin/network/site-themes.php:55
+msgid "You do not have permission to access this page."
+msgstr "Je hebt onvoldoende rechten om deze pagina op te vragen."
+
+#: wp-admin/ms-delete-site.php:24
+msgid "I'm sorry, the link you clicked is stale. Please select another option."
+msgstr "Helaas, de link waarop je hebt geklikt is verouderd. Selecteer een andere optie."
+
+#: wp-admin/network/edit.php:344
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: wp-admin/network/user-new.php:34
+msgid "Cannot create an empty user."
+msgstr "Aanmaken van lege gebruikers niet mogelijk."
+
+#: wp-admin/network/site-users.php:217
+msgid "Duplicated username or email address."
+msgstr "De gebruikersnaam of het e-mailadres is al in gebruik."
+
+#: wp-admin/network/settings.php:58
+msgid "What you would like to call this website."
+msgstr "Hoe wil je deze website noemen?"
+
+#: wp-admin/network/settings.php:74
+msgid "Allow new registrations"
+msgstr "Nieuwe registraties toestaan"
+
+#: wp-admin/network/settings.php:92
+msgid "Registration notification"
+msgstr "Registratiemelding"
+
+#: wp-admin/network/settings.php:103
+msgid "Add New Users"
+msgstr "Nieuwe gebruikers toevoegen"
+
+#: wp-admin/network/settings.php:110
+msgid "Banned Names"
+msgstr "Verboden namen"
+
+#: wp-admin/network/settings.php:119
+msgid "Limited Email Registrations"
+msgstr "E-mailregistraties beperkt"
+
+#: wp-admin/network/settings.php:131
+msgid "Banned Email Domains"
+msgstr "Verboden e-maildomeinnamen"
+
+#: wp-admin/network/settings.php:145
+msgid "Welcome Email"
+msgstr "Welkomse-mail"
+
+#: wp-admin/network/settings.php:154
+msgid "Welcome User Email"
+msgstr "Welkom gebruiker e-mail"
+
+#: wp-admin/network/settings.php:159
+msgid "The welcome email sent to new users."
+msgstr "Het welkomsbericht is verstuurd naar de nieuwe gebruikers."
+
+#: wp-admin/network/settings.php:172
+msgid "First Page"
+msgstr "Eerste pagina"
+
+#: wp-admin/network/settings.php:181
+msgid "First Comment"
+msgstr "Eerste reactie"
+
+#: wp-admin/network/settings.php:190
+msgid "First Comment Author"
+msgstr "Eerste reactie van de auteur"
+
+#: wp-admin/network/settings.php:198
+msgid "First Comment URL"
+msgstr "Eerste reactie URL"
+
+#: wp-admin/network/settings.php:212
+msgid "Videos"
+msgstr "Video&#39;s"
+
+#: wp-admin/network/settings.php:213
+msgid "Music"
+msgstr "Muziek"
+
+#: wp-admin/network/settings.php:230
+msgid "Max upload file size"
+msgstr "Maximale upload bestandsgrootte"
+
+#: wp-admin/network/settings.php:243
+msgid "Default Language"
+msgstr "Standaard taalinstellingen"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:143
+#: wp-admin/network/site-new.php:120 wp-admin/network/site-new.php:122
+#: wp-admin/network/site-info.php:119
+msgid "Domain"
+msgstr "Domein"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:147
+#: wp-admin/network/site-info.php:142
+msgid "Last Updated"
+msgstr "Laatst bijgewerkt"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:172
+#: wp-admin/network/site-info.php:148
+msgid "Archived"
+msgstr "Gearchiveerd"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:175
+#: wp-admin/network/site-info.php:152
+msgid "Mature"
+msgstr "Volwassen"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:174
+#: wp-admin/network/site-info.php:150
+msgid "Deleted"
+msgstr "Verwijderd"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:253
+msgid "Unarchive"
+msgstr "Dearchiveren"
+
+#: wp-admin/my-sites.php:95
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:266
+msgid "Visit"
+msgstr "Bezoek"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:281
+msgid "Never"
+msgstr "Nooit"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:302
+msgid "Only showing first 5 users."
+msgstr "Alleen de eerste 5 gebruikers."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:302
+msgid "More"
+msgstr "Meer"
+
+#: wp-admin/network/site-new.php:140
+msgid "Add Site"
+msgstr "Website toevoegen"
+
+#: wp-admin/network/site-new.php:117
+msgid "Site Address"
+msgstr "Websiteadres"
+
+#: wp-admin/network/site-new.php:124
+msgid "Only the characters a-z and 0-9 recommended."
+msgstr "Alleen de karakters a-z en 0-9 worden aanbevolen."
+
+#: wp-admin/network/site-new.php:133
+msgid "Admin Email"
+msgstr "Beheerder e-mailadres"
+
+#: wp-admin/network/site-new.php:137
+msgid "A new user will be created if the above email address is not in the database."
+msgstr "Een nieuwe gebruiker wordt aangemaakt als bovenstaande e-mailadres niet voorkomt in de database."
+
+#: wp-admin/network/site-new.php:137
+msgid "The username and password will be mailed to this email address."
+msgstr "De gebruikersnaam en wachtwoord worden per e-mail verstuurd naar het e-mailadres."
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:82
+msgid "No users found."
+msgstr "Geen gebruikers gevonden."
+
+#: wp-admin/network/user-new.php:94 wp-admin/network/site-users.php:302
+msgid "Username and password will be mailed to the above email address."
+msgstr "De gebruikersnaam en het wachtwoord worden per e-mail verstuurd naar het bovenstaande e-mailadres."
+
+#: wp-admin/my-sites.php:16
+msgid "You do not have sufficient permissions to view this page."
+msgstr "Je hebt onvoldoende rechten om deze pagina te bekijken."
+
+#: wp-admin/my-sites.php:23
+msgid "You must be a member of at least one site to use this page."
+msgstr "Je moet lid zijn van minimaal een website om deze pagina te gebruiken."
+
+#: wp-admin/my-sites.php:68
+msgid "Global Settings"
+msgstr "Algemene instellingen"
+
+#: wp-admin/network.php:231 wp-admin/network.php:235 wp-admin/network.php:275
+msgid "Server Address"
+msgstr "Serveradres"
+
+#: wp-admin/network.php:292
+msgid "Your email address."
+msgstr "Jouw email adres."
+
+#: wp-admin/includes/ms-deprecated.php:30
+msgid "Sorry, you must delete files before you can upload any more."
+msgstr "Je moet bestanden verwijderen, voor je opnieuw kunt uploaden."
+
+#: wp-activate.php:43
+msgid "Activation Key Required"
+msgstr "Activatiesleutel is verplicht"
+
+#: wp-activate.php:46
+msgid "Activation Key:"
+msgstr "Activatie sleutel:"
+
+#: wp-activate.php:62 wp-activate.php:82
+msgid "Your account is now active!"
+msgstr "Je account is nu actief!"
+
+#: wp-activate.php:73
+msgid "An error occurred during the activation"
+msgstr "Er heeft zich een fout voorgedaan tijdens het activatieproces"
+
+#: wp-activate.php:85 wp-signup.php:129
+msgid "Username:"
+msgstr "Gebruikersnaam:"

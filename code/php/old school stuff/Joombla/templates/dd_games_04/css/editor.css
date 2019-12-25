@@ -1,0 +1,320 @@
+
+
+/* Compatibility rule for default TinyMCE skin (for td element): */
+td {
+   color: inherit;
+   font-family: inherit;
+   font-size: inherit;
+   margin: inherit;
+   padding: 2px;
+   border: solid 1px #878787;
+   vertical-align: top;
+   text-align: left;
+}
+
+body, table
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+body, table
+{
+   text-align: left;
+}
+
+body 
+{
+   direction: ltr;
+   color: #B8B8B8;
+   background: #242424;
+}
+
+li,
+table,
+a,
+a:link,
+a:visited,
+a:hover
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   text-align: justify;
+}
+
+p
+{
+   margin: 12px 0;
+}
+
+h1,
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:hover,
+h2,
+h2 a,
+h2 a:link,
+h2 a:visited,
+h2 a:hover,
+h3,
+h3 a,
+h3 a:link,
+h3 a:visited,
+h3 a:hover,
+h4,
+h4 a,
+h4 a:link,
+h4 a:visited,
+h4 a:hover,
+h5,
+h5 a,
+h5 a:link,
+h5 a:visited,
+h5 a:hover,
+h6,
+h6 a,
+h6 a:link,
+h6 a:visited,
+h6 a:hover
+{
+   font-family: Arial, Helvetica, Sans-Serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   text-decoration: none;
+}
+
+a
+{
+   text-decoration: none;
+   color: #FF0000;
+}
+
+a:link
+{
+   text-decoration: none;
+   color: #FF0000;
+}
+
+a:visited
+{
+   color: #FF0000;
+}
+
+a:hover
+{
+   text-decoration: underline;
+   color: #FF0000;
+}
+
+h1
+{
+   color: #9C9C9C;
+   margin: 21px 0;
+}
+
+h2
+{
+   color: #9C9C9C;
+   margin: 19px 0;
+   font-size: 24px;
+}
+
+h2 a,
+h2 a:link,
+h2 a:hover,
+h2 a:visited
+{
+   font-size: 24px;
+}
+
+h3
+{
+   color: #F0F0F0;
+   margin: 19px 0;
+   font-size: 19px;
+}
+
+h3 a,
+h3 a:link,
+h3 a:hover,
+h3 a:visited
+{
+   font-size: 19px;
+}
+
+h4
+{
+   color: #E5E5E5;
+   margin: 20px 0;
+   font-size: 16px;
+}
+
+h4 a,
+h4 a:link,
+h4 a:hover,
+h4 a:visited
+{
+   font-size: 16px;
+}
+
+h5
+{
+   color: #E5E5E5;
+   margin: 26px 0;
+   font-size: 13px;
+}
+
+h5 a,
+h5 a:link,
+h5 a:hover,
+h5 a:visited
+{
+   font-size: 13px;
+}
+
+h6
+{
+   color: #DBDBDB;
+   margin: 35px 0;
+   font-size: 11px;
+}
+
+h6 a,
+h6 a:link,
+h6 a:hover,
+h6 a:visited
+{
+   font-size: 11px;
+}
+
+ul
+{
+   list-style-type: none;
+   margin: 1em 0 1em 2em;
+   padding: 0;
+}
+
+ol
+{
+   list-style-position: inside;
+   margin: 1em 0 1em 2em;
+   padding: 0;
+}
+
+/* end Page */
+
+/* begin Box, Post */
+/* set background fot correct editing in administrator: */
+
+a img
+{
+   border: 0;
+}
+
+img
+{
+   border-color: #707070;
+   border-style: solid;
+   border-width: 0;
+   margin: 10px 10px 10px 10px;
+}
+
+table
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+th{
+   border: solid 1px #878787;
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+/* end Box, Post */
+
+/* begin PostBullets */
+
+li
+{
+   font-size: 13px;
+   color: #C4C4C4;
+   padding: 0 0 0 13px;
+}
+
+li ol, .dd-post li ul
+{
+   margin: 0.5em 0 0.5em 2em;
+   padding: 0;
+}
+
+ol>li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+ul>li
+{
+   background-image: url('../images/postbullets.png');
+   background-repeat: no-repeat;
+   background-position: top left;
+   padding-left: 13px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+/* end PostBullets */
+
+/* begin PostQuote */
+blockquote,
+blockquote a,
+blockquote a:link,
+blockquote a:visited,
+blockquote a:hover
+{
+   color: #B2B2B2;
+   font-style: italic;
+   font-weight: normal;
+   text-align: left;
+}
+
+blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+blockquote
+{
+   margin: 10px;
+   padding: 10px;
+   background-color: #424242;
+   margin-left: 50px;
+   padding-left: 47px;
+   background-image: url('../images/postquote.png');
+   background-position: left top;
+   background-repeat: no-repeat;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+
+/* end PostQuote */
+

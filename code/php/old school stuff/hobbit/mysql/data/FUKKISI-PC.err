@@ -1,0 +1,72 @@
+140422 22:57:05 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+140422 22:57:05  InnoDB: Initializing buffer pool, size = 8.0M
+140422 22:57:05  InnoDB: Completed initialization of buffer pool
+140422 22:57:05  InnoDB: highest supported file format is Barracuda.
+140422 22:57:06  InnoDB: 1.1.4 started; log sequence number 4442965
+140422 22:57:06 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+140422 22:57:06 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+140422 22:57:06 [Note] Event Scheduler: Loaded 0 events
+140422 22:57:06 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+140422 22:57:16 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+140422 22:57:16 [Note] Event Scheduler: Purging the queue. 0 events
+140422 22:57:16  InnoDB: Starting shutdown...
+140422 22:57:16  InnoDB: Shutdown completed; log sequence number 4443091
+140422 22:57:16 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: Shutdown complete
+
+140422 22:57:19 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The InnoDB memory heap is disabled
+InnoDB: Mutexes and rw_locks use Windows interlocked functions
+InnoDB: Compressed tables use zlib 1.2.3
+140422 22:57:19  InnoDB: Initializing buffer pool, size = 8.0M
+140422 22:57:19  InnoDB: Completed initialization of buffer pool
+140422 22:57:19  InnoDB: highest supported file format is Barracuda.
+140422 22:57:20  InnoDB: 1.1.4 started; log sequence number 4443091
+140422 22:57:20 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+140422 22:57:20 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+140422 22:57:20 [Note] Event Scheduler: Loaded 0 events
+140422 22:57:20 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: ready for connections.
+Version: '5.5.8'  socket: ''  port: 3306  MySQL Community Server (GPL)
+140422 22:57:22 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: Normal shutdown
+
+140422 22:57:22 [Note] Event Scheduler: Purging the queue. 0 events
+140422 22:57:22  InnoDB: Starting shutdown...
+140422 22:57:23  InnoDB: Shutdown completed; log sequence number 4443091
+140422 22:57:23 [Note] E:\Google Docs\01 - School\IT\HTML&PHP\hobbit\mysql\bin\mysqld-nt.exe: Shutdown complete
+

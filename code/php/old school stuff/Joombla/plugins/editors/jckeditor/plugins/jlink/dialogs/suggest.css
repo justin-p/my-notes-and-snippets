@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2010 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+body{font-family:helvetica, sans-serif;font-size:12px;margin:0;padding:0;}
+#content{height:100%;width:100%;text-align:center;}
+#message{font-weight:bold;text-align:center;margin-left:10px;margin-bottom:10px;margin-top:10px;}
+a{text-decoration:none;color:#173f5f;margin:0;}
+input{font-family:helvetica, sans-serif;font-weight:normal;font-size:10px;}
+#scroll{background-color:white;border:1px solid #C0C0C0;overflow:scroll;white-space:normal;width:385px;position:relative;visibility:hidden;z-index:1;margin:0 auto;padding:5px;}
+#scroll div{text-align:left;margin:0 auto;}
+#suggest table{width:270px;font-size:11px;font-weight:normal;color:#676767;text-decoration:none;border:0;text-align:left;margin:0;padding:0;}
+.highlightrow{background-color:#999;cursor:pointer;}
+input#txtCaption,input#txtHref{width:394px;border:solid #fff 0;margin-left:1px;}
+input#keyword{background-image:url(magnifier_icon.png);background-position:-2px -4px;background-repeat:no-repeat;padding-left:15px;width:379px;border:solid #fff 0;margin-left:1px;}
