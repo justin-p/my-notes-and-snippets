@@ -1,6 +1,6 @@
 # IPv4
 
-## Subnettting
+## Subnetting
 
 ### IPv4 - 255
 

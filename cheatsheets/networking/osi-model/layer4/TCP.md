@@ -9,3 +9,18 @@ TCP is connection-oriented. A connection between client and server is establishe
 Three-way handshake, retransmission, and error-detection adds to reliability but lengthens latency. Applications that do not require reliable data stream service may use the User Datagram Protocol (UDP), which provides a connectionless datagram service that prioritizes time over reliability.
 
 TCP employs network congestion avoidance. However, there are vulnerabilities to TCP including denial of service, connection hijacking, TCP veto, and reset attack. For network security, monitoring, and debugging, TCP traffic can be intercepted and logged with a packet sniffer.
+
+
+##  Three-way handshake 
+
+![handshake](https://www.inetdaemon.com/img/internet/3-way-handshake.gif)
+
+| Steps |
+| - |
+|Host A sends a TCP SYNchronize packet to Host B |
+|Host B receives A's SYN |
+|Host B sends a SYNchronize-ACKnowledgement |
+|Host A receives B's SYN-ACK |
+|Host A sends ACKnowledge |
+|Host B receives ACK. |
+|TCP socket connection is ESTABLISHED. |
