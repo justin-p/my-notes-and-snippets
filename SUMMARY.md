@@ -50,7 +50,7 @@
 * [Networking](cheatsheets/networking/README.md)
   * [OSIModel](cheatsheets/networking/OSI Model.md)
     * [PDU](cheatsheets/networking/PDU.md)
-    * [Layer1](cheatsheets/networking/layer1/README.MD)
+    * [Layer1](cheatsheets/networking/layer1/layer1.MD)
     * [Layer2](cheatsheets/networking/layer2/README.MD)
     * [Layer3](cheatsheets/networking/layer3/README.MD)
       * [IPv4](cheatsheets/networking/layer3/IPv4/README.md)
