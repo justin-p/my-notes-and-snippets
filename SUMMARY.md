@@ -53,7 +53,7 @@
 
 ## Code
 
-* [code](code/code.md)
+* [code](code/README.md)
 
 ## courses
 * [courses](courses/README.md)
