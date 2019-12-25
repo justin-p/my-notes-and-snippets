@@ -55,6 +55,11 @@
 
 * [code](code/code.md)
 
+## courses
+* [courses](courses/README.md)
+  * [Blackhat-Python](courses/Blackhat-Python/README.md)
+  * [Python4N00bs](courses/Python4N00bs/README.md)
+
 ## CTFs
 * [GraficomSpoorzoeker](ctfs/GraficomSpoorzoeker/Spoorzoeker.md)
 * [OverTheWire](ctfs/overthewire/README.md)
