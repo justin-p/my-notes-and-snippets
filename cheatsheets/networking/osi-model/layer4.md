@@ -1,24 +1,7 @@
 # Layer 4
 
-## UDP
 
-User Datagram Protocol (UDP) is one of the core members of the 'Internet protocol suite'.
 
-With UDP computer applications can send messages, in this case referred to as datagrams,to other hosts on an Internet Protocol (IP) network. Prior communications are not required in order to set up communication channels or data paths. UDP uses a simple connectionless communication model with a minimum of protocol mechanisms.  
-
-UDP provides checksums for data integrity, and port numbers for addressing different functions at the source and destination of the datagram. It has no handshaking dialogues, and thus exposes the user's program to any unreliability of the underlying network; there is no guarantee of delivery, ordering, or duplicate protection, like there is with TCP.
-
-## TCP
-
-Transmission Control Protocol (TCP) is one of the main protocols of the 'Internet protocol suite'.
-
-TCP provides reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications running on hosts communicating via an IP network. Major internet applications such as the HTTP, SMTP, SSH, and SFTP rely on TCP. SSL/TLS often runs on top of TCP.
-
-TCP is connection-oriented. A connection between client and server is established before data can be sent, this connection establisment is called the Three-way handshake.
-
-Three-way handshake, retransmission, and error-detection adds to reliability but lengthens latency. Applications that do not require reliable data stream service may use the User Datagram Protocol (UDP), which provides a connectionless datagram service that prioritizes time over reliability.
-
-TCP employs network congestion avoidance. However, there are vulnerabilities to TCP including denial of service, connection hijacking, TCP veto, and reset attack. For network security, monitoring, and debugging, TCP traffic can be intercepted and logged with a packet sniffer.
 
 ###  Three-way handshake 
 
