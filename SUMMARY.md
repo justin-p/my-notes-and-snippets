@@ -3,10 +3,11 @@
 * [Notes and Snippets](README.md)
 
 ## Cheatsheets
+
 * [Commands](cheatsheets/README.md)
   * [docker](cheatsheets/commands/docker/README.md)
     * [Docker-Compose](cheatsheets/commands/docker/docker-compose.md)
-    * [Dockerfile](cheatsheets/commands/docker/dockerfile.md) 
+    * [Dockerfile](cheatsheets/commands/docker/dockerfile.md)
   * [Unix](cheatsheets/commands/unix/README.md)
     * [Forensic](cheatsheets/commands/unix/forensic/README.md)
       * [SSH RSA SHA256](cheatsheets/commands/unix/forensic/ssh-rsa-sha256.md)
@@ -23,9 +24,9 @@
     * [grep](cheatsheets/commands/unix/grep.md)
     * [gunzip](cheatsheets/commands/unix/gunzip.md)
     * [gzip](cheatsheets/commands/unix/gzip.md)
-    * [markdown](cheatsheets/commands/unix/markdown.md)
+    * [markdown](cheatsheets/cheatsheets/unix/markdown.md)
     * [md5sum](cheatsheets/commands/unix/md5sum.md)
-    * [mysql](cheatsheets/commands/unix/mysql.md)
+    * [mysql](cheatsheets/cheatsheets/unix/mysql.md)
     * [nc](cheatsheets/commands/unix/nc.md)
     * [s\_client](cheatsheets/commands/unix/openssl-s_client.md)
     * [openssl](cheatsheets/commands/unix/openssl.md)
@@ -48,21 +49,18 @@
   * [MySQL](cheatsheets/mysql/mysql.md)
   * [injection](cheatsheets/mysql/injection.md)
 * [Networking](cheatsheets/networking/README.md)
-  * [OSIModel](cheatsheets/networking/OSI Model.md)
+  * [OSIModel](cheatsheets/networking/OSI%20Model.md)
     * [PDU](cheatsheets/networking/PDU.md)
-    * [Layer1](cheatsheets/networking/layer1/layer1.MD)
-    * [Layer2](cheatsheets/networking/layer2/README.MD)
-    * [Layer3](cheatsheets/networking/layer3/README.MD)
-      * [IPv4](cheatsheets/networking/layer3/IPv4/README.md)
-      * [IPv6](cheatsheets/networking/layer3/IPv6/README.md)
-    * [Layer4](cheatsheets/networking/layer4/README.MD)
-    * [Layer5](cheatsheets/networking/layer5/README.MD)
-    * [Layer6](cheatsheets/networking/layer6/README.MD)
-    * [Layer7](cheatsheets/networking/layer7/README.MD)
-  * [TCPIPModel](cheatsheets/networking/TCPIP Model.md)
-
-
-
+    * [Layer1](cheatsheets/networking/osi-model/layer1.md)
+    * [Layer2](cheatsheets/networking/osi-model/layer2.md)
+    * [Layer3](cheatsheets/networking/osi-model/layer3/README.md)
+      * [IPv4](cheatsheets/networking/osi-model/layer3/ipv4.md)
+      * [IPv6](cheatsheets/networking/osi-model/layer3/ipv6.md)
+    * [Layer4](cheatsheets/networking/osi-model/layer4.md)
+    * [Layer5](cheatsheets/networking/osi-model/layer5.md)
+    * [Layer6](cheatsheets/networking/osi-model/layer6.md)
+    * [Layer7](cheatsheets/networking/osi-model/layer7.md)
+  * [TCPIPModel](cheatsheets/networking/TCPIP%20Model.md)
 * [Random](cheatsheets/random/README.md)
   * [bash](cheatsheets/random/bash.md)
 * [ASCII Table](cheatsheets/asciitable.md)
@@ -72,11 +70,13 @@
 * [code](code/README.md)
 
 ## courses
+
 * [courses](courses/README.md)
-  * [Blackhat-Python](courses/Blackhat-Python/README.md)
+  * [Blackhat-Python](courses/courses/blackhat-python.md)
   * [Python4N00bs](courses/Python4N00bs/README.md)
 
 ## CTFs
+
 * [GraficomSpoorzoeker](ctfs/GraficomSpoorzoeker/Spoorzoeker.md)
 * [OverTheWire](ctfs/overthewire/README.md)
   * [Bandit](ctfs/overthewire/bandit.md)
