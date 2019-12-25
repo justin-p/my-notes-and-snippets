@@ -49,7 +49,7 @@
   * [MySQL](cheatsheets/mysql/mysql.md)
   * [injection](cheatsheets/mysql/injection.md)
 * [Networking](cheatsheets/networking/README.md)
-  * [OSIModel](cheatsheets/networking/OSI%20Model.md)
+  * [osi-model](cheatsheets/networking/osi-model.md)
     * [PDU](cheatsheets/networking/PDU.md)
     * [Layer1](cheatsheets/networking/osi-model/layer1.md)
     * [Layer2](cheatsheets/networking/osi-model/layer2.md)
