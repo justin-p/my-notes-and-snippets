@@ -1,5 +1,8 @@
-# Layer1
+# Layer 1
 
-Physical layer
+Pizza  
 
-Transmission and reception of raw bit streams over a physical medium 
+Physical Layer   
+Bit  
+Data cables, CAT5e, CAT6   
+Transmission and reception of raw bit streams over a physical medium  
