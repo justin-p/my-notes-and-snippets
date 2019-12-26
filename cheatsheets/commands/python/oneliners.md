@@ -1,36 +1,25 @@
-# oneliners
+# Python Oneliners
 
 ## HTTP
 
 Start a webserver that hosts the current pwd.
 
-### Python 2
-
-python -m SimpleHTTPServer 8000
-
-### Python 3
-
-python3 -m http.server 8000
+| Python2                         | Python3                     |
+|---------------------------------|-----------------------------|
+| Python -m SimpleHTTPServer 8000 | Python3 -m http.server 8000 |
 
 ## FTP
 
-start a ftp that hosts the current pwd.
+Start a ftp that hosts the current pwd.
 
-## Python 2
+| Python2                         | Python3                     |
+|---------------------------------|-----------------------------|
+| Python -m pyftpdlib             | Python3 -m pyftpdlib        |
 
-python -m pyftpdlib
+## unicode character
 
-## Python 3
+Print a unicode character
 
-python3 -m pyftpdlib
-
-
-## echo unicode character
-
-### Python 2
-
-python -c "print unichr(234)"
-
-### Python 3
-
-python3 -c "print(chr(234))"
+| Python2                         | Python3                      |
+|---------------------------------|------------------------------|
+| Python -c "print unichr(234)"   | Python3 -c "print(chr(234))" |
