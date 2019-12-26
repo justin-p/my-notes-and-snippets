@@ -44,9 +44,7 @@ For example, if a web browser connects to http://www.bbc.com/, then it will be c
 UDP is a connectionless protocol that is built on top of IPv4 and IPv6. It's very simple to use: Decide the destination address and port and send your data packet! However the network makes no guarantee about whether the packets will arrive.
 Packets (aka Datagrams) may be dropped if the network is congested. Packets may be duplicated or arrive out of order.
 
-Between two distant data-centers it's typical to see 3% packet loss.
-
-A typical use case for UDP is when receiving up to date data is more important than receiving all of the data. For example, a game may send continuous updates of player positions. A streaming video signal may send picture updates using UDP
+A typical use case for UDP is when receiving up to date data is more important than receiving all of the data. For example, a game may send continuous updates of player positions. A streaming video signal may send picture updates using UDP.
 
 ## What is TCP? When is it used?
 
