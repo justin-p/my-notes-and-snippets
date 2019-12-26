@@ -43,6 +43,10 @@
     * [uniq](cheatsheets/commands/unix/uniq.md)
     * [xxd](cheatsheets/commands/unix/xxd.md)
     * [zcat](cheatsheets/commands/unix/zcat.md)
+  * [Microsoft](cheatsheets/commands/Microsoft/README.md)
+    * [Exchange](cheatsheets/commands/Microsoft/Exchange/README.md)
+      * [MultiTenant](cheatsheets/commands/Microsoft/Exchange/multi_tenant.md)
+      * [RemoveDefaultDB](cheatsheets/commands/Microsoft/Exchange/remove_default_db.md)
 * [Markdown](cheatsheets/markdown/README.md)
   * [Markdown](cheatsheets/markdown/markdown.md)
 * [MySQL](cheatsheets/mysql/README.md)
@@ -76,7 +80,7 @@
 ## courses
 
 * [courses](courses/README.md)
-  * [Blackhat-Python](courses/courses/blackhat-python.md)
+  * [Blackhat-Python](courses/blackhat-python.md)
   * [Python4N00bs](courses/Python4N00bs/README.md)
 
 ## CTFs

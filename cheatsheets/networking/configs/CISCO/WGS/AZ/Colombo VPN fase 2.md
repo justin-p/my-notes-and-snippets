@@ -1,3 +1,4 @@
+```
 !
 crypto ipsec transform-set COLOMBOTRANS esp-aes esp-sha-hmac
 !
@@ -9,3 +10,4 @@ crypto map COLOMBOMAP 10 ipsec-isakmp
 interface GigabitEthernet0/1
  crypto map COLOMBOMAP
 !
+```

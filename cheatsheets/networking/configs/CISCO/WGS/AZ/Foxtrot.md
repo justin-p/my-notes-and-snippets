@@ -1,3 +1,4 @@
+```
 hostname Foxtrot
 !
 ip routing
@@ -39,3 +40,4 @@ line con 0
 !
 end
 !
+```

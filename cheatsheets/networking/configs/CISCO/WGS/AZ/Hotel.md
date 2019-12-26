@@ -1,3 +1,4 @@
+```
 hostname Hotel
 !
 ip routing
@@ -46,3 +47,4 @@ line con 0
 !
 end
 !
+```

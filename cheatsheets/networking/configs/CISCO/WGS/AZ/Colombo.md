@@ -1,3 +1,4 @@
+```
 hostname Colombo
 !
 no ip domain lookup
@@ -44,3 +45,4 @@ ip access-list extended VPN
 !
 end
 !
+```

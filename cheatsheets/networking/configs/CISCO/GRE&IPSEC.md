@@ -1,3 +1,4 @@
+```
 GRE staat voor:
 Generic Routing Encapsulation
 Met GRE kun je routing protecolen(OSPF, EIGRP) over een tunnel sturen.
@@ -231,4 +232,4 @@ ip nat inside source list NONAT interface FastEthernet0/1 overload <enter>
 
 
 Met "sh cryto ipsec sa" kunnen wij informatie zien van de tunnel
- 
+```

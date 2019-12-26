@@ -1,3 +1,4 @@
+```
 !
 crypto isakmp policy 1
  encr aes
@@ -7,3 +8,4 @@ crypto isakmp policy 1
 !
 crypto isakmp key CISCO address 115.1.13.37
 !
+```

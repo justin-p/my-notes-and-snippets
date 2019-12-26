@@ -1,3 +1,4 @@
+```
 hostname Golf
 !
 ip dhcp excluded-address 192.168.2.126
@@ -59,3 +60,4 @@ line con 0
 !
 end
 !
+```
