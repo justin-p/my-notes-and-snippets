@@ -3,14 +3,15 @@
 ## Subnetting
 
 ### subnetting made easy
-```
-Silano
 
+```
 IP 192.168.1.0
 Neem je masker 255.255.255.192
 Het eerste groene getal pakken
 Aftrekken van 256
 256-192 = 64
+
+128  64  32  16  8  4  2  1
 
 De stappen van het eerste groene getal zullen 64 zijn
 
@@ -20,10 +21,11 @@ De stappen van het eerste groene getal zullen 64 zijn
 192.168.1.63 	HB
 192.168.1.64 	BC
 
-
 172.168.0.0
 255.255.252.0
 256-252=4
+
+128  64  32  16  8  4  2  1
 
 1e
 172.168.0.0
@@ -34,68 +36,64 @@ De stappen van het eerste groene getal zullen 64 zijn
 IP        192.168.100.0
 MASK      255.255.255.224
 
-
 224 aftrekken 255
 255.255.255.255
 255.255.255.224 - 
                          31
 
+
 Trek een streep waar het vorige getal tussen past.
 128      64     32|16     8    4    2    1
 
 
-1ste subnet
+1 subnet
 NETID    192.168.100.0
 LB       192.168.100.1
 HB       192.168.100.30
 BC       192.168.100.31
 
-2de subnet
+2 subnet
 NETID    192.168.100.32
 LB       192.168.100.33
 HB       192.168.100.62
 BC       192.168.100.63
 
-3de subnet
+3 subnet
 NETID	192.168.100.64
 LB		192.168.100.65
 HB		192.168.100.94
 BC		192.168.100.95
 
-4de subnet
+4 subnet
 NETID	192.168.100.96
 LB		192.168.100.97
 HB		192.168.100.126
 BC		192.168.100.127
 
-5de subnet
+5 subnet
 NETID	192.168.100.128
 LB		192.168.100.129
 HB		192.168.100.158
 BC		192.168.100.159
 
-6de subnet
+6 subnet
 NETID	192.168.100.160
 LB		192.168.100.161
 HB		192.168.100.190
 BC		192.168.100.191
 
-7de subnet 
+7 subnet 
 NETID	192.168.100.192
 LB		192.168.100.193
 HB		192.168.100.222
 BC 		192.168.100.223
 
-8de subnet
+8 subnet
 NETID	192.168.100.224
 LB		192.168.100.225
 HB		192.168.100.253
 BC		192.168.100.255
 ```
-
-
-
-
 ### IPv4 - 255
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
@@ -297,18 +295,13 @@ Following chart summarises which types of candidates contribute to a successful 
 * relay: Relay NAT (a candidate derived from TURN)
 
 
-### P.A.T. Port Adres Translatie.   
+### P.A.T. Port Address Translation.
 
 `> 1024`
 
-| my local ip | my local port | my external ip | my external port | external ip         |
-|-----------------|--------------|--------------|-----------------|---------------------|
-| 192.168.3.1     |     :1025    |  9.2.1.33    |     :1025       |    188.1.3.15       |
-|	              |              |              |                 |                     |
-|---------------- |--------------|--------------|-----------------|---------------------|
-| 192.168.3.2     |     :1025    |  9.2.1.33    |     :1026       |    188.1.3.15       |
-|	              |              |              |                 |                     |
-|-----------------|--------------|--------------|-----------------|---------------------|
-| 192.168.3.3     |     :1025    |  9.2.1.33    |     :1027       |    188.1.3.15       |
-|	              |              |              |                 |                     |
-|-----------------|--------------|--------------|-----------------|---------------------|
+| my local ip     | my local port | my external ip | my external port | external ip |
+|-----------------|---------------|----------------|------------------|-------------|
+| 192.168.3.1     | :1025         | 9.2.1.33       | :1025            | 188.1.3.15  |
+| 192.168.3.2     | :1025         | 9.2.1.33       | :1026            | 188.1.3.15  |
+| 192.168.3.3     | :1025         | 9.2.1.33       | :1027            | 188.1.3.15  |
+
