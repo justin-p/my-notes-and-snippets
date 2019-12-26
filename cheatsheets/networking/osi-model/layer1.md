@@ -22,4 +22,4 @@ The functions of the physical layer are :
 - Physical topologies: Physical layer specifies the way in which the different, devices/nodes are arranged in a network i.e. bus, star or mesh topolgy.
 - Transmission mode: Physical layer also defines the way in which the data flows between the two connected devices. The various transmission modes possible are: Simplex, half-duplex and full-duplex.
 
-![physical_terminations](https://raw.githubusercontent.com/justin-p/my-notes-and-snippets/master/_files/IMG/physical_terminations-packetlife.png)
+![physical_terminations](https://raw.githubusercontent.com/justin-p/my-notes-and-snippets/master/.gitbook/assets/IMG/physical_terminations-packetlife.png)

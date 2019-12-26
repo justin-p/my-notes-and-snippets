@@ -108,4 +108,3 @@
     * [Fail2Ban](my-guides/vps/ubuntu-vps/fail2ban.md)
     * [Logwatch](my-guides/vps/ubuntu-vps/logwatch.md)
     * [SysCTL optimization](my-guides/vps/ubuntu-vps/sysctl-optimization.md)
-
