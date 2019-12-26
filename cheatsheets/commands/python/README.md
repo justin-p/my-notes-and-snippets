@@ -551,6 +551,11 @@ for n in nums:
     Xpi=n*math.pi
     print(math.sin(Xpi))
     print(math.cos(Xpi))
+
+
+## alias import
+import datetime import datetime as data
+print(dt.now())
 ```
 
 ### File handeling
@@ -664,3 +669,18 @@ display_stats(name="Vikram", age="29", job="PhD Student", hobby="Python Instruct
 ### Classes
 
 See https://colab.research.google.com/github/justin-p/my-notes-and-snippets/blob/master/courses/Python4N00bs/Python4n00bs_day_04.ipynb
+
+
+### Sockets
+
+```python
+#!/bin/python3
+
+import socket
+
+HOST = '127.0.0.1'
+PORT = 7777
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST,PORT))
+```
