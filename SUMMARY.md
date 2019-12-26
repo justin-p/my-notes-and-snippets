@@ -4,12 +4,12 @@
 
 ## Cheatsheets
 
-* [commands](cheatsheets/commands/README.md)
-  * [docker](cheatsheets/commands/docker/README.md)
+* [Commands](cheatsheets/commands/README.md)
+  * [Docker](cheatsheets/commands/docker/README.md)
     * [Docker-Compose](cheatsheets/commands/docker/docker-compose.md)
     * [Dockerfile](cheatsheets/commands/docker/dockerfile.md)
   * [Microsoft](cheatsheets/commands/Microsoft/README.md)
-    * [powershell](cheatsheets/commands/Microsoft/powershell/README.md)
+    * [PowerShell](cheatsheets/commands/Microsoft/powershell/README.md)
       * [Exchange](cheatsheets/commands/Microsoft/powershell/Exchange/README.md)
         * [MultiTenant](cheatsheets/commands/Microsoft/powershell/Exchange/multi_tenant.md)
         * [RemoveDefaultDB](cheatsheets/commands/Microsoft/powershell/Exchange/remove_default_db.md)
@@ -50,7 +50,6 @@
     * [uniq](cheatsheets/commands/unix/uniq.md)
     * [xxd](cheatsheets/commands/unix/xxd.md)
     * [zcat](cheatsheets/commands/unix/zcat.md)
-
 * [Markdown](cheatsheets/markdown/README.md)
   * [Markdown](cheatsheets/markdown/markdown.md)
 * [MySQL](cheatsheets/mysql/README.md)
@@ -72,7 +71,7 @@
     * [Layer5](cheatsheets/networking/osi-model/layer5.md)
     * [Layer6](cheatsheets/networking/osi-model/layer6.md)
     * [Layer7](cheatsheets/networking/osi-model/layer7.md)
-  * [TCPIPModel](cheatsheets/networking/TCPIP%20Model.md)
+  * [TCPIP-Model](cheatsheets/networking/TCPIP-Model.md)
 * [Random](cheatsheets/random/README.md)
   * [bash](cheatsheets/random/bash.md)
 * [ASCII Table](cheatsheets/asciitable.md)
