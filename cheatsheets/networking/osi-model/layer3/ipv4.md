@@ -2,7 +2,43 @@
 
 ## Subnetting
 
-### subnetting made easy
+Netmask depends the range of the network. `1's` in the netmask lockdown the IP address.
+
+Small mask = Large network  
+Large mask = Small network  
+
+### Binary - 255
+
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| --- | -- | -- | -- | - | - | - | - |
+|   1 |  1 |  1 |  1 | 1 | 1 | 1 | 1 |  
+
+### Binary - 7
+
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| --- | -- | -- | -- | - | - | - | - |
+|   0 |  0 |  0 |  0 | 0 | 1 | 1 | 1 |
+
+### CIDR - /32
+
+| 255       | 255       | 255       | 255       |
+|-----------|-----------|-----------|-----------|
+| 1111 1111 | 1111 1111 | 1111 1111 | 1111 1111 |
+
+### CIDR - /24
+
+| 255      | 255        | 255       | 0         |
+|----------|------------|-----------|-----------|
+| 1111 1111 | 1111 1111 | 1111 1111 | 0000 0000 |
+
+### CIDR - /22
+
+| 255      | 255        | 252       | 0         |
+|----------|------------|-----------|-----------|
+| 1111 1111 | 1111 1111 | 1111 1100 | 0000 0000 |
+
+
+### school example
 
 ```
 IP 192.168.1.0
@@ -94,17 +130,131 @@ LB		192.168.100.225
 HB		192.168.100.253
 BC		192.168.100.255
 ```
-### IPv4 - 255
 
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-| --- | -- | -- | -- | - | - | - | - |
-|   1 |  1 |  1 |  1 | 1 | 1 | 1 | 1 |  
+### Table example
 
-### IPv4 - 7
+#### Subnet Table
 
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-| --- | -- | -- | -- | - | - | - | - |
-|   0 |  0 |  0 |  0 | 0 | 1 | 1 | 1 |
+| Octect | Subnet: 128           | Subnet: 192           | Subnet: 224           | Subnet: 240           | Subnet: 248           | Subnet: 252           | Subnet: 254           | subnet: 255           |
+|--------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
+| 1      | /1                    | /2                    | /3                    | /4                    | /5                    | /6                    | /7                    | /8                    |
+| 2      | /9                    | /10                   | /11                   | /12                   | /13                   | /14                   | /15                   | /16                   |
+| 3      | /17                   | /18                   | /19                   | /20                   | /21                   | /22                   | /23                   | /24                   |
+| 4      | /25                   | /26                   | /27                   | /28                   | /29                   | /30                   | /31                   | /32                   |
+
+#### Host Table
+
+| Octect | Hosts:                | Hosts                | Hosts                 | Hosts                 | Hosts                 | Hosts                | Hosts                   | Hosts                 |
+|--------|-----------------------|----------------------|-----------------------|-----------------------|-----------------------|----------------------|-------------------------|-----------------------|
+| 1      | /1  <br> 2147483648   | /2  <br> 1073741824  | /3  <br> 536870912    | /4  <br> 268435456    | /5  <br> 134217728    | /6  <br> 67108864    | /7  <br> 33554432       | /8  <br> 16777216     |
+| 2      | /9  <br> 8388608      | /10 <br> 4194304     | /11 <br> 2097152      | /12 <br> 1048576      | /13 <br> 524288       | /14 <br> 262144      | /15 <br> 131072         | /16 <br> 65536        |
+| 3      | /17 <br> 32768        | /18 <br> 16384       | /19 <br> 8192         | /20 <br> 4096         | /21 <br> 2048         | /22 <br> 1024        | /23 <br> 512            | /24 <br> 256          |
+| 4      | /25 <br> 128          | /26 <br> 64          | /27 <br> 32           | /28 <br> 16           | /29 <br> 8            | /30 <br> 4           | /31 <br> 2              | /32 <br> 1            |
+
+#### Willdcard Mask Table
+
+| Slash | Netmask         | Wildcard Mask   |
+|-------|-----------------|-----------------|
+| /32   | 255.255.255.255 | 0.0.0.0         |
+| /31   | 255.255.255.254 | 0.0.0.1         |
+| /30   | 255.255.255.252 | 0.0.0.3         |
+| /29   | 255.255.255.248 | 0.0.0.7         |
+| /28   | 255.255.255.240 | 0.0.0.15        |
+| /27   | 255.255.255.224 | 0.0.0.31        |
+| /26   | 255.255.255.192 | 0.0.0.63        |
+| /25   | 255.255.255.128 | 0.0.0.127       |
+| /24   | 255.255.255.0   | 0.0.0.255       |
+| /23   | 255.255.254.0   | 0.0.1.255       |
+| /22   | 255.255.252.0   | 0.0.3.255       |
+| /21   | 255.255.248.0   | 0.0.7.255       |
+| /20   | 255.255.240.0   | 0.0.15.255      |
+| /19   | 255.255.224.0   | 0.0.31.255      |
+| /18   | 255.255.192.0   | 0.0.63.255      |
+| /17   | 255.255.128.0   | 0.0.127.255     |
+| /16   | 255.255.0.0     | 0.0.255.255     |
+| /15   | 255.254.0.0     | 0.1.255.255     |
+| /14   | 255.252.0.0     | 0.3.255.255     |
+| /13   | 255.248.0.0     | 0.7.255.255     |
+| /12   | 255.240.0.0     | 0.15.255.255    |
+| /11   | 255.224.0.0     | 0.31.255.255    |
+| /10   | 255.192.0.0     | 0.63.255.255    |
+| /9    | 255.128.0.0     | 0.127.255.255   |
+| /8    | 255.0.0.0       | 0.255.255.255   |
+| /7    | 254.0.0.0       | 1.255.255.255   |
+| /6    | 252.0.0.0       | 3.255.255.255   |
+| /5    | 248.0.0.0       | 7.255.255.255   |
+| /4    | 240.0.0.0       | 15.255.255.255  |
+| /3    | 224.0.0.0       | 31.255.255.255  |
+| /2    | 192.0.0.0       | 63.255.255.255  |
+| /1    | 128.0.0.0       | 127.255.255.255 |
+| /0    | 0.0.0.0         | 255.255.255.255 |
+ 
+#### Example 1
+``` 
+Subnet to calculate 192.168.1.X/25
+
+/25 is on row 4 of our subnet table, this means the first 3 octets of our netmask are locked down and the last octect is unknown.
+255.255.255.?
+
+Our unknown octet has the value 128 as seen on the header of the Subnet Table.
+This means our netmask is 255.255.255.128.
+
+There are 128 hosts using this netmask as seen in Host Table.
+2 of those are not usable, the broadcast (BC) and Network ID(NETID), this means there are 126 usable hosts in this subnet. We start counting these hosts from 0.
+To define our range of usable hosts we will use the Lowest Usable (LU) and the Highest Usable (HU). This means our LU in this case will be 192.168.1.1 and our HU will be 192.168.1.126.
+
+First Subnet
+NETID 	192.168.1.0
+LU 		192.168.1.1
+HU		192.168.1.126
+BC		192.168.1.127
+
+Second Subnet
+NETID 	192.168.1.128
+LU 		192.168.1.129
+HU		192.168.1.254
+BC		192.168.1.255
+``` 
+
+#### Example 2
+``` 
+Subnet to calculate 10.0.X.X/10
+
+/10 is on row 2 of the subnet table, this means the first octet of our netmask are locked down to 255, the second octect is unknown and the rest are locked down to 0.
+255.?.0.0
+
+Our unknown octect has the value of 192 as seen in the header of the subnet table.
+This means our netmask is 255.192.0.0.
+
+There are 4194304 hosts using this netmask as seen in the host table.
+2 of those are not usable, the broadcast (BC) and Network ID(NETID), this means there are 4194302 usable hosts in this subnet. We start counting these hosts from 0.
+To define our range of usable hosts we will use the Lowest Usable (LU) and the Highest Usable (HU). Since this is a bigger range the Wildcard Mask can be used to make this easier.
+To get our wildcard mask we inverse of our mask. Our wildcard mask is 0.63.255.255. See Wildcard Mask table.
+
+This means our LU in this case will be 10.0.0.1 and our HU will be 10.63.255.254.
+
+NETID 	10.0.0.0
+LU 		10.0.0.1
+HU		10.63.255.254
+BC		10.63.255.255
+
+
+NETID 	10.64.0.0
+LU 		10.64.0.1
+HU		10.127.255.254
+BC		10.127.255.255
+
+NETID 	10.128.0.0
+LU 		10.128.0.1
+HU		10.191.255.254
+BC		10.191.255.255
+
+
+NETID 	10.192.0.0
+LU 		10.192.0.1
+HU		10.255.255.254
+BC		10.255.255.255
+``` 
 
 ## Network Classes
 
