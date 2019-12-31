@@ -2,17 +2,16 @@
 
 ## Level 1
 
-### Port scan
+### Enum
 
-| Time                     | Proto | port    | Service     | Other |
-|--------------------------|-------|---------|-------------|-------|
-| 2019-12-29 23:00 (GMT+1) | TCP   | 22      | SSH         | OpenSSH 2.9p2 (protocol 1.99) <br> ssh-hostkey 1024 <br> Server supports SSHv1 |
-| 2019-12-29 23:00 (GMT+1) | TCP   | 80      | HTTP        | Apache httpd 1.3.20 <br> Unix Red-Hat/Linux <br> mod_ssl/2.8.4 <br> OpenSSL/0.9.6b <br> Potentially risky methods: TRACE <br> HTTP-Title: Test Page for the Apache Web Server on Red Hat Linux
-| 2019-12-29 23:00 (GMT+1) | TCP   | 111     | rpcbind     | 2 (RPC #100000) |
-| 2019-12-29 23:00 (GMT+1) | TCP   | 139     | netbios-ssn | Samba smbd (workgroup: MYGROUP) |
-| 2019-12-29 23:00 (GMT+1) | TCP   | 443     | HTTPS       | Apache/1.3.20 <br> Unix Red-Hat/Linux <br> mod_ssl/2.8.4 <br> OpenSSL/0.9.6b <br> SSLv2
-| 2019-12-29 23:00 (GMT+1) | TCP   | 32768   | RPCstatus   | 1 (RPC #100024) | 
-
+| Time                        | Proto | port    | Service/URL                        | Other |
+|-----------------------------|-------|---------|------------------------------------|-------|
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 22      | SSH                                | OpenSSH 2.9p2 (protocol 1.99) <br> ssh-hostkey 1024 <br> Server supports SSHv1 <br> old key exchange / ciphers : DH SHA1/AES128-CBC|
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 80      | HTTP                               | Apache httpd 1.3.20 <br> Unix Red-Hat/Linux <br> mod_ssl/2.8.4 <br> OpenSSL/0.9.6b <br> Potentially risky methods: TRACE <br> HTTP-Title: Test Page for the Apache Web Server on Red Hat Linux
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 111     | rpcbind                            | 2 (RPC #100000) |
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 139     | netbios-ssn                        | Samba smbd 2.2.1a <br> workgroup MYGROUP <br> ADMIN$ no anon access <br> IPC$ no anon access |
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 443     | HTTPS                              | Apache/1.3.20 <br> Unix Red-Hat/Linux <br> mod_ssl/2.8.4 <br> OpenSSL/0.9.6b <br> SSLv2 <br> |
+| 2019-12-29 23:00 (GMT+1)    | TCP   | 32768   | RPCstatus                          | 1 (RPC #100024) | 
 
 #### TCP
 
@@ -93,7 +92,7 @@ MAC Address: 00:0C:29:CE:A7:CD (VMware)
 Nmap done: 1 IP address (1 host up) scanned in 1027.39 seconds
 ```
 
-## 192.168.88.129 - 80/443
+#### 192.168.88.129 - 80/443
 
 | Time | URL | Finding |
 |------|-----|---------|
@@ -118,9 +117,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1027.39 seconds
 | 2019-12-30 13:14:37 (GMT+1) | https://192.168.88.129/manual/ | **OSVDB-3092** <br> Perl manual. |
 | 2019-12-30 13:14:37 (GMT+1) | https://192.168.88.129/icons/ | **OSVDB-3268** <br> Directory indexing found. |
 | 2019-12-30 13:14:37 (GMT+1) | https://192.168.88.129/icons/ | **OSVDB-3233** <br> /icons/README: Apache default file found. |
-| 2019-12-30 13:14:37 (GMT+1) | https://192.168.88.129/test.php | **Custom test page** <br> `<?php4 print "TEST"; ?>` | 
+| 2019-12-30 13:14:37 (GMT+1) | https://192.168.88.129/test.php | **Custom test page** <br> `<?php4 print "TEST"; ?>` |
 
-### Nikto
+##### Nikto
 
 ```bash
 nikto -h 192.168.88.129
@@ -171,7 +170,7 @@ nikto -h 192.168.88.129
 + 1 host(s) tested
 ```
 
-### dirbuster
+##### dirbuster
 
 ```
 DirBuster 1.0-RC1 - Report
@@ -232,4 +231,163 @@ Files found with a 200 responce:
 /manual/mod/mod_ssl/ssl_glossary.html
 
 --------------------------------
+```
+
+##### gobuster
+
+```bash
+gobuster dir -u http://192.168.88.129 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html -t 40 -e
+```
+
+```bash
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://192.168.88.129
+[+] Threads:        40
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     php,txt,html
+[+] Expanded:       true
+[+] Timeout:        10s
+===============================================================
+2019/12/31 12:07:10 Starting gobuster
+===============================================================
+http://192.168.88.129/index.html (Status: 200)
+http://192.168.88.129/test.php (Status: 200)
+http://192.168.88.129/manual (Status: 301)
+http://192.168.88.129/usage (Status: 301)
+http://192.168.88.129/mrtg (Status: 301)
+===============================================================
+2019/12/31 12:34:23 Finished
+===============================================================
+```
+
+#### 192.168.88.129 - 111/139
+
+| Time                | command/module                       | Finding                    |
+|---------------------|--------------------------------------|----------------------------|
+| 2019-12-31 13:22:06 | auxiliary(scanner/smb/smb_version)   | Samba 2.2.1a               |
+| 2019-12-31 13:35:59 | nmap/smbclient                       | NetBIOS <br> KIOPTRIX      |
+| 2019-12-31 13:35:59 | nmap/smbclient                       | workgroup <br> MYGROUP     |
+| 2019-12-31 13:35:59 | smbclient                            | ADMIN$ <br>  no anon acces |
+| 2019-12-31 13:35:59 | smbclient                            | IPC$ <br> no anon acces    |
+
+##### MSF
+
+```bash
+msf5 auxiliary(scanner/smb/smb_version)
+```
+
+```bash
+[*] 192.168.88.129:139    - Host could not be identified: Unix (Samba 2.2.1a)
+[*] 192.168.88.129:445    - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+```
+
+##### smbclient
+
+```bash
+smbclient -L \\\\192.168.88.129\\
+```
+
+```bash
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+Enter WORKGROUP\root's password: 
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        IPC$            IPC       IPC Service (Samba Server)
+        ADMIN$          IPC       IPC Service (Samba Server)
+Reconnecting with SMB1 for workgroup listing.
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+
+        Server               Comment
+        ---------            -------
+        KIOPTRIX             Samba Server
+
+        Workgroup            Master
+        ---------            -------
+        MYGROUP
+```
+
+```bash
+smbclient \\\\192.168.88.129\\ADMIN$
+```
+
+```bash
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+Enter WORKGROUP\root's password: 
+tree connect failed: NT_STATUS_WRONG_PASSWORD
+```
+
+```bash
+smbclient \\\\192.168.88.129\\IPC$
+```
+
+```bash
+Server does not support EXTENDED_SECURITY  but 'client use spnego = yes' and 'client ntlmv2 auth = yes' is set
+Anonymous login successful
+Enter WORKGROUP\root's password: 
+Try "help" to get a list of possible commands.
+smb: \> help
+?              allinfo        altname        archive        backup         
+blocksize      cancel         case_sensitive cd             chmod          
+chown          close          del            deltree        dir            
+du             echo           exit           get            getfacl        
+geteas         hardlink       help           history        iosize         
+lcd            link           lock           lowercase      ls             
+l              mask           md             mget           mkdir          
+more           mput           newer          notify         open           
+posix          posix_encrypt  posix_open     posix_mkdir    posix_rmdir    
+posix_unlink   posix_whoami   print          prompt         put            
+pwd            q              queue          quit           readlink       
+rd             recurse        reget          rename         reput          
+rm             rmdir          showacls       setea          setmode        
+scopy          stat           symlink        tar            tarmode        
+timeout        translate      unlock         volume         vuid           
+wdel           logon          listconnect    showconnect    tcon           
+tdis           tid            utimes         logoff         ..             
+!              
+smb: \> ls
+NT_STATUS_NETWORK_ACCESS_DENIED listing \*
+smb: \> 
+```
+
+#### 192.168.88.129 - 22
+
+| Time                | command/module                       | Finding       |
+|---------------------|--------------------------------------|---------------|
+| 2019-12-31 13:22:06 | nmap                                 | OpenSSH 2.9p2 |
+| 2019-12-31 13:44:47 | ssh                                  | old key exchange / ciphers <br> DH SHA1/AES128-CBC|
+
+##### SSH
+
+```bash
+ssh 192.168.88.129
+```
+
+```bash
+Unable to negotiate with 192.168.88.129 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
+```
+
+```bash
+ssh 192.168.88.129 -oKexAlgorithms=diffie-hellman-group-exchange-sha1
+```
+
+```bash
+Unable to negotiate with 192.168.88.129 port 22: no matching cipher found. Their offer: aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc,rijndael128-cbc,rijndael192-cbc,rijndael256-cbc,rijndael-cbc@lysator.liu.se
+```
+
+```bash
+ssh 192.168.88.129 -oKexAlgorithms=diffie-hellman-group-exchange-sha1 -c aes128-cbc
+```
+
+```bash
+root@192.168.88.129's password: 
 ```
