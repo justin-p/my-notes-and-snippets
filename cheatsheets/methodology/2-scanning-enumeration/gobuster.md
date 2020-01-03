@@ -3,7 +3,7 @@
 ## General scan
 
 ```bash
-gobuster dir -u http://example.com -w /usr/share/wordlists/dirb/comment.txt -t 40 -e
+./go/bin/gobuster dir -u http://example.com -w /usr/share/wordlists/dirb/common.txt -t 40 -e
 ```
 
 ## Bigger wordlist and extensions

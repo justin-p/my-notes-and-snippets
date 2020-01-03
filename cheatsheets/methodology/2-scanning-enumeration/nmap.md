@@ -21,7 +21,7 @@ nmap -T4 -p -sU 10.10.10.10
 ## ARP scan
 
 ```bash
-nmap -n -sn -PR 10.10.10.10
+nmap -n -sn -PR 10.10.10.0/24
 ```
 
 ## Host discovery
