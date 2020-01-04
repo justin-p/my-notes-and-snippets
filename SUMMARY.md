@@ -37,6 +37,8 @@
     * [Payloads](cheatsheets/methodology/3-explotation/payloads.md)
     * [Shells](cheatsheets/methodology/3-explotation/shells.md)
     * [sqlmap](cheatsheets/methodology/3-explotation/sqlmap.md)
+  * [post-explotaion](cheatsheets/methodology/README.md)
+    * [shell-escaping](cheatsheets/methodology/4-post-explotation/shell-escaping.md)
 * [Microsoft](cheatsheets/Microsoft/README.md)
   * [PowerShell](cheatsheets/Microsoft/powershell/README.md)
     * [Exchange](cheatsheets/Microsoft/powershell/Exchange/README.md)
