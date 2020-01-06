@@ -1,0 +1,7 @@
+http://192.168.88.132/images (Status: 301)
+http://192.168.88.132/member (Status: 302)
+http://192.168.88.132/index (Status: 200)
+http://192.168.88.132/logout (Status: 302)
+http://192.168.88.132/john (Status: 301)
+http://192.168.88.132/robert (Status: 301)
+http://192.168.88.132/server-status (Status: 403)

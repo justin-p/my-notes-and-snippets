@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Jan  2 20:34:41 2020 as: nmap -T4 -p- -A -oA tcp 192.168.88.130 -->
+<nmaprun scanner="nmap" args="nmap -T4 -p- -A -oA tcp 192.168.88.130" start="1577993681" startstr="Thu Jan  2 20:34:41 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1577993681" endtime="1577993792"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.88.130" addrtype="ipv4"/>
+<address addr="00:0C:29:D7:71:4E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="resets" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="3.9p1" extrainfo="protocol 1.99" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:3.9p1</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 8f:3e:8b:1e:58:63:fe:cf:27:a3:18:09:3b:52:cf:72 (RSA1)&#xa;  1024 34:6b:45:3d:ba:ce:ca:b2:53:55:ef:1e:43:70:38:36 (DSA)&#xa;  1024 68:4d:8c:bb:b6:5a:bd:79:71:b8:71:47:ea:00:42:61 (RSA)"><table>
+<elem key="key">35 149174282886581624883868648302761292182406879108668063702143177994710569161669502445416601666211201346192352271911333433971833283425439634231257314174441054335295864218587993634534355128377261436615077053235666774641007412196140534221696911370388178873572900977872600139866890316021962605461192127591516843621</elem>
+<elem key="fingerprint">8f3e8b1e5863fecf27a318093b52cf72</elem>
+<elem key="bits">1024</elem>
+<elem key="type">rsa1</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAOWJ2N2BPBPm0HxCi630ZxHtTNMh+uVkeYCkKVNxavZkcJdpfFTOGZp054sj27mVZVtCeNMHhzAUpvRisn/cH4k4plLd1m8HACAVPtcgRrshCzb7wzQikrP+byCVypE0RpkQcDya+ngDMVzrkA+9KQSR/5W6BjldLW60A5oZgyfvAAAAFQC/iRZe4LlaYXwHvYYDpjnoCPY3xQAAAIBKFGl/zr/u1JxCV8a9dIAMIE0rk0jYtwvpDCdBre450ruoLII/hsparzdJs898SMWX1kEzigzUdtobDVT8nWdJAVRHCm8ruy4IQYIdtjYowXD7hxZTy/F0xOsiTRWBYMQPe8lW1oA+xabqlnCO3ppjmBecVlCwEMoeefnwGWAkxwAAAIAKajcioQiMDYW7veV13Yjmag6wyIia9+V9aO8JmgMi3cNr04Vl0FF+n7OIZ5QYvpSKcQgRzwNylEW5juV0Xh96m2g3rqEvDd4kTttCDlOltPgP6q6Z8JI0IGzcIGYBy6UWdIxj9D7F2ccc7fAM2o22+qgFp+FFiLeFDVbRhYz4sg==</elem>
+<elem key="fingerprint">346b453dbacecab25355ef1e43703836</elem>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAIEA4j5XFFw9Km2yphjpu1gzDBglGSpMxtR8zOvpH9gUbOMXXbCQeXgOK3rs4cs/j75G54jALm99Ky7tgToNaEuxmQmwnpYk9bntoDu9SkiT/hPZdOwq40yrfWIHzlUNWTpY3okTdf/YNUAdl4NOBOYbf0x/dsAdHHqSWnvZmruFA6M=</elem>
+<elem key="fingerprint">684d8cbbb65abd7971b87147ea004261</elem>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+</script><script id="sshv1" output="Server supports SSHv1">true</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.0.52" extrainfo="(CentOS)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.0.52</cpe></service><script id="http-server-header" output="Apache/2.0.52 (CentOS)"><elem>Apache/2.0.52 (CentOS)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2020-01-02T17:25:48+00:00; -2h09m46s from scanner time."><elem key="delta">-7786.0</elem>
+<elem key="date">2020-01-02T17:25:48+00:00</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_64_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_64_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="620"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ipp" product="CUPS" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apple:cups:1.1</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: PUT"><table key="Potentially risky methods">
+<elem>PUT</elem>
+</table>
+</script><script id="http-server-header" output="CUPS/1.1"><elem>CUPS/1.1</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35330"/>
+<osmatch name="Linux 2.6.9 - 2.6.30" accuracy="100" line="59081">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="602" lastboot="Thu Jan  2 20:26:30 2020"/>
+<distance value="1"/>
+<tcpsequence index="199" difficulty="Good luck!" values="7CB8356B,7C7F15AF,7CF4946B,7C77A742,7C3B735D,7CEA33BB"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="7CBEC,7CC51,7CCB6,7CD1B,7CD80,7CDE5"/>
+<hostscript><script id="clock-skew" output="-2h09m46s"><elem key="mean">-7786</elem>
+<elem key="stddev">0</elem>
+<elem key="median">-7786</elem>
+<elem key="count">1</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.88.130" rtt="0.60"/>
+</trace>
+<times srtt="600" rttvar="172" to="100000"/>
+</host>
+<runstats><finished time="1577993792" timestr="Thu Jan  2 20:36:32 2020" elapsed="112.32" summary="Nmap done at Thu Jan  2 20:36:32 2020; 1 IP address (1 host up) scanned in 112.32 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

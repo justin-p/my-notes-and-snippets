@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Jan  5 21:36:23 2020 as: nmap -p- -A -oA tcp 192.168.56.101 -->
+<nmaprun scanner="nmap" args="nmap -p- -A -oA tcp 192.168.56.101" start="1578256583" startstr="Sun Jan  5 21:36:23 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1578256591" percent="3.71" remaining="208" etc="1578256799"/>
+<host starttime="1578256583" endtime="1578256743"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<address addr="08:00:27:F0:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65523">
+<extrareasons reason="no-responses" count="65523"/>
+</extraports>
+<port protocol="tcp" portid="20"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="2.0.8 or later" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: PASV failed: 550 Permission denied."/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.56.102&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.56.102&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 81:21:ce:a1:1a:05:b1:69:4f:4d:ed:80:28:e8:99:05 (RSA)&#xa;  256 5b:a5:bb:67:91:1a:51:c2:d3:21:da:c0:ca:f0:db:9e (ECDSA)&#xa;  256 6d:01:b7:73:ac:b0:93:6f:fa:b9:89:e6:ae:3c:ab:d3 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDc/xrBbi5hixT2B19dQilbbrCaRllRyNhtJcOzE8x0BM1ow9I80RcU7DtajyqiXXEwHRavQdO+/cHZMyOiMFZG59OCuIouLRNoVO58C91gzDgDZ1fKH6BDg+FaSz+iYZbHg2lzaMPbRje6oqNamPR4QGISNUpxZeAsQTLIiPcRlb5agwurovTd3p0SXe0GknFhZwHHvAZWa2J6lHE2b9K5IsSsDzX2WHQ4vPb+1DzDHV0RTRVUGviFvUX1X5tVFvVZy0TTFc0minD75CYClxLrgc+wFLPcAmE2C030ER/Z+9umbhuhCnLkLN87hlzDSRDPwUjWr+sNA3+7vc/xuZul</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">8121cea11a05b1694f4ded8028e89905</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQB5n5kAZPIyHb9lVx1aU0fyOXMPUblpmB8DRjnP8tVIafLIWh54wmTFVd3nCMr1n5IRWiFeX1weTBDSjjz0IY=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">5ba5bb67911a51c2d321dac0caf0db9e</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ9wvrF4tkFMApswOmWKpTymFjkaiIoie4QD0RWOYnny</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">6d01b773acb0936ffab989e6ae3cabd3</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="dnsmasq" version="2.75" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.75</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.75"><elem key="bind.version">dnsmasq-2.75</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="PHP cli server" version="5.5 or later" method="probed" conf="10"><cpe>cpe:/a:php:php</cpe></service><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="123"><state state="closed" reason="reset" reason_ttl="64"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="137"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="138"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="4.3.9-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="RED" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="666"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="doom" servicefp="SF-Port666-TCP:V=7.80%I=7%D=1/5%Time=5E124931%P=x86_64-pc-linux-gnu%r(NULL,10F8,&quot;PK\x03\x04\x14\0\x02\0\x08\0d\x80\xc3Hp\xdf\x15\x81\xaa,\0\0\x152\0\0\x0c\0\x1c\0message2\.jpgUT\t\0\x03\+\x9cQWJ\x9cQWux\x0b\0\x01\x04\xf5\x01\0\0\x04\x14\0\0\0\xadz\x0bT\x13\xe7\xbe\xefP\x94\x88\x88A@\xa2\x20\x19\xabUT\xc4T\x11\xa9\x102&gt;\x8a\xd4RDK\x15\x85Jj\xa9\&quot;DL\[E\xa2\x0c\x19\x140&lt;\xc4\xb4\xb5\xca\xaen\x89\x8a\x8aV\x11\x91W\xc5H\x20\x0f\xb2\xf7\xb6\x88\n\x82@%\x99d\xb7\xc8#;3\[\r_\xcddr\x87\xbd\xcf9\xf7\xaeu\xeeY\xeb\xdc\xb3oX\xacY\xf92\xf3e\xfe\xdf\xff\xff\xff=2\x9f\xf3\x99\xd3\x08y}\xb8a\xe3\x06\xc8\xc5\x05\x82&gt;`\xfe\x20\xa7\x05:\xb4y\xaf\xf8\xa0\xf8\xc0\^\xf1\x97sC\x97\xbd\x0b\xbd\xb7nc\xdc\xa4I\xd0\xc4\+j\xce\[\x87\xa0\xe5\x1b\xf7\xcc=,\xce\x9a\xbb\xeb\xeb\xdds\xbf\xde\xbd\xeb\x8b\xf4\xfdis\x0f\xeeM\?\xb0\xf4\x1f\xa3\xcceY\xfb\xbe\x98\x9b\xb6\xfb\xe0\xdc\]sS\xc5bQ\xfa\xee\xb7\xe7\xbc\x05AoA\x93\xfe9\xd3\x82\x7f\xcc\xe4\xd5\x1dx\xa2O\x0e\xdd\x994\x9c\xe7\xfe\x871\xb0N\xea\x1c\x80\xd63w\xf1\xaf\xbd&amp;&amp;q\xf9\x97&apos;i\x85fL\x81\xe2\\\xf6\xb9\xba\xcc\x80\xde\x9a\xe1\xe2:\xc3\xc5\xa9\x85`\x08r\x99\xfc\xcf\x13\xa0\x7f{\xb9\xbc\xe5:i\xb2\x1bk\x8a\xfbT\x0f\xe6\x84\x06/\xe8-\x17W\xd7\xb7&amp;\xb9N\x9e&lt;\xb1\\\.\xb9\xcc\xe7\xd0\xa4\x19\x93\xbd\xdf\^\xbe\xd6\xcdg\xcb\.\xd6\xbc\xaf\|W\x1c\xfd\xf6\xe2\x94\xf9\xebj\xdbf~\xfc\x98x&apos;\xf4\xf3\xaf\x8f\xb9O\xf5\xe3\xcc\x9a\xed\xbf`a\xd0\xa2\xc5KV\x86\xad\n\x7fou\xc4\xfa\xf7\xa37\xc4\|\xb0\xf1\xc3\x84O\xb6nK\xdc\xbe#\)\xf5\x8b\xdd{\xd2\xf6\xa6g\x1c8\x98u\(\[r\xf8H~A\xe1qYQq\xc9w\xa7\xbe\?}\xa6\xfc\x0f\?\x9c\xbdTy\xf9\xca\xd5\xaak\xd7\x7f\xbcSW\xdf\xd0\xd8\xf4\xd3\xddf\xb5F\xabk\xd7\xff\xe9\xcf\x7fy\xd2\xd5\xfd\xb4\xa7\xf7Y_\?n2\xff\xf5\xd7\xdf\x86\^\x0c\x8f\x90\x7f\x7f\xf9\xea\xb5m\x1c\xfc\xfef\&quot;\.\x17\xc8\xf5\?B\xff\xbf\xc6\xc5,\x82\xcb\[\x93&amp;\xb9NbM\xc4\xe5\xf2V\xf6\xc4\t3&amp;M~{\xb9\x9b\xf7\xda-\xac\]_\xf9\xcc\[qt\x8a\xef\xbao/\xd6\xb6\xb9\xcf\x0f\xfd\x98\x98\xf9\xf9\xd7\x8f\xa7\xfa\xbd\xb3\x12_@N\x84\xf6\x8f\xc8\xfe{\x81\x1d\xfb\x1fE\xf6\x1f\x81\xfd\xef\xb8\xfa\xa1i\xae\.L\xf2\\g@\x08D\xbb\xbfp\xb5\xd4\xf4Ym\x0bI\x96\x1e\xcb\x879-a\)T\x02\xc8\$\x14k\x08\xae\xfcZ\x90\xe6E\xcb&lt;C\xcap\x8f\xd0\x8f\x9fu\x01\x8dvT\xf0&apos;\x9b\xe4ST%\x9f5\x95\xab\rSWb\xecN\xfb&amp;\xf4\xed\xe3v\x13O\xb73A#\xf0,\xd5\xc2\^\xe8\xfc\xc0\xa7\xaf\xab4\xcfC\xcd\x88\x8e}\xac\x15\xf6~\xc4R\x8e`wT\x96\xa8KT\x1cam\xdb\x99f\xfb\n\xbc\xbcL}AJ\xe5H\x912\x88\(O\0k\xc9\xa9\x1a\x93\xb8\x84\x8fdN\xbf\x17\xf5\xf0\.npy\.9\x04\xcf\x14\x1d\x89Rr9\xe4\xd2\xae\x91#\xfbOg\xed\xf6\x15\x04\xf6~\xf1\]V\xdcBGu\xeb\xaa=\x8e\xef\xa4HU\x1e\x8f\x9f\x9bI\xf4\xb6GTQ\xf3\xe9\xe5\x8e\x0b\x14L\xb2\xda\x92\x12\xf3\x95\xa2\x1c\xb3\x13\*P\x11\?\xfb\xf3\xda\xcaDfv\x89`\xa9\xe4k\xc4S\x0e\xd6P0&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    message2.jpgUT &#xa;    QWux&#xa;    &quot;DL[E&#xa;    #;3[&#xa;    \xf6&#xa;    u([r&#xa;    qYQq&#xa;    Y_?n2&#xa;    3&amp;M~{&#xa;    9-a)T&#xa;    L}AJ&#xa;    .npy.9"><elem key="NULL">&#xa;    message2.jpgUT &#xa;    QWux&#xa;    &quot;DL[E&#xa;    #;3[&#xa;    \xf6&#xa;    u([r&#xa;    qYQq&#xa;    Y_?n2&#xa;    3&amp;M~{&#xa;    9-a)T&#xa;    L}AJ&#xa;    .npy.9</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MySQL" version="5.7.12-0ubuntu1" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.7.12-0ubuntu1</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.7.12-0ubuntu1&#xa;  Thread ID: 11&#xa;  Capabilities flags: 63487&#xa;  Some Capabilities: FoundRows, InteractiveClient, Support41Auth, IgnoreSpaceBeforeParenthesis, IgnoreSigpipes, ODBCClient, ConnectWithDatabase, Speaks41ProtocolOld, SupportsLoadDataLocal, Speaks41ProtocolNew, LongPassword, SupportsCompression, SupportsTransactions, LongColumnFlag, DontAllowDatabaseTableColumn, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins&#xa;  Status: Autocommit&#xa;  Salt: K \x18Z\x01F&gt;\x1FNku&apos;\%@\x1D7p\x1Fi&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.7.12-0ubuntu1</elem>
+<elem key="Thread ID">11</elem>
+<elem key="Capabilities flags">63487</elem>
+<table key="Some Capabilities">
+<elem>FoundRows</elem>
+<elem>InteractiveClient</elem>
+<elem>Support41Auth</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>ODBCClient</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>LongPassword</elem>
+<elem>SupportsCompression</elem>
+<elem>SupportsTransactions</elem>
+<elem>LongColumnFlag</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">K \x18Z\x01F&gt;\x1FNku&apos;\%@\x1D7p\x1Fi</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="12380"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Tim, we need to-do better next year for Initech"><elem key="title">Tim, we need to-do better next year for Initech</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="20"/>
+<portused state="closed" proto="udp" portid="38429"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="665" lastboot="Sun Jan  5 21:27:58 2020"/>
+<distance value="1"/>
+<tcpsequence index="261" difficulty="Good luck!" values="EE50083E,3B27F935,C56F753A,BBD453CB,36D0FD6,61179E2C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="25D28,25D41,25D5A,25D73,25D8C,25DA5"/>
+<hostscript><script id="clock-skew" output="mean: 59m59s, deviation: 0s, median: 59m58s"><elem key="median">3598</elem>
+<elem key="mean">3599</elem>
+<elem key="stddev">0</elem>
+<elem key="count">3</elem>
+</script><script id="nbstat" output="NetBIOS name: RED, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.9-Ubuntu)&#xa;  Computer name: red&#xa;  NetBIOS computer name: RED\x00&#xa;  Domain name: \x00&#xa;  FQDN: red&#xa;  System time: 2020-01-05T21:38:22+00:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.9-Ubuntu</elem>
+<elem key="server">RED\x00</elem>
+<elem key="date">2020-01-05T21:38:22+00:00</elem>
+<elem key="fqdn">red</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-01-05T21:38:22&#xa;  start_date: N/A"><elem key="date">2020-01-05T21:38:22</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.56.101" rtt="0.50"/>
+</trace>
+<times srtt="498" rttvar="271" to="100000"/>
+</host>
+<runstats><finished time="1578256743" timestr="Sun Jan  5 21:39:03 2020" elapsed="161.58" summary="Nmap done at Sun Jan  5 21:39:03 2020; 1 IP address (1 host up) scanned in 161.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

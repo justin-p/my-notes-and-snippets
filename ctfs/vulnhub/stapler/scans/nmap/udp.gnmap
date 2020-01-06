@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Jan  5 21:34:05 2020 as: nmap -sU -A -oA udp 192.168.56.101
+Host: 192.168.56.101 ()	Status: Up
+Host: 192.168.56.101 ()	Ports: 53/open/udp//domain//dnsmasq 2.75/, 68/open|filtered/udp//dhcpc///, 69/open|filtered/udp//tftp///, 137/open/udp//netbios-ns//Samba nmbd netbios-ns (workgroup: WORKGROUP)/, 138/open|filtered/udp//netbios-dgm///	Ignored State: closed (995)
+# Nmap done at Sun Jan  5 21:54:16 2020 -- 1 IP address (1 host up) scanned in 1211.06 seconds

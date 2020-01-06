@@ -1,0 +1,78 @@
+# Nmap 7.80 scan initiated Sun Jan  5 16:39:01 2020 as: nmap -p- -A -oA tcp 192.168.88.134
+Nmap scan report for 192.168.88.134
+Host is up (0.00061s latency).
+Not shown: 65518 closed ports
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 5.9p1 Debian 5ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 10:cd:9e:a0:e4:e0:30:24:3e:bd:67:5f:75:4a:33:bf (DSA)
+|   2048 bc:f9:24:07:2f:cb:76:80:0d:27:a6:48:52:0a:24:3a (RSA)
+|_  256 4d:bb:4a:c1:18:e8:da:d1:82:6f:58:52:9c:ee:34:5f (ECDSA)
+25/tcp    open  smtp       Postfix smtpd
+|_smtp-commands: vulnix, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+|_ssl-date: 2020-01-05T15:40:19+00:00; +6s from scanner time.
+79/tcp    open  finger     Linux fingerd
+|_finger: No one logged on.\x0D
+110/tcp   open  pop3       Dovecot pop3d
+|_pop3-capabilities: SASL STLS CAPA RESP-CODES UIDL TOP PIPELINING
+|_ssl-date: 2020-01-05T15:40:19+00:00; +6s from scanner time.
+111/tcp   open  rpcbind    2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100003  2,3,4       2049/udp6  nfs
+|   100005  1,2,3      40412/udp   mountd
+|   100005  1,2,3      51233/tcp6  mountd
+|   100005  1,2,3      57722/tcp   mountd
+|   100005  1,2,3      59004/udp6  mountd
+|   100021  1,3,4      37539/tcp6  nlockmgr
+|   100021  1,3,4      42654/udp   nlockmgr
+|   100021  1,3,4      49656/udp6  nlockmgr
+|   100021  1,3,4      54775/tcp   nlockmgr
+|   100024  1          38568/tcp   status
+|   100024  1          50138/udp   status
+|   100024  1          54698/udp6  status
+|   100024  1          57281/tcp6  status
+|   100227  2,3         2049/tcp   nfs_acl
+|   100227  2,3         2049/tcp6  nfs_acl
+|   100227  2,3         2049/udp   nfs_acl
+|_  100227  2,3         2049/udp6  nfs_acl
+143/tcp   open  imap       Dovecot imapd
+|_imap-capabilities: ID LOGIN-REFERRALS listed STARTTLS LOGINDISABLEDA0001 IDLE ENABLE have post-login OK capabilities SASL-IR Pre-login LITERAL+ more IMAP4rev1
+|_ssl-date: 2020-01-05T15:40:19+00:00; +6s from scanner time.
+512/tcp   open  exec       netkit-rsh rexecd
+513/tcp   open  login?
+514/tcp   open  tcpwrapped
+993/tcp   open  ssl/imaps?
+|_ssl-date: 2020-01-05T15:40:18+00:00; +5s from scanner time.
+995/tcp   open  ssl/pop3s?
+|_ssl-date: 2020-01-05T15:40:18+00:00; +5s from scanner time.
+2049/tcp  open  nfs_acl    2-3 (RPC #100227)
+38568/tcp open  status     1 (RPC #100024)
+38839/tcp open  mountd     1-3 (RPC #100005)
+54775/tcp open  nlockmgr   1-4 (RPC #100021)
+57722/tcp open  mountd     1-3 (RPC #100005)
+59621/tcp open  mountd     1-3 (RPC #100005)
+MAC Address: 00:0C:29:76:09:06 (VMware)
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Network Distance: 1 hop
+Service Info: Host:  vulnix; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 5s, deviation: 0s, median: 5s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.61 ms 192.168.88.134
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan  5 16:42:34 2020 -- 1 IP address (1 host up) scanned in 213.68 seconds

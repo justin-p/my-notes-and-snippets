@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jan  3 12:11:21 2020 as: nmap -p- -A -oA tcp 192.168.88.131
+Host: 192.168.88.131 ()	Status: Up
+Host: 192.168.88.131 ()	Ports: 22/open/tcp//ssh//OpenSSH 4.7p1 Debian 8ubuntu1.2 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.8 ((Ubuntu) PHP|5.2.4-2ubuntu5.6 with Suhosin-Patch)/	Ignored State: closed (65533)	OS: Linux 2.6.9 - 2.6.33	Seq Index: 205	IP ID Seq: All zeros
+# Nmap done at Fri Jan  3 12:11:32 2020 -- 1 IP address (1 host up) scanned in 12.53 seconds

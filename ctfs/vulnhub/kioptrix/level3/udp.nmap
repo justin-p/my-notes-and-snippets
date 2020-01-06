@@ -1,0 +1,7 @@
+# Nmap 7.80 scan initiated Sat Jan  4 14:08:01 2020 as: nmap -sU -T4 -oA udp 192.168.88.131
+Nmap scan report for kioptrix3.com (192.168.88.131)
+Host is up (0.00063s latency).
+All 1000 scanned ports on kioptrix3.com (192.168.88.131) are closed (955) or open|filtered (45)
+MAC Address: 00:0C:29:FF:C3:CB (VMware)
+
+# Nmap done at Sat Jan  4 14:25:21 2020 -- 1 IP address (1 host up) scanned in 1039.80 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Jan  4 23:41:40 2020 as: nmap -sU -A -oA udp 192.168.88.133
+Host: 192.168.88.133 ()	Status: Up
+Host: 192.168.88.133 ()	Status: Up
+# Nmap done at Sun Jan  5 13:11:53 2020 -- 1 IP address (1 host up) scanned in 48613.43 seconds

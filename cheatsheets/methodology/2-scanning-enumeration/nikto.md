@@ -11,3 +11,12 @@ nikto -h [hostname/ip]
 ```bash
 nikto -h [hostname/ip] -output [filename]
 ```
+
+
+## run trough burpsuite
+
+`LW_SSL_ENGINE=SSLeay`
+
+```bash
+nikto -h [hostname/ip] -useproxy http://localhost:8080/
+```

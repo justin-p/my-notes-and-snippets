@@ -1,0 +1,45 @@
+# Nmap 7.80 scan initiated Sat Jan  4 17:16:37 2020 as: nmap -p- -A -oA tcp 192.168.88.132
+Nmap scan report for 192.168.88.132
+Host is up (0.00046s latency).
+Not shown: 39528 closed ports, 26003 filtered ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1.2 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 9b:ad:4f:f2:1e:c5:f2:39:14:b9:d3:a0:0b:e8:41:71 (DSA)
+|_  2048 85:40:c6:d5:41:26:05:34:ad:f8:6e:f2:a7:6b:4f:0e (RSA)
+80/tcp  open  http        Apache httpd 2.2.8 ((Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch)
+|_http-server-header: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch
+|_http-title: Site doesn't have a title (text/html).
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 3.0.28a (workgroup: WORKGROUP)
+MAC Address: 00:0C:29:F2:50:A8 (VMware)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 2h30m02s, deviation: 3h32m07s, median: 2s
+|_nbstat: NetBIOS name: KIOPTRIX4, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.28a)
+|   Computer name: Kioptrix4
+|   NetBIOS computer name: 
+|   Domain name: localdomain
+|   FQDN: Kioptrix4.localdomain
+|_  System time: 2020-01-04T11:17:19-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.46 ms 192.168.88.132
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  4 17:17:21 2020 -- 1 IP address (1 host up) scanned in 45.01 seconds

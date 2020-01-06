@@ -1,0 +1,34 @@
+# Nmap 7.80 scan initiated Thu Jan  2 20:34:23 2020 as: nmap -sU -T4 -oA udp 192.168.88.130
+Warning: 192.168.88.130 giving up on port because retransmission cap hit (6).
+Nmap scan report for 192.168.88.130
+Host is up (0.00061s latency).
+Not shown: 975 closed ports
+PORT      STATE         SERVICE
+68/udp    open|filtered dhcpc
+88/udp    open|filtered kerberos-sec
+111/udp   open          rpcbind
+192/udp   open|filtered osu-nms
+631/udp   open|filtered ipp
+1019/udp  open|filtered unknown
+1072/udp  open|filtered cardax
+4672/udp  open|filtered rfa
+7000/udp  open|filtered afs3-fileserver
+17823/udp open|filtered unknown
+18113/udp open|filtered unknown
+18617/udp open|filtered unknown
+19500/udp open|filtered unknown
+19624/udp open|filtered unknown
+19998/udp open|filtered unknown
+20762/udp open|filtered unknown
+20817/udp open|filtered unknown
+21568/udp open|filtered unknown
+27892/udp open|filtered unknown
+28122/udp open|filtered unknown
+33355/udp open|filtered unknown
+34079/udp open|filtered unknown
+47772/udp open|filtered unknown
+49220/udp open|filtered unknown
+61370/udp open|filtered unknown
+MAC Address: 00:0C:29:D7:71:4E (VMware)
+
+# Nmap done at Thu Jan  2 20:51:41 2020 -- 1 IP address (1 host up) scanned in 1038.32 seconds

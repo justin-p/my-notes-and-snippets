@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Jan  4 23:41:21 2020 as: nmap -p- -A -oA tcp 192.168.88.133
+Host: 192.168.88.133 ()	Status: Up
+Host: 192.168.88.133 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.15 ((CentOS) DAV|2 PHP|5.3.3)/	Ignored State: filtered (65534)	OS: Linux 2.6.32|Linux 2.6.32 - 3.10|Linux 2.6.32 - 3.13	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Sat Jan  4 23:44:01 2020 -- 1 IP address (1 host up) scanned in 160.46 seconds
