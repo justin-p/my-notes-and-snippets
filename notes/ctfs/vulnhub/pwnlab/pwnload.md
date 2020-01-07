@@ -453,9 +453,9 @@ iSv5Ym2GRo
 
 I was today years old when I learned that system command of mysql runs LOCAL not remote.
 
-png
+![png](https://raw.githubusercontent.com/justin-p/my-notes-and-snippets/master/.gitbook/assets/IMG/pwnlab_localshelll.png)
 
-gif
+![gif](https://raw.githubusercontent.com/justin-p/my-notes-and-snippets/master/.gitbook/assets/IMG/pwnlab_localshelll.gif)
 
 
 ```
