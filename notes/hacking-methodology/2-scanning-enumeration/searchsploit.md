@@ -6,6 +6,12 @@
 searchsploit "Samba < 2."
 ```
 
+## show web url instead of local
+
+```bash
+searchsploit -w "Samba < 2."
+```
+
 ## open exploit in editor
 
 ```bash
