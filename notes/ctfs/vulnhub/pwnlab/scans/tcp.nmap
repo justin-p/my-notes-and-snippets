@@ -1,0 +1,43 @@
+# Nmap 7.80 scan initiated Tue Jan  7 17:31:57 2020 as: nmap -p- -A -oA scans/tcp 192.168.56.103
+Nmap scan report for 192.168.56.103
+Host is up (0.00032s latency).
+Not shown: 65531 closed ports
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.10 ((Debian))
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-title: PwnLab Intranet Image Hosting
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          41188/udp   status
+|   100024  1          50511/tcp   status
+|   100024  1          56045/tcp6  status
+|_  100024  1          59499/udp6  status
+3306/tcp  open  mysql   MySQL 5.5.47-0+deb8u1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.47-0+deb8u1
+|   Thread ID: 38
+|   Capabilities flags: 63487
+|   Some Capabilities: ConnectWithDatabase, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, IgnoreSpaceBeforeParenthesis, SupportsCompression, FoundRows, IgnoreSigpipes, InteractiveClient, Speaks41ProtocolNew, SupportsLoadDataLocal, ODBCClient, LongPassword, LongColumnFlag, DontAllowDatabaseTableColumn, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: 4{3+|PYOb|k$n~QXH@Dw
+|_  Auth Plugin Name: mysql_native_password
+50511/tcp open  status  1 (RPC #100024)
+MAC Address: 08:00:27:D7:49:EB (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.32 ms 192.168.56.103
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan  7 17:32:14 2020 -- 1 IP address (1 host up) scanned in 18.10 seconds

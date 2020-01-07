@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Jan  7 17:31:57 2020 as: nmap -p- -A -oA scans/tcp 192.168.56.103
+Host: 192.168.56.103 ()	Status: Up
+Host: 192.168.56.103 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.10 ((Debian))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 3306/open/tcp//mysql//MySQL 5.5.47-0+deb8u1/, 50511/open/tcp//status//1 (RPC #100024)/	Ignored State: closed (65531)	OS: Linux 3.2 - 4.9	Seq Index: 259	IP ID Seq: All zeros
+# Nmap done at Tue Jan  7 17:32:14 2020 -- 1 IP address (1 host up) scanned in 18.10 seconds

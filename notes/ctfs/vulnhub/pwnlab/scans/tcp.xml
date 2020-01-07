@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Jan  7 17:31:57 2020 as: nmap -p- -A -oA scans/tcp 192.168.56.103 -->
+<nmaprun scanner="nmap" args="nmap -p- -A -oA scans/tcp 192.168.56.103" start="1578414717" startstr="Tue Jan  7 17:31:57 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1578414718" endtime="1578414734"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.103" addrtype="ipv4"/>
+<address addr="08:00:27:D7:49:EB" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.10" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.10</cpe></service><script id="http-server-header" output="Apache/2.4.10 (Debian)"><elem>Apache/2.4.10 (Debian)</elem>
+</script><script id="http-title" output="PwnLab Intranet Image Hosting"><elem key="title">PwnLab Intranet Image Hosting</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  3,4          111/tcp6  rpcbind&#xa;  100000  3,4          111/udp6  rpcbind&#xa;  100024  1          41188/udp   status&#xa;  100024  1          50511/tcp   status&#xa;  100024  1          56045/tcp6  status&#xa;  100024  1          59499/udp6  status&#xa;"><table key="100000">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+</table>
+<table key="local">
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">/run/rpcbind.sock</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="udp">
+<elem key="owner">106</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">41188</elem>
+</table>
+<table key="tcp">
+<elem key="owner">106</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">50511</elem>
+</table>
+<table key="tcp6">
+<elem key="owner">106</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">56045</elem>
+</table>
+<table key="udp6">
+<elem key="owner">106</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">59499</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MySQL" version="5.5.47-0+deb8u1" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.5.47-0%2Bdeb8u1</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.47-0+deb8u1&#xa;  Thread ID: 38&#xa;  Capabilities flags: 63487&#xa;  Some Capabilities: ConnectWithDatabase, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, IgnoreSpaceBeforeParenthesis, SupportsCompression, FoundRows, IgnoreSigpipes, InteractiveClient, Speaks41ProtocolNew, SupportsLoadDataLocal, ODBCClient, LongPassword, LongColumnFlag, DontAllowDatabaseTableColumn, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments&#xa;  Status: Autocommit&#xa;  Salt: 4{3+|PYOb|k$n~QXH@Dw&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.47-0+deb8u1</elem>
+<elem key="Thread ID">38</elem>
+<elem key="Capabilities flags">63487</elem>
+<table key="Some Capabilities">
+<elem>ConnectWithDatabase</elem>
+<elem>Support41Auth</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsTransactions</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>SupportsCompression</elem>
+<elem>FoundRows</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>InteractiveClient</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>ODBCClient</elem>
+<elem>LongPassword</elem>
+<elem>LongColumnFlag</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleStatments</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">4{3+|PYOb|k$n~QXH@Dw</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="50511"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41732"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="14070" lastboot="Tue Jan  7 13:37:44 2020"/>
+<distance value="1"/>
+<tcpsequence index="259" difficulty="Good luck!" values="D8FFDF64,53359BF5,1C5C296B,9ACCB696,3EC97410,7BD3EF0B"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="35E2F2,35E30B,35E324,35E33D,35E357,35E370"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.56.103" rtt="0.32"/>
+</trace>
+<times srtt="321" rttvar="63" to="100000"/>
+</host>
+<runstats><finished time="1578414734" timestr="Tue Jan  7 17:32:14 2020" elapsed="18.10" summary="Nmap done at Tue Jan  7 17:32:14 2020; 1 IP address (1 host up) scanned in 18.10 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

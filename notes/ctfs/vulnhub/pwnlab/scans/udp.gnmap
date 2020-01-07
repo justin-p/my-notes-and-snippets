@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Jan  7 19:40:52 2020 as: nmap -sU -oA scans/udp 192.168.56.103
+Host: 192.168.56.103 ()	Status: Up
+Host: 192.168.56.103 ()	Ports: 68/open|filtered/udp//dhcpc///, 111/open/udp//rpcbind///	Ignored State: closed (998)
+# Nmap done at Tue Jan  7 19:59:08 2020 -- 1 IP address (1 host up) scanned in 1095.87 seconds

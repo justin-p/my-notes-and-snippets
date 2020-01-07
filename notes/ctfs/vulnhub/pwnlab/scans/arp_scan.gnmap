@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Tue Jan  7 17:30:05 2020 as: nmap -sn -PR -oA scans/arp_scan 192.168.56.0/24
+Host: 192.168.56.1 ()	Status: Up
+Host: 192.168.56.100 ()	Status: Up
+Host: 192.168.56.103 ()	Status: Up
+Host: 192.168.56.102 ()	Status: Up
+# Nmap done at Tue Jan  7 17:30:07 2020 -- 256 IP addresses (4 hosts up) scanned in 2.07 seconds

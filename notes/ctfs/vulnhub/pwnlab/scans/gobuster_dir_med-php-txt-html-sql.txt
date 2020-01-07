@@ -1,0 +1,7 @@
+http://192.168.56.103/index.php (Status: 200)
+http://192.168.56.103/images (Status: 301)
+http://192.168.56.103/upload (Status: 301)
+http://192.168.56.103/upload.php (Status: 200)
+http://192.168.56.103/login.php (Status: 200)
+http://192.168.56.103/config.php (Status: 200)
+http://192.168.56.103/server-status (Status: 403)
