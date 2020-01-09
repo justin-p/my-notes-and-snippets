@@ -1,3 +1,5 @@
 external/*
+private/*
+!private/README.md
 !external/.gitkeep
 !external/README.md
