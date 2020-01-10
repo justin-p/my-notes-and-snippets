@@ -2,16 +2,16 @@ import io
 import sys
 import os
 import string
-from PIL import Image
+from PIL import Image, ImageOps
 import argparse
 from zipfile import ZipFile 
 
 # initiate the parser with a description
-parser = argparse.ArgumentParser(description = 'Program that helps solve a CTF challange. Recursive zips, each zip has a password. Password is morse code embeded in a file called pwn.png')
+parser = argparse.ArgumentParser(description = 'Program that helps solve a CTF challenge. Recursive zips, each zip has a password. Password is morse code embedded in a file')
 optional = parser._action_groups.pop()
 required = parser.add_argument_group('required arguments')
 required.add_argument("-p", "--path", help="fullpath to folder containing files", required=True)
-required.add_argument("-z", "--zipfile", help="zipfile to unzip", required=True)
+required.add_argument("-z", "--zip-file-name", help="zipfile to unzip", required=True)
 required.add_argument("-m", "--morse-code-file", help="filename that contains morse code", required=True)
 required.add_argument("-i", "--inital-password", help="initalpassword of the first zip", required=True)
 optional.add_argument("-l", "--lower-case-morse", help="transform morse to lower case, default is uppercase", action="store_true")
@@ -52,18 +52,43 @@ def errorprint(*args, **kwargs):
     '''
     print("[x]", *args, **kwargs) 
 
+def printheader():
+        print(f"""
+Author\t\t: justin-p (https://github.com/justin-p)
+Version\t\t: 1.0
+Path\t\t: {cmdargs.path}
+Zip\t\t: {cmdargs.zip_file_name}
+Morse file:\t: {cmdargs.morse_code_file}
+Pass\t\t: {cmdargs.inital_password}
+Lowercase\t: {cmdargs.lower_case_morse}
+""")
+
 def convert_to_binaryimage(file):
     '''
-    ensures our file is in 'binary'. A pixel is either black or white.
+    Ensures our file is in 'binary'. A pixel is either black or white.
+    First convert all pixels to only black and white in RGB mode. 
+    Then convert to grey scale mode (L).
+    This ensures we have a easy on or off state 0 or 255, instead of (0,0,0) and (255,255,255)
     '''
     debugprint('starting convert_to_binaryimage')
-    img = Image.open(file).convert('L')
-    # get the unique color values from our image
-    c1,c2=list(set(list(img.getdata())))
-    # convert gray to black and white
-    img = img.point(lambda x: 0 if x==c1 else 255, '1')
-    img.save(file.replace(".png","_binary.png"))
-
+    try:
+        img = Image.open(file)
+        c1,c2 = (list(set(list(img.getdata()))))
+        img = img.convert("RGB")
+        debugprint(f"update {c1} to (0  , 0  , 0)")
+        debugprint(f"update {c2} to (255, 255, 255)")
+        pixdata = img.load()
+        for y in range(img.size[1]):
+            for x in range(img.size[0]):
+                if pixdata[x, y] == c1:
+                    pixdata[x, y] = (0, 0, 0)
+                elif pixdata[x, y] == c2:
+                    pixdata[x, y] = (255, 255, 255)
+        img = img.convert("L")
+        img.save(file.replace(".png","_binary.png"))        
+    except ValueError as err:
+        errorprint(f"convert_to_binaryimage - {err}")
+        sys.exit()
 
 def getMorseInBinary(width,height,img):
     '''
@@ -73,14 +98,29 @@ def getMorseInBinary(width,height,img):
     morse = []
     lineofmorse=""
     for y in range(0, height): 
+        c=0
+        if cmdargs.debug:
+            print("")
+        debugprint(f"y {y} ", end = '')
         for x in range(0, width):
-            if 255 == img.getpixel((x,y)):
+            pixelvalue=img.getpixel((x,y))            
+            if c > 24:
+                c=0
+                if cmdargs.debug:
+                    print(f"\t{pixelvalue}")
+            else:
+                if cmdargs.debug:
+                    print(f"\t{pixelvalue} ", end = '')
+            c=c+1
+            if 255 == pixelvalue:
                 lineofmorse=lineofmorse+'0'
-            elif 0 == img.getpixel((x,y)):
+            elif 0 == pixelvalue:
                 lineofmorse=lineofmorse+'1' 
         morse.append(lineofmorse)
         lineofmorse=""
-    debugprint(morse)
+    if cmdargs.debug:
+        print("\n")
+    debugprint(f"morse list {morse}")
     return morse
 
 def detectBinaryMorse(morselist):
@@ -103,7 +143,7 @@ def convertFromBinaryMorse(morselist,on,off):
     replace binary values with morse code
     '''
     morse = []
-    debugprint('starting convertMorse')
+    debugprint('starting convertFromBinaryMorse')
     for line in morselist:
         if line != '1111111111111111111111111':
             if line != '0000000000000000000000000':
@@ -180,10 +220,12 @@ def decodeMorse(message,lower_case_morse):
         else:
             debugprint("Character not found, returning <CNF>")
             decodeMessage += '<CNF>'
+        debugprint(f"morse : {char}")
+        debugprint(f"char : {inverseMorseAlphabet[char]}")
     if lower_case_morse:
         decodeMessage=(decodeMessage.lower())
-    verboseprint(f"Message : {message}")
-    verboseprint(f"Decoded : {decodeMessage}")
+    verboseprint(f"Message\t: {message}")
+    verboseprint(f"Decoded\t: {decodeMessage}")
     return decodeMessage
 
 def getPasswordFromFile(path, filename, lower_case_morse):
@@ -198,18 +240,20 @@ def getPasswordFromFile(path, filename, lower_case_morse):
     on,off = detectBinaryMorse(morseInBinary)
     message = convertFromBinaryMorse(morseInBinary, on, off)
     password = decodeMorse(message,lower_case_morse)
-    infoprint(f"Decoded password : {password}")
     return password
 
 def unzip(path,zip_file_name,morse_code_file,password,recursive,lower_case_morse):
     with ZipFile((path + zip_file_name), 'r') as zip:
         files = zip.namelist()
-        verboseprint(f"found {files}")
+        verboseprint(f"Using file\t: {zip_file_name}")
+
+        if recursive == True:
+            password=getPasswordFromFile(path,morse_code_file,lower_case_morse)
+        password_in_bytes=str.encode(password)
+
+        verboseprint(f"Extracting\t: {', '.join(files)}")
         for file in files:
-            password_in_bytes=str.encode(password)   
-            verboseprint(f"setting password to {password_in_bytes}")
             zip.setpassword(password_in_bytes)
-            infoprint(f"extracting {file}")
             try:
                 for zip_info in zip.infolist():
                     if zip_info.filename[-1] == '/':
@@ -217,21 +261,36 @@ def unzip(path,zip_file_name,morse_code_file,password,recursive,lower_case_morse
                     zip_info.filename = os.path.basename(zip_info.filename)
                     if '.zip' in file:
                         nextzip=file.split('/')[-1]
-                    zip.extract(zip_info, path)                    
+                    zip.extract(zip_info, path)
             except KeyboardInterrupt:
+                print("\n")
                 warningprint("Exiting program")
                 sys.exit()
             except RuntimeError as err:
-                errorprint(f"RuntimeError: {err}")
+                errorprint(f"Could not extract {zip_file_name}")
+                errorprint(f"Most likely the password is wrong password.\n    RuntimeError '{err}'")
                 sys.exit()
+        infoprint(f"Unzipped '{zip_file_name}' using password '{password}'")
         if recursive == True:
-            password=getPasswordFromFile(path,morse_code_file,lower_case_morse)
             unzip(path,nextzip,morse_code_file,password,recursive,lower_case_morse)
         else:
-            verboseprint(f"next file to extract is {nextzip}")
             return nextzip
         
 if __name__ == "__main__":
-    nextzip=unzip(cmdargs.path,cmdargs.zipfile,cmdargs.morse_code_file,cmdargs.inital_password,False,cmdargs.lower_case_morse)
-    password=getPasswordFromFile(cmdargs.path,cmdargs.morse_code_file,cmdargs.lower_case_morse)
-    unzip(cmdargs.path,nextzip,cmdargs.morse_code_file,password,True,cmdargs.lower_case_morse)
+    printheader()
+    nextzip=unzip(cmdargs.path,cmdargs.zip_file_name,cmdargs.morse_code_file,cmdargs.inital_password,False,cmdargs.lower_case_morse)
+    try:
+        unzip(cmdargs.path,nextzip,cmdargs.morse_code_file,'',True,cmdargs.lower_case_morse)
+    except UnboundLocalError:
+        infoprint("""Found the flag!
+                                   .''.       
+       .''.      .        *''*    :_\/_:     . 
+      :_\/_:   _\(/_  .:.*_\/_*   : /\ :  .'.:.'.
+  .''.: /\ :   ./)\   ':'* /\ * :  '..'.  -=:o:=-
+ :_\/_:'.:::.    ' *''*    * '.\'/.' _\(/_'.':'.'
+ : /\ : :::::     *_\/_*     -= o =-  /)\    '  *
+  '..'  ':::'     * /\ *     .'/.\'.   '
+      *            *..*         :
+jgs     *
+        *
+""")

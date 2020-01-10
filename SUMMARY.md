@@ -128,6 +128,8 @@
     * [priv-esc](notes/hacking-methodology/4-post-explotation/priv-esc.md)
     * [shell-escaping](notes/hacking-methodology/4-post-explotation/shell-escaping.md)
   * [steganography](notes/hacking-methodology/steganography/README.md)
+  * [Forensics](notes/hacking-methodology/Forensics/README.md)
+    * [USBRip](notes/hacking-methodology/Forensics/usbrip.md)
 * [metasploit](cheatsheets/metasploit/README.md)
   * [msfconsole-core-commands](cheatsheets/metasploit/msfconsole_core_commands.md)
 * [Networking](cheatsheets/networking/README.md)

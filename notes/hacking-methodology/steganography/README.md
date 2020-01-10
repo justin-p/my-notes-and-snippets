@@ -1,7 +1,8 @@
 # Steganography
 
-## steghide 
+https://0xrick.github.io/lists/stego/
 
+## steghide 
 
 ### get info
 
@@ -23,4 +24,21 @@ Enter passphrase:
 ```
 root@kali:/mnt/hgfs/_shared_folder# steghide --extract -sf hawking -p hawking
 wrote extracted data to "flag.txt".
+```
+
+## binwalk
+
+Binwalk is a tool for searching binary files like images and audio files for embedded files and data. 
+
+```
+binwalk file
+```
+
+
+## foremost
+
+Foremost is a program that recovers files based on their headers , footers and internal data structures.
+
+```
+foremost -i file
 ```
