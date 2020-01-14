@@ -25,6 +25,14 @@
 Load Prefs
 ```
 
+### nano
+
+```
+CTRL+R
+CTRL+X
+reset; bash 1>&0 2>&0
+```
+
 ## Pager
 
 
