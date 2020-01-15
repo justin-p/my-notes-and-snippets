@@ -20,6 +20,7 @@
   * [MySQL](cheatsheets/mysql/mysql.md)
 * [Python](cheatsheets/python/README.md)
   * [Oneliners](cheatsheets/python/oneliners.md)
+  * [Handy stuff](cheatsheets/python/handystuff.md)
 * [Unix](cheatsheets/unix/README.md)
   * [nmap](cheatsheets/unix/nmap.md)
   * [awk](cheatsheets/unix/awk.md)

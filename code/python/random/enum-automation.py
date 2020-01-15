@@ -7,7 +7,7 @@ import argparse
 import nmap
 import socket
 import subprocess
-
+import threading
 
 def verboseprint(*args, **kwargs): 
     # verbose print function if verbose arg is given
@@ -45,44 +45,52 @@ def SetupFolderStructure(output_folder):
         f = open(file,'w+')
         f.close()
 
-def NmapScanner(ip, scantype):
+def NmapScanner(ip, scantype, output_folder):
     try:
         nm = nmap.PortScanner()
     except:
         errorprint('Unable to find nmap, exiting program.')
         sys.exit()
     if scantype == 'simple-udp':
-        scanArgs = '-sU -T4 -oN scans/simple_udp.nmap -oG scans/simple_udp.nmap'
+        scanArgs = str('-sU -T4 -oN ' + output_folder + '/scans/simple_udp.nmap -oG ' + output_folder + '/scans/simple_udp.gnmap')
     elif scantype == 'simple-tcp':
-        scanArgs = '-sS -T4 -p80 -oN scans/simple_tcp.nmap -oG scans/simple_tcp.nmap'
+        scanArgs = str('-sS -T4 -oN ' + output_folder + '/scans/simple_tcp.nmap -oG ' + output_folder + '/scans/simple_tcp.gnmap')
     elif scantype == 'full-tcp':
-        scanArgs = '-A -T4 -p- -oN scans/full_tcp.nmap -oG scans/full_tcp.nmap'
-    infoprint(f'Running a {scantype} ({scanArgs}) scan against {ip}')
+        scanArgs = str('-A -T4 -p- -oN ' + output_folder + '/scans/full_tcp.nmap -oG ' + output_folder + '/scans/full_tcp.gnmap')
     if scanArgs is None:
+        infoprint(f'Running a default scan against {ip}')                
         nm.scan(ip)
+        infoprint(f'Default scan against {ip} finished!')
     else:
+        infoprint(f'Running a {scantype} ({scanArgs}) scan against {ip}')        
         nm.scan(ip, arguments=scanArgs)
+        infoprint(f'{scantype} scan against {ip} finished!')
     return nm
 
-def TCPServicesScan(ip):
-    nmapresults = NmapScanner(ip,'full-tcp')    
+def FullTCPScan(ip,output_folder):
+    NmapScanner(ip,'full-tcp',output_folder)
+
+def UDPScan(ip,output_folder):
+    NmapScanner(ip,'simple-udp',output_folder)
+
+def QuickTCPAndServicesScan(ip,output_folder):
+    nmapresults = NmapScanner(ip,'simple-tcp',output_folder)    
 
     if True == nmapresults[ip].has_tcp(80):
         infoprint("Port 80 is open.")
         NiktoScanner(ip,output_folder)
         GobusterScanner(ip,output_folder)
 
-def UDPServicesScan(ip):
-    NmapScanner(ip,'simple-udp')
-
-def NiktoScanner(host,output_folder):
-    infoprint("Running nikto")
-    cmd = ["/usr/bin/nikto", "-host", host,"-output", (output_folder + "/scans/nikto.txt")]
+def NiktoScanner(ip,output_folder):
+    infoprint(f"Running Nikto scan against {ip}")
+    cmd = ["/usr/bin/nikto", "-host", ip,"-output", (output_folder + "/scans/nikto.txt")]
     FNULL = open(os.devnull, 'w')
     subprocess.Popen(cmd, stdout=FNULL).wait()
+    infoprint(f"Nikto scan against {ip} finished!")
 
-def GobusterScanner(host,output_folder):
-    infoprint("Running gobuster")
+def GobusterScanner(ip,output_folder):
+    infoprint(f"Running gobuster scan against {ip}")
+    infoprint(f"Running gobuster scan against {ip} finished!")
     pass
 
 def main(ip,output_folder):
@@ -97,10 +105,9 @@ def main(ip,output_folder):
             sys.exit()
     SetupFolderStructure(output_folder)
     
-    ## make this run in parallel 
-    TCPServicesScan(ip)
-    UDPServicesScan(ip)
-    ## make this run in parallel 
+    threading.Thread(target=QuickTCPAndServicesScan, args=(ip,output_folder)).start()
+    threading.Thread(target=FullTCPScan, args=(ip,output_folder)).start()
+    threading.Thread(target=UDPScan, args=(ip,output_folder)).start()
 
 
 if __name__ == '__main__':
