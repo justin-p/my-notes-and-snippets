@@ -51,10 +51,10 @@ def NmapScanner(ip, scantype, output_folder):
     except:
         errorprint('Unable to find nmap, exiting program.')
         sys.exit()
-    if scantype == 'simple-udp':
+    if scantype == 'udp':
         scanArgs = str('-sU -T4 -oN ' + output_folder + '/scans/simple_udp.nmap -oG ' + output_folder + '/scans/simple_udp.gnmap')
-    elif scantype == 'simple-tcp':
-        scanArgs = str('-sS -T4 -oN ' + output_folder + '/scans/simple_tcp.nmap -oG ' + output_folder + '/scans/simple_tcp.gnmap')
+    elif scantype == 'quick-tcp':
+        scanArgs = str('-A -T4 -oN ' + output_folder + '/scans/simple_tcp.nmap -oG ' + output_folder + '/scans/simple_tcp.gnmap')
     elif scantype == 'full-tcp':
         scanArgs = str('-A -T4 -p- -oN ' + output_folder + '/scans/full_tcp.nmap -oG ' + output_folder + '/scans/full_tcp.gnmap')
     if scanArgs is None:
@@ -71,10 +71,10 @@ def FullTCPScan(ip,output_folder):
     NmapScanner(ip,'full-tcp',output_folder)
 
 def UDPScan(ip,output_folder):
-    NmapScanner(ip,'simple-udp',output_folder)
+    NmapScanner(ip,'udp',output_folder)
 
 def QuickTCPAndServicesScan(ip,output_folder):
-    nmapresults = NmapScanner(ip,'simple-tcp',output_folder)    
+    nmapresults = NmapScanner(ip,'quick-tcp',output_folder)    
 
     if True == nmapresults[ip].has_tcp(80):
         infoprint("Port 80 is open.")
@@ -82,16 +82,17 @@ def QuickTCPAndServicesScan(ip,output_folder):
         GobusterScanner(ip,output_folder)
 
 def NiktoScanner(ip,output_folder):
-    infoprint(f"Running Nikto scan against {ip}")
-    cmd = ["/usr/bin/nikto", "-host", ip,"-output", (output_folder + "/scans/nikto.txt")]
-    FNULL = open(os.devnull, 'w')
-    subprocess.Popen(cmd, stdout=FNULL).wait()
+    cmd = ["/usr/bin/nikto", "-host", ("http://" + ip + "/"),"-output", (output_folder + "/scans/nikto.txt")]
+    infoprint(f"Running Nikto ({cmd})")
+    subprocess.Popen(cmd).wait()
     infoprint(f"Nikto scan against {ip} finished!")
 
 def GobusterScanner(ip,output_folder):
-    infoprint(f"Running gobuster scan against {ip}")
+    cmd = ["/root/go/bin/gobuster", "dir"," ", "-w", "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt", "-x", "txt,html", "-t", "20", "-e", " ","-u", ("http://" + ip + "/"), "-o", (output_folder + "/scans/gobuster_dir_med-txt-html.txt")]
+    infoprint(f"Running gobuster ({cmd})")
+    #FNULL = open(os.devnull, 'w')
+    subprocess.Popen(cmd).wait()#, stdout=FNULL).wait()
     infoprint(f"Running gobuster scan against {ip} finished!")
-    pass
 
 def main(ip,output_folder):
     ## set output_folder to current folder if its currently set to 'False'
@@ -103,19 +104,19 @@ def main(ip,output_folder):
         if path.exists() == False:
             errorprint(f"Could not find path {output_folder}")
             sys.exit()
+    
     SetupFolderStructure(output_folder)
     
     threading.Thread(target=QuickTCPAndServicesScan, args=(ip,output_folder)).start()
     threading.Thread(target=FullTCPScan, args=(ip,output_folder)).start()
     threading.Thread(target=UDPScan, args=(ip,output_folder)).start()
 
-
 if __name__ == '__main__':
     ## initiate the parser with a description
     parser = argparse.ArgumentParser(description = 'Basic enumeration automation for CTFs/HTB/Boot2Root/etc')
     optional = parser._action_groups.pop()
     required = parser.add_argument_group('required arguments')
-    required.add_argument("-i", "--ip", help="ip to scan", required=True)
+    required.add_argument("-ip", "--ip", help="ip to scan", required=True)
     optional.add_argument("-o", "--output-folder", help="output folder",default=False)
     optional.add_argument("-v", "--verbose", help="show verbose", action="store_true")
     optional.add_argument("-d", "--debug", help="show debug", action="store_true")

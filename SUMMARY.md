@@ -116,6 +116,7 @@
       * [password-spraying](notes/hacking-methodology/3-explotation/brute-forceing/password-spraying.md)
     * [shells](notes/hacking-methodology/3-explotation/shells/README.md)
       * [payloads](notes/hacking-methodology/3-explotation/shells/payloads.md)
+    * [redis](notes/hacking-methodology/3-explotation/redis.md)
     * [sql-injection](notes/hacking-methodology/3-explotation/sql-injection.md)
   * [post-explotaion](notes/hacking-methodology/README.md)
     * [passwords](notes/hacking-methodology/4-post-explotation/passwords/README.md)
