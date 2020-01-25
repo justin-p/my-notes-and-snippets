@@ -1,0 +1,5 @@
+http://10.10.10.14/images (Status: 301)
+http://10.10.10.14/Images (Status: 301)
+http://10.10.10.14/IMAGES (Status: 301)
+http://10.10.10.14/_private (Status: 403)
+http://10.10.10.14/postinfo.html (Status: 200)

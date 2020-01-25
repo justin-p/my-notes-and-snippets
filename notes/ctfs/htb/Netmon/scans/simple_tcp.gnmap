@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Jan 25 16:32:36 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_tcp.gnmap 10.10.10.152
+Host: 10.10.10.152 ()	Status: Up
+Host: 10.10.10.152 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Indy httpd 18.1.37.13946 (Paessler PRTG bandwidth monitor)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Microsoft Windows Server 2008 R2 - 2012 microsoft-ds/	Ignored State: closed (995)	Seq Index: 253	IP ID Seq: Busy server or unknown class
+# Nmap done at Sat Jan 25 16:33:02 2020 -- 1 IP address (1 host up) scanned in 26.99 seconds

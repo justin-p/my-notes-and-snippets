@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jan 24 15:18:36 2020 as: nmap -oX - -A -T4 -p- -oN /mnt/hgfs/_shared_folder/htb/boxes/Optimum/scans/full_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Optimum/scans/full_tcp.gnmap 10.10.10.8
+Host: 10.10.10.8 ()	Status: Up
+Host: 10.10.10.8 ()	Ports: 80/open/tcp//http//HttpFileServer httpd 2.3/	Ignored State: filtered (65534)	Seq Index: 261	IP ID Seq: Busy server or unknown class
+# Nmap done at Fri Jan 24 15:20:18 2020 -- 1 IP address (1 host up) scanned in 101.59 seconds

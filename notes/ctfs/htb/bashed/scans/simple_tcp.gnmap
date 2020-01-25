@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jan 24 22:09:36 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/bashed/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/bashed/scans/simple_tcp.gnmap 10.10.10.68
+Host: 10.10.10.68 ()	Status: Up
+Host: 10.10.10.68 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Ignored State: closed (999)	Seq Index: 258	IP ID Seq: All zeros
+# Nmap done at Fri Jan 24 22:09:49 2020 -- 1 IP address (1 host up) scanned in 13.20 seconds

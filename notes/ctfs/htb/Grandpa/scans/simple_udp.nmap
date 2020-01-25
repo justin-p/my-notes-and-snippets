@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Sat Jan 25 01:14:07 2020 as: nmap -oX - -sU -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Grandpa/scans/simple_udp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Grandpa/scans/simple_udp.gnmap 10.10.10.14
+Nmap scan report for 10.10.10.14
+Host is up (0.019s latency).
+All 1000 scanned ports on 10.10.10.14 are open|filtered
+
+# Nmap done at Sat Jan 25 01:14:11 2020 -- 1 IP address (1 host up) scanned in 4.23 seconds

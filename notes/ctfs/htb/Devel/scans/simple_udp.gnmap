@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 19:06:09 2020 as: nmap -oX - -sU -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/devel/scans/simple_udp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/devel/scans/simple_udp.gnmap 10.10.10.5
+Host: 10.10.10.5 ()	Status: Up
+Host: 10.10.10.5 ()	Status: Up
+# Nmap done at Thu Jan 23 19:06:30 2020 -- 1 IP address (1 host up) scanned in 21.48 seconds

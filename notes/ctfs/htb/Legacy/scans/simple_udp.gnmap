@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 14:44:53 2020 as: nmap -oX - -sU -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/legacy/scans/simple_udp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/legacy/scans/simple_udp.gnmap 10.10.10.4
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Ports: 137/open/udp//netbios-ns///	Ignored State: open|filtered (999)
+# Nmap done at Thu Jan 23 14:45:11 2020 -- 1 IP address (1 host up) scanned in 17.42 seconds

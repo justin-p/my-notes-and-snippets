@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Sat Jan 25 16:32:35 2020 as: nmap -oX - -sU -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_udp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_udp.gnmap 10.10.10.152
+Warning: 10.10.10.152 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.152
+Host is up (0.019s latency).
+Not shown: 980 closed ports
+PORT      STATE         SERVICE
+123/udp   open|filtered ntp
+137/udp   open|filtered netbios-ns
+138/udp   open|filtered netbios-dgm
+407/udp   open|filtered timbuktu
+427/udp   open|filtered svrloc
+500/udp   open|filtered isakmp
+686/udp   open|filtered hcp-wismar
+1070/udp  open|filtered gmrupdateserv
+4500/udp  open|filtered nat-t-ike
+5003/udp  open|filtered filemaker
+5353/udp  open|filtered zeroconf
+5355/udp  open|filtered llmnr
+20126/udp open|filtered unknown
+20249/udp open|filtered unknown
+21167/udp open|filtered unknown
+21320/udp open|filtered unknown
+27482/udp open|filtered unknown
+34577/udp open|filtered unknown
+50497/udp open|filtered unknown
+55587/udp open|filtered unknown
+
+# Nmap done at Sat Jan 25 16:50:05 2020 -- 1 IP address (1 host up) scanned in 1049.91 seconds

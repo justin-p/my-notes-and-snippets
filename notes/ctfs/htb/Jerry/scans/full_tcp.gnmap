@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 21:59:39 2020 as: nmap -oX - -A -T4 -p- -oN /mnt/hgfs/_shared_folder/htb/boxes/Jerry/scans/full_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Jerry/scans/full_tcp.gnmap 10.10.10.95
+Host: 10.10.10.95 ()	Status: Up
+Host: 10.10.10.95 ()	Ports: 8080/open/tcp//http//Apache Tomcat|Coyote JSP engine 1.1/	Ignored State: filtered (65534)	Seq Index: 265	IP ID Seq: Incremental
+# Nmap done at Thu Jan 23 22:01:30 2020 -- 1 IP address (1 host up) scanned in 110.94 seconds

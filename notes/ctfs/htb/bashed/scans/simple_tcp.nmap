@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Fri Jan 24 22:09:36 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/bashed/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/bashed/scans/simple_tcp.gnmap 10.10.10.68
+Nmap scan report for 10.10.10.68
+Host is up (0.019s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Arrexel's Development Site
+Device type: general purpose
+Running (JUST GUESSING): Linux 2.6.X|3.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3.2.0
+Aggressive OS guesses: Linux 2.6.18 - 2.6.22 (91%), Linux 3.2.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT      ADDRESS
+1   18.25 ms 10.10.14.1
+2   18.42 ms 10.10.10.68
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 24 22:09:49 2020 -- 1 IP address (1 host up) scanned in 13.20 seconds

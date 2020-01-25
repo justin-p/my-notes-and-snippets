@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 14:44:54 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/legacy/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/legacy/scans/simple_tcp.gnmap 10.10.10.4
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Ports: 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows XP microsoft-ds/, 3389/closed/tcp//ms-wbt-server///	Ignored State: filtered (997)	Seq Index: 261	IP ID Seq: Incremental
+# Nmap done at Thu Jan 23 14:46:00 2020 -- 1 IP address (1 host up) scanned in 67.12 seconds

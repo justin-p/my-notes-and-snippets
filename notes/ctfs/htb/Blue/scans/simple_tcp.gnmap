@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 16:56:13 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/blue/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/blue/scans/simple_tcp.gnmap 10.10.10.40
+Host: 10.10.10.40 ()	Status: Up
+Host: 10.10.10.40 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)/, 49152/open/tcp//msrpc//Microsoft Windows RPC/, 49153/open/tcp//msrpc//Microsoft Windows RPC/, 49154/open/tcp//msrpc//Microsoft Windows RPC/, 49155/open/tcp//msrpc//Microsoft Windows RPC/, 49156/open/tcp//msrpc//Microsoft Windows RPC/, 49157/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: closed (991)	Seq Index: 261	IP ID Seq: Incremental
+# Nmap done at Thu Jan 23 16:57:37 2020 -- 1 IP address (1 host up) scanned in 84.44 seconds

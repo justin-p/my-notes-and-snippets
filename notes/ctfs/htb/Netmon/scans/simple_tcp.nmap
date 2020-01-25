@@ -1,0 +1,53 @@
+# Nmap 7.80 scan initiated Sat Jan 25 16:32:36 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Netmon/scans/simple_tcp.gnmap 10.10.10.152
+Nmap scan report for 10.10.10.152
+Host is up (0.020s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE      VERSION
+21/tcp  open  ftp          Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 02-02-19  11:18PM                 1024 .rnd
+| 02-25-19  09:15PM       <DIR>          inetpub
+| 07-16-16  08:18AM       <DIR>          PerfLogs
+| 02-25-19  09:56PM       <DIR>          Program Files
+| 02-02-19  11:28PM       <DIR>          Program Files (x86)
+| 02-03-19  07:08AM       <DIR>          Users
+|_02-25-19  10:49PM       <DIR>          Windows
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp  open  http         Indy httpd 18.1.37.13946 (Paessler PRTG bandwidth monitor)
+|_http-server-header: PRTG/18.1.37.13946
+| http-title: Welcome | PRTG Network Monitor (NETMON)
+|_Requested resource was /index.htm
+|_http-trane-info: Problem with XML parsing of /evox/about
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2016 (85%)
+OS CPE: cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2016 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 41s, deviation: 0s, median: 41s
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-01-25T15:33:36
+|_  start_date: 2020-01-25T10:31:51
+
+TRACEROUTE (using port 1025/tcp)
+HOP RTT      ADDRESS
+1   20.22 ms 10.10.14.1
+2   20.20 ms 10.10.10.152
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 25 16:33:02 2020 -- 1 IP address (1 host up) scanned in 26.99 seconds

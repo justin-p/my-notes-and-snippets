@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Jan 25 15:14:57 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Granny/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Granny/scans/simple_tcp.gnmap 10.10.10.15
+Host: 10.10.10.15 ()	Status: Up
+Host: 10.10.10.15 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 6.0/	Ignored State: filtered (999)	Seq Index: 261	IP ID Seq: Incremental
+# Nmap done at Sat Jan 25 15:15:13 2020 -- 1 IP address (1 host up) scanned in 17.08 seconds

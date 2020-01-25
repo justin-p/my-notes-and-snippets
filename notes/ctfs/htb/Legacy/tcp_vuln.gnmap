@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jan 23 15:33:43 2020 as: nmap -A --script vuln -oA tcp_vuln 10.10.10.4
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Status: Up
+# Nmap done at Thu Jan 23 15:34:19 2020 -- 1 IP address (1 host up) scanned in 36.17 seconds

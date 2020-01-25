@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jan 24 00:06:09 2020 as: nmap -oX - -A -T4 -oN /mnt/hgfs/_shared_folder/htb/boxes/Nibbles/scans/simple_tcp.nmap -oG /mnt/hgfs/_shared_folder/htb/boxes/Nibbles/scans/simple_tcp.gnmap 10.10.10.75
+Host: 10.10.10.75 ()	Status: Up
+Host: 10.10.10.75 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Ignored State: closed (998)	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Fri Jan 24 00:06:31 2020 -- 1 IP address (1 host up) scanned in 22.56 seconds
