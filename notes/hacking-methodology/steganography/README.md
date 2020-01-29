@@ -42,3 +42,15 @@ Foremost is a program that recovers files based on their headers , footers and i
 ```
 foremost -i file
 ```
+
+## NTFS Alternate Data Streams
+
+[info](https://www.secjuice.com/ntfs-steganography-hiding-in-plain-sight/)
+
+cmd
+
+`dir /r`
+
+powershell
+
+`gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' | select filename,stream,@{'name'='identifier';"e"={"$($_.filename)$($_.stream)"}}`
