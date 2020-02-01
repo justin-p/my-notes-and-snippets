@@ -17,7 +17,7 @@ hashcat -a 0 -m 1000 -O -w 3 hashfile wordlist -o cracked_hashes -r rule
 ### one-rule-to-rule-them-all
 
 https://www.notsosecure.com/one-rule-to-rule-them-all/  
-https://github.com/NotSoSecure/password_cracking_rules   
+https://github.com/NotSoSecure/password_cracking_rules  
 
 ## bruteforcing 
 
