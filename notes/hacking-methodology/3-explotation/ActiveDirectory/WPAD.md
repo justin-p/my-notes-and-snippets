@@ -7,3 +7,5 @@ A attacker can serve a fake WPAD server and respond to client WPAD name resoluti
 ## Attacking
 
 [responder](https://github.com/lgandx/Responder) + [ntlmrelayx](https://github.com/SecureAuthCorp/impacket)
+
+[mitm6](https://github.com/fox-it/mitm6) + [ntlmrelayx](https://github.com/SecureAuthCorp/impacket) + ([getSP.py](https://github.com/SecureAuthCorp/impacket) + ) [secretsdump.py](https://github.com/SecureAuthCorp/impacket)
