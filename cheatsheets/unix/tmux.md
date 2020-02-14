@@ -84,6 +84,13 @@ x  kill pane
 <prefix> z toggle pane zoom
 ```
 
+## Renaming
+
+```text
+,        name pane
+:rename  rename session
+```
+
 ## Sync Panes
 
 You can do this by switching to the appropriate window, typing your Tmux prefix \(commonly Ctrl-B or Ctrl-A\) and then a colon to bring up a Tmux command line, and typing:
