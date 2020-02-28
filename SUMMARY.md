@@ -145,7 +145,7 @@
   * [post-explotaion](notes/hacking-methodology/README.md)
     * [ActiveDirectory](notes/hacking-methodology/4-post-explotation/ActiveDirectory/README.md)
       * [CredentialAccess&Dumping](notes/hacking-methodology/4-post-explotation/ActiveDirectory/CredentialAccess&Dumping/README.md)
-        * [CredentialDeligation](otes/hacking-methodology/4-post-explotation/ActiveDirectory/CredentialAccess&Dumping/CredentialDeligation.md)
+        * [CredentialDeligation](notes/hacking-methodology/4-post-explotation/ActiveDirectory/CredentialAccess%26Dumping/CredentialDeligation.md)
     * [passwords](notes/hacking-methodology/4-post-explotation/passwords/README.md)
       * [hash-identifier](notes/hacking-methodology/4-post-explotation/passwords/hash-identifier.md)
       * [hashcat](notes/hacking-methodology/4-post-explotation/passwords/hashcat.md)
